@@ -2,24 +2,19 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-}
-   
+}  
 body {
    font-size: 17px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
-
-
-
 .body_login {
    background-image: url(img/fondo.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
    height: 100vh;
    display: flex;
 }
-
 .formulario{
    position: absolute;
    top: 50%;
@@ -52,14 +47,12 @@ body {
 .formulario form{
    padding: 0 40px;
    box-sizing: border-box;
-
 }
 
 form .usuario{
    position: relative;
    border-bottom: 2px solid rgb(0, 0, 0);
    margin: 30px 0;
-
 }
 
 .usuario input{
@@ -70,16 +63,13 @@ form .usuario{
    border: none;
    background: none;
    outline: none;
-
 }
-
 .usuario label{
    position: absolute;
    left: 5px;
    color: rgb(255, 255, 255) ;
    pointer-events: none;
 }
-
 .usuario span::before{
    content: '';
    position: absolute;
@@ -89,16 +79,12 @@ form .usuario{
    height: 2px;
    background: #6a656b;
    transition: .5s;
-
-
 }
-
 .usuario input:focus ~ label,
 .usuario input:focus ~ label{
    top: -7px;
    color: #534b57;
 }
-
 .usuario input:focus ~ span::before,
 .usuario input:focus ~ span::before{
    width: 100%;
@@ -124,7 +110,6 @@ form .usuario{
    color: rgb(255, 255, 255);
    cursor: pointer;
    outline: none;
-   
 }
 
 .btn_login:hover{
