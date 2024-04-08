@@ -1,15 +1,24 @@
 *{
-   body{
-    margin: 0;
-    padding: 0;
-    background-image: url(images/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    height: 100vh;
-    display: flex;
-   }
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+   
+body {
+   font-size: 17px;
+}
+
+
+
+.body_login {
+   background-image: url(img/fondo.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+   height: 100vh;
+   display: flex;
+}
 
 .formulario{
    position: absolute;
@@ -19,8 +28,6 @@
    width: 400px;
    background: rgba(43, 147, 151, 0.897);
    border-radius: 10px;
-   box-shadow: 20px 20px 20px rgb(43,148,151);
-
 }
 
 .container {
@@ -28,14 +35,12 @@
    justify-content: center;
    align-items: center;
    height: 25vh; 
- }
+}
  
- .container img {
+.container img {
    max-width: 100%; 
    max-height: 100%; 
- }
-
-
+}
 
 .formulario h1{
    text-align: center;
@@ -49,7 +54,6 @@
    box-sizing: border-box;
 
 }
-
 
 form .usuario{
    position: relative;
@@ -73,9 +77,7 @@ form .usuario{
    position: absolute;
    left: 5px;
    color: rgb(255, 255, 255) ;
-   font-size: 20px;
    pointer-events: none;
-
 }
 
 .usuario span::before{
@@ -93,28 +95,26 @@ form .usuario{
 
 .usuario input:focus ~ label,
 .usuario input:focus ~ label{
-   top: -5px;
+   top: -7px;
    color: #534b57;
 }
 
 .usuario input:focus ~ span::before,
 .usuario input:focus ~ span::before{
    width: 100%;
-
 }
+
 .reestablecer{
    margin: -5px 0 20px 5px;
    color: blue;
    cursor: pointer;
-   font-size: 18px;
 }
 
 .reestablecer:hover{
    text-decoration: underline;
 }
 
-
-input[type="submit"]{
+.btn_login {
    width: 100%;
    height: 50px;
    border: 1px solid;
@@ -127,12 +127,47 @@ input[type="submit"]{
    
 }
 
-input[type="submit"]:hover{
+.btn_login:hover{
    border-color: #25e9c8;
    transition: .5s;
 }
 
 
-
-
+/* PAGINA DE REPORTES */
+.header {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   padding: 5px 10px;
+   background-color: rgb(43, 148, 151);
+   box-shadow: 1px 1px 3px black;
+   border-radius: 0 0 10px 10px;
 }
+.logo img {
+   width: 50px;
+}
+.navegacion{
+   width: 400px;
+   display: flex;
+}
+.navegacion a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 15px;
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   height: 30px;
+   width: 70px;
+}
+.navegacion a:hover {
+   background-color: rgb(0, 119, 255, 0.2);
+   border-radius: 5px;
+   box-shadow: 0px 2px 2px 2px black;
+   font-size: 17.5px;
+}
+
+
+
+
