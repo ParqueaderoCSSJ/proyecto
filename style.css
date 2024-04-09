@@ -154,6 +154,104 @@ form .usuario{
    font-size: 16.5px;
 }
 
+/* PAGINA DE RESERVAS */
+.cabecera{
+   display: flex;
+   gap: 20px;
+   background-color: rgb(43, 148, 151);
+   padding: 5px 5px;
+   border-radius: 2px;
+   box-shadow: 4px 6px 2px;
+   box-shadow: 1px 1px 3px black;
+   border-radius: 0 0 10px 10px;
+}
+
+.browser {
+   display: flex;
+   width: 400px;
+   z-index: 2;
+}
+
+.browser a {
+   display: flex;
+   align-items: center;
+   margin: 5px 5px 5px;
+}
+
+.logotipo img{
+   width: 70px;
+   height: 70px;
+   
+}
 
 
+.nav-cion{
+   width: 500px;
+   display: flex;
+}
 
+.nav-cion a{
+   align-items: center;
+   color: black;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   margin-right: 50px;
+   font-weight: bold;
+   padding-left: 70px;
+   padding-right: 70px;
+   height: 50px;
+   width: 50px;
+   text-transform: uppercase;
+}
+
+.nav-cion a:hover{
+   background-color: rgb(0, 119, 255, 0.2);
+   border-radius: 5px;
+   box-shadow: 0px 3px 3px 3px rgba(6, 23, 43, 0.774);
+   font-size: 25px;
+}
+
+.contenedor{
+   margin: 0;
+   width: 100rem;
+   height: 800px;
+   background-color: rgba(175, 190, 190, 0.192);
+}
+.verticalnav {
+   height: 100%;
+   width: 160px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: rgb(55, 55, 55);
+   overflow: hidden;
+   padding-top: 20px;
+   z-index: 1;
+}
+
+.barra-izq{
+   width: 200px;
+   height: 100vh;
+   background-color: rgba(175, 190, 190, 0.192);
+   border-style: groove;
+   border-radius: 10px;
+}
+
+.barra-izq a{
+   text-decoration: none;
+   display: flex;
+   text-align: center;
+   font-weight: bold;
+   padding-left: 20px;
+   color: black;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.barra-izq a:hover{
+   background-color: rgba(0, 119, 255, 0.2);
+   border-radius: 20px;
+   margin-top:  20px;
+   box-shadow: 0px 0px 2px 4px rgba(6, 23, 43, 0.774);
+}
