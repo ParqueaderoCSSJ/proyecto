@@ -1,0 +1,43 @@
+/************ GLOBALES ***************/
+:root {
+    --color-primary: rgb(43, 148, 151);
+    --color-secundary: rgb(0, 119, 255, 0.089);
+    --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+ }
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ } 
+ html {
+    font-size: 62.5%;
+ }
+ body {
+    font-size: 1.6rem;
+    font-family: var(--font);
+ }
+ /************ PAGINA FACTURAS ***************/
+ .logo img {
+    width: 50px;
+ }
+ .browser {
+    display: flex;
+    width: 400px;
+    z-index: 2;
+ }
+ .browser a {
+    display: flex;
+    align-items: center;
+    margin: 5px 5px 5px;
+ }
+ .verticalnav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(55, 55, 55);
+    overflow: hidden;
+    padding-top: 20px;
+    z-index: 1;
+ }
