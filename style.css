@@ -171,6 +171,7 @@ form .usuario{
 .browser {
    display: flex;
    width: 400px;
+   z-index: 2;
 }
 
 .browser a {
@@ -201,6 +202,7 @@ form .usuario{
    background-color: rgb(55, 55, 55);
    overflow: hidden;
    padding-top: 20px;
+   z-index: 1;
 }
 
 .verticalnav a{
