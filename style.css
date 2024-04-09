@@ -163,6 +163,18 @@ form .usuario{
    padding: 5px 5px;
    border-radius: 2px;
    box-shadow: 4px 6px 2px;
+   box-shadow: 1px 1px 3px black;
+   border-radius: 0 0 10px 10px;
+}
+
+.browser {
+   display: flex;
+   width: 400px;
+   z-index: 2;
+}
+
+.browser a {
+   display: flex;
    align-items: center;
    margin: 5px 5px 5px;
 }
@@ -206,6 +218,17 @@ form .usuario{
    width: 100rem;
    height: 800px;
    background-color: rgba(175, 190, 190, 0.192);
+}
+.verticalnav {
+   height: 100%;
+   width: 160px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: rgb(55, 55, 55);
+   overflow: hidden;
+   padding-top: 20px;
+   z-index: 1;
 }
 
 .barra-izq{
