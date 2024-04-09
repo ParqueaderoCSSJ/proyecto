@@ -2,11 +2,16 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-}  
+} 
+
+
 body {
    font-size: 16px;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+   background-color: rgb(0, 119, 255, 0.089);;
 }
+
+/***************** PAGINA LOGIN *********************/
 .body_login {
    background-image: url(img/fondo.jpg);
    background-repeat: no-repeat;
@@ -117,23 +122,24 @@ form .usuario{
    border-color: #25e9c8;
    transition: .5s;
 }
-
-
-/* PAGINA DE REPORTES */
+/***************** PAGINA LOGIN ********************/
+/**************** PAGINA DE REPORTES ***************/
 .header {
+   position: fixed;
+   top: 0px;
    display: flex;
    align-items: center;
    gap: 20px;
    padding: 5px 10px;
    background-color: rgb(43, 148, 151);
    box-shadow: 1px 1px 3px black;
-   border-radius: 0 0 10px 10px;
+   border-radius: 0 0 5px 5px;
 }
 .logo img {
    width: 50px;
 }
 .navegacion{
-   width: 400px;
+   width: 100vw;
    display: flex;
 }
 .navegacion a {
@@ -153,8 +159,38 @@ form .usuario{
    box-shadow: 0px 2px 2px 2px black;
    font-size: 16.5px;
 }
-
-/* PAGINA DE RESERVAS */
+.nav_lateral {
+   position: fixed;
+   top: 64px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 150px;
+   height: 100vh;
+   gap: 20px;
+   background-color: rgb(43, 148, 151);
+   border-radius: 5px;
+   box-shadow: 1px 1px 3px black;
+   margin-top: 1px;
+}
+.nav_lateral a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   height: 30px;
+   width: 100%;
+}
+.nav_lateral a:hover {
+   background-color: rgb(0, 119, 255, 0.2);
+   border-radius: 5px;
+   box-shadow: 0px 2px 2px 2px black;
+   font-size: 16.5px;
+   color: white;
+}
+/**************** PAGINA DE RESERVAS ****************/
 .cabecera{
    display: flex;
    gap: 20px;
@@ -165,31 +201,15 @@ form .usuario{
    box-shadow: 1px 1px 3px black;
    border-radius: 0 0 10px 10px;
 }
-
-.browser {
-   display: flex;
-   width: 400px;
-   z-index: 2;
-}
-
-.browser a {
-   display: flex;
-   align-items: center;
-   margin: 5px 5px 5px;
-}
-
 .logotipo img{
    width: 70px;
    height: 70px;
    
 }
-
-
 .nav-cion{
    width: 500px;
    display: flex;
 }
-
 .nav-cion a{
    align-items: center;
    color: black;
@@ -204,19 +224,53 @@ form .usuario{
    width: 50px;
    text-transform: uppercase;
 }
-
 .nav-cion a:hover{
    background-color: rgb(0, 119, 255, 0.2);
    border-radius: 5px;
    box-shadow: 0px 3px 3px 3px rgba(6, 23, 43, 0.774);
    font-size: 25px;
 }
-
 .contenedor{
    margin: 0;
    width: 100rem;
    height: 800px;
    background-color: rgba(175, 190, 190, 0.192);
+}
+.barra-izq{
+   width: 200px;
+   height: 100vh;
+   background-color: rgba(175, 190, 190, 0.192);
+   border-style: groove;
+   border-radius: 10px;
+}
+.barra-izq a{
+   text-decoration: none;
+   display: flex;
+   text-align: center;
+   font-weight: bold;
+   padding-left: 20px;
+   color: black;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.barra-izq a:hover{
+   background-color: rgba(0, 119, 255, 0.2);
+   border-radius: 20px;
+   margin-top:  20px;
+   box-shadow: 0px 0px 2px 4px rgba(6, 23, 43, 0.774);
+   
+}
+/**************** PAGINA DE RESERVAS ****************/
+/**************** PAGINA DE REPORTES ***************/
+.browser {
+   display: flex;
+   width: 400px;
+   z-index: 2;
+}
+.browser a {
+   display: flex;
+   align-items: center;
+   margin: 5px 5px 5px;
 }
 .verticalnav {
    height: 100%;
@@ -229,29 +283,4 @@ form .usuario{
    padding-top: 20px;
    z-index: 1;
 }
-
-.barra-izq{
-   width: 200px;
-   height: 100vh;
-   background-color: rgba(175, 190, 190, 0.192);
-   border-style: groove;
-   border-radius: 10px;
-}
-
-.barra-izq a{
-   text-decoration: none;
-   display: flex;
-   text-align: center;
-   font-weight: bold;
-   padding-left: 20px;
-   color: black;
-   padding-top: 20px;
-   padding-bottom: 20px;
-}
-
-.barra-izq a:hover{
-   background-color: rgba(0, 119, 255, 0.2);
-   border-radius: 20px;
-   margin-top:  20px;
-   box-shadow: 0px 0px 2px 4px rgba(6, 23, 43, 0.774);
-}
+/**************** PAGINA DE REPORTES ***************/
