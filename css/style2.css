@@ -1,0 +1,92 @@
+/*********** SEBASTIAN V **************/
+/************ GLOBALES ***************/
+:root {
+      --color-primary: rgb(43, 148, 151);
+      --color-secundary: rgb(0, 119, 255, 0.089);
+      --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+ *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+} 
+html {
+      font-size: 62.5%;
+}
+body {
+      font-size: 1.6rem;
+      font-family: var(--font);
+}
+ /************ PAGINA FACTURAS ***************/
+.encabezado{
+      position: fixed;
+      top: 0;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 5px 10px;
+      background-color: rgb(43, 148, 151);
+      border-radius: 0 25px 25px 0;
+      width: 100%;
+}
+
+.logo{
+      width: 4rem;
+}
+
+.horizontalnav{
+      width: 1rem;
+      display: flex;
+}
+
+.horizontalnav a{
+      display: flex;
+      margin: 1rem;
+      box-shadow: black;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      height: 25px;
+      width: 100px;
+}
+
+.horizontalnav a:hover{
+      background-color: rgb(118, 201, 215);
+      box-shadow: black;
+      padding: 10px;
+      border-radius: 25px;
+}
+
+.verticalnav{
+      position: fixed;
+      top: 56px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(78, 100, 119);
+      color: white;
+      width: 150px;
+      height: 100%;
+      border-radius: 0 10px 0 0px;
+}
+
+.verticalnav a{
+      display: flex;
+      margin: 1rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 100%;
+}
+
+.verticalnav a:hover{
+      background-color: rgb(118, 201, 215);
+      box-shadow: black;
+      padding: 10px;
+      border-radius: 25px;
+}
