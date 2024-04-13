@@ -10,54 +10,77 @@
 <body>
     <header class="cabecera">
         <div class="logotipo">
-            <a href="#"><img src="img/logo.png" alt="logo parqueadero"></a>
+            <a href="#"><img src="img/logo.png" alt="Inicio"></a>
         </div>
-        <nav class="nav-cion">
-            <a href="#">inicio</a>
-        </nav>
+        <div class="logo-app">
+            <a href="#"><img src="img/logo1.png" alt="Logo Empresa"></a>
+        </div>
     </header>
     <main>
          <div class="contenedor">
             <div class="barra-izq">
-                <a href="#">Registro</a>
+                <a href="#"><img src="img/registro.png" alt="Registro"></a>
                 <br>
-                <a href="#">Disponibilida</a>
+                <a href="#"><img src="img/disponibilidad.png" alt="Disponibilidad"></a>
                 <br>
-                <a href="#">Facturas</a>
+                <a href="#"><img src="img/facturas.png" alt="Facturas"></a>
                 <br>
-                <a href="#">Mensualidad</a>
+                <a href="#"><img src="img/mensualidad.png" alt="Mensualidad"></a>
                 <br>
-                <a href="#">Reservas</a>
+                <a href="#"><img src="img/reservas.png" alt="Reservas"></a>
                 <br>
-                <a href="#">Reportes</a>
+                <a href="#"><img src="img/reportes.png" alt="Reportes"></a>
                 <br>
-                <a href="#">Ayuda</a>
+                <a href="#"><img src="img/ayuda.png" alt="Ayuda"></a>
             </div>
+
             <div class="barra-central">
-                <div class="">
                     <form class="placa1">
                         <label for="lplaca"></label>
                         <input type="text, number" name="placa" id="lplaca">
                     </form>
-                </div>
-                <div class="formulario">
-                    <form>
+            </div>
+             
+            <div class="barra-central">
+                    <form class="form1">
                         <label for="lhora"></label>Hora de Entrada<br>
                         <input type="week" name="hora" id="lhora">
                         <br>
                         <label for="lhorario"></label>Hora de Salida<br>
                         <input type="week" name="hora" id="lhorario">
+                        <br>
+                        <label for="ltiempo"></label>Total Tiempo<br>
+                        <input type="week" name="hora" id="ltiempo">
                     </form>
-                </div>
-                <div class="">
+            </div>
+
+            <div class="barra-central">
+                    <form class="form1">
+                        <label for="ltarifa">Tarifa</label>
+                        <br>
+                        <select name="tarifa" id="ltarifa">
+                            <option value="Moto">Moto</option>
+                            <option value="Automovil">Automóvil</option>
+                        </select>
+                        <br>
+                        <br>
+                        <input type="submit" value="Guardar">
+                        <br>
+                        <br>
+                        <input type="reset" value="Reiniciar">
+
+                    </form>
+            </div>
+
+                <div class="barra-central">
                     <form class="placa2">
                         <label for="lplaca"></label>
                         <input type="text, number" name="placa" id="lplaca">
                     </form>
                 </div>
+
             </div>
         </div>
-        </main>
     </main>
 </body>
 </html>
