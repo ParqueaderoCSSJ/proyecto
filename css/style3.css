@@ -21,13 +21,7 @@
 
  /************ PAGINA RESERVAS ***************/
 
-@media (min-width: 768px) {
-    .contenedor {
-      width: 80px;
-      margin: 0 auto;
-    }
-}
- .cabecera{
+.cabecera{
     display: flex;
     gap: 20px;
     background-color: var(--color-primary);
@@ -36,23 +30,21 @@
     box-shadow: 4px 6px 2px;
     box-shadow: 1px 1px 3px black;
     border-radius: 0 0 10px 10px;
- }
+   }
+
  .logotipo img{
     width: 70px;
     height: 70px;
     padding-top: 25%;
+    }
 
-    
- }
+.logo-app img{
+    width: 50%;
+    justify-content: center;
+    margin: 0 150%;
+   }
 
- .logo-app img{
-   width: 50%;
-   justify-content: center;
-   margin: 0 150%;
-   
-
- }
-/*  .nav-cion{
+   /*  .nav-cion{
     width: 500px;
     display: flex;
  } */
@@ -84,7 +76,8 @@
     height: 800px;
     background-color: rgba(175, 190, 190, 0.192);
     
- }
+   }
+
  .barra-izq{
     width: 120px;
     height: 100vh;
@@ -93,8 +86,9 @@
     border-radius: 10px;
     margin-left: 10%;
     display: grid;
- }
- /* .barra-izq a{
+   }
+
+/*.barra-izq a{
     text-decoration: none;
     display: flex;
     text-align: center;
@@ -103,51 +97,47 @@
     color: black;
     padding-top: 20px;
     padding-bottom: 20px;
- } */
+   }  */
 
 
- .barra-izq img{
-
-   width: 7rem;
+.barra-izq a img{
+    width: 7rem;
+    color: blanchedalmond;
    
-
- }
+   }
 
 .barra-izq img:hover{
     background-color: rgba(0, 119, 255, 0.2);
     border-radius: 20px;
     margin-top:  20px;
-     box-shadow: 0px 0px 2px 4px rgba(6, 23, 43, 0.774);
+    box-shadow: 0px 0px 2px 4px rgba(6, 23, 43, 0.774);
    } 
    
- 
-
  .barra-central{
-   background-color: rgba(175, 190, 190, 0.192);
-   width: 900rem;
-   height: 25rem;
-   margin-top: 20px;
-   padding: 20px;
-   display: inline;
- }
+    background-color: rgba(175, 190, 190, 0.192);
+    width: 900rem;
+    height: 25rem;
+    margin-top: 20px;
+    padding: 20px;
+    display: inline;
+   }
 
 
- .placa1 input{
-   width: 50rem;
-   height: 20rem;
-   margin-left: 1%;
- }
+.placa1 input{
+    width: 50rem;
+    height: 20rem;
+    margin-left: 1%;
+   }
 
- .form1{
-   width: 22rem;
-   height: 20rem;
-   margin-left: 11%;
-   
- }
+.form1{
+    width: 22rem;
+    height: 20rem;
+    margin-left: 11%;
+   }
 
- .placa2 input{
-   width: 50rem;
-   height: 20rem;
-   margin-left: 2%;
- }
+.placa2 input{
+    width: 50rem;
+    height: 20rem;
+    margin-left: 2%;
+   }
 
