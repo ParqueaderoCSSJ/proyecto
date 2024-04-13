@@ -7,19 +7,45 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style1.css"> 
 </head>
-<body class="disponibilidad">
-    <header>
+<body>
+    <header class="header">
         <div class="logo">
-            <img src="images/logo.png" alt="logo parqueadero">
+            <a href="#"><img src="img/logo.png" alt="logo parqueadero"></a>
         </div>
-        
+        <nav class="navegacion">
+            <a href="disponibilidad.html">Inicio</a>
+            <a href="#">Registro</a>
+            <a href="#">Ayuda</a>
+        </nav>
     </header>
-    <nav class="barra">
-        <a target="_blank" href="index.html">inicio</a>
-        <a href="#">registro</a>
-        <a href="#">ayuda</a>
-    </nav>
+    <main>
+        <div class="nav_lateral">
+            <a href="disponibilidad.html">Disponibilidad</a>
+            <a href="facturas.html">Facturas</a>
+            <a href="#">Mensualidad</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="reportes.html">Reportes</a>
+        </div>
 
-    
+        <div class="graficas">
+            <div class="dispo_actual">
+                <img src="img/disponibilidad1.png" alt="disponibilidad actual">
+                <div class="text">disponibilidad actual</div>
+            </div>
+
+            <div class="dispo_reservas">
+                <img src="img/disponibilidad2.png" alt="disponibilidad reservas">
+                <div class="text">disponibilidad reservas</div>
+            </div>
+            <div class="dispo_mensualidad">
+                <img src="img/disponibilidad3.png" alt="disponibilidad mensualidad">
+                <div class="text">disponibilidad mensualidad</div>
+            </div>
+            <div class="ingreso_mensual">
+                <img src="img/disponibilidad4.png" alt="ingreso mensual">
+                <div class="text">ingreso mensual</div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
