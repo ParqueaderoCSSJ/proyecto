@@ -97,9 +97,9 @@ body {
 
 .inputmat{
       position: absolute;
-      left: 175px;
-      top: 80px;
-      width: 25%;
+      left: 200px;
+      top: 85px;
+      width: 30%;
       height: 150px;
       border-radius: 25px;
       font-size: 90px;
@@ -109,7 +109,7 @@ body {
 
 .inputenterhour{
       position: absolute;
-      left: 600px;
+      left: 680px;
       top: 85px;
       height: 35px;
       width: 125px;
@@ -119,7 +119,7 @@ body {
 
 .inputouthour{
       position: absolute;
-      left: 600px;
+      left: 680px;
       top: 135px;
       height: 35px;
       width: 125px;
@@ -129,10 +129,78 @@ body {
 
 .hours{
       position: absolute;
-      left: 600px;
+      left: 680px;
       top: 185px;
       height: 35px;
       width: 125px;
       text-align: center;
       border-radius: 10px;
+}
+
+.list{
+      position: absolute;
+      left: 850px;
+      top: 105px;
+      height: 35px;
+      width: 125px;
+      text-align: center;
+      border-radius: 10px;
+}
+
+.submit{
+      position: absolute;
+      left: 850px;
+      top: 155px;
+      height: 35px;
+      width: 125px;
+      text-align: center;
+}
+
+.reset{
+      position: absolute;
+      left: 850px;
+      top: 185px;
+      height: 35px;
+      width: 125px;
+      text-align: center;
+}
+
+.decorar{
+      color: black;
+      background-color: white;
+      border-radius: 5px;
+      padding: 3.5px;
+}
+
+.leftbox{
+      position: absolute;
+      left: 1000px;
+      top: 85px;
+      width: 30%;
+      height: 150px;
+      border-radius: 25px;
+      font-size: 90px;
+      text-align: center;
+      background-color: white;
+}
+
+.tabla{
+      position: absolute;
+      top: 270px;
+      left: 200px;
+      background-color: white;
+      text-align: center;
+      border: 1px solid black;
+      border-collapse: collapse;
+}
+
+th, td{
+      border: 1px solid black;
+      padding: 0;
+      width: 208px;
+      height: 50px;
+}
+
+.primerafila{
+      background-color: rgba(118, 200, 215, 0.495);
 }
