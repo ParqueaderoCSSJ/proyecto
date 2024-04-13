@@ -12,10 +12,12 @@
  html {
     font-size: 62.5%;
  }
+ /*Esto es para establecer el tamaño de duente para todoa la pagina y para definir el tipo de fuente
+ que tambien esta guardado arriba
+ */
  body {
     font-size: 1.6rem;
     font-family: var(--font) ;
-    background-color: var(--color-secundary);
  }
  /************ PAGINA REPORTES ***************/
  .header {
