@@ -1,88 +1,48 @@
 /************ GLOBALES ***************/
 :root {
-    --color-primary: rgb(43, 148, 151);
-    --color-secundary: rgb(0, 119, 255, 0.089);
-    --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
- }
- *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
- } 
- html {
-    font-size: 62.5%;
- }
- /*Esto es para establecer el tamaño de duente para todoa la pagina y para definir el tipo de fuente
+   --color-primary: rgb(43, 148, 151);
+   --color-secundary: rgb(0, 119, 255, 0.089);
+   --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+/*Esto es para establecer el tamaño de duente para todoa la pagina y para definir el tipo de fuente
  que tambien esta guardado arriba
  */
- body {
-    font-size: 1.6rem;
-    font-family: var(--font) ;
- }
- /************ PAGINA REPORTES ***************/
- .header {
-    position: fixed;
-    top: 0px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 5px 10px;
-    background-color: var(--color-primary);
-    box-shadow: 1px 1px 3px black;
-    border-radius: 0 0 5px 5px;
- }
- .logo img {
-    width: 50px;
- }
- .navegacion{
-    width: 100vw;
-    display: flex;
- }
- .navegacion a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    height: 30px;
-    width: 80px;
- }
- .navegacion a:hover {
-    background-color: rgb(0, 119, 255, 0.2);
-    border-radius: 5px;
-    box-shadow: 0px 2px 2px 2px black;
-    font-size: 16.5px;
- }
- .nav_lateral {
-    position: fixed;
-    top: 64px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 150px;
-    height: 100vh;
-    gap: 20px;
-    background-color: var(--color-primary);
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px black;
-    margin-top: 1px;
- }
- .nav_lateral a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    height: 30px;
-    width: 100%;
- }
- .nav_lateral a:hover {
-    background-color: rgb(0, 119, 255, 0.2);
-    border-radius: 5px;
-    box-shadow: 0px 2px 2px 2px black;
-    font-size: 16.5px;
-    color: white;
- }
+body {
+   font-size: 1.6rem;
+   font-family: var(--font);
+}
+
+img {
+   width: 100%;
+}
+
+/************ PAGINA REPORTES ***************/
+
+.main {
+   display: flex;
+}
+.graphics {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   margin-top: 2rem;
+   margin: 0 auto;
+   column-gap: 4rem;
+}
+
+.graphics div {
+   width: 35rem;
+   display: flex;
+   align-items: center;
+}
+
