@@ -175,6 +175,10 @@
    flex-wrap: wrap; 
    justify-content: center;
    width: 700px;
-   margin: 50px auto;
+   margin: 0 auto;
+}
+
+.main {
+   display: flex;
 }
 
