@@ -18,20 +18,14 @@
     </header>
     <main>
          <div class="contenedor">
-            <div class="barra-izq">
-                <a href="#"><img src="img/registro.png" alt="Registro"></a>
-                <br>
-                <a href="#"><img src="img/disponibilidad.png" alt="Disponibilidad"></a>
-                <br>
-                <a href="#"><img src="img/facturas.png" alt="Facturas"></a>
-                <br>
-                <a href="#"><img src="img/mensualidad.png" alt="Mensualidad"></a>
-                <br>
-                <a href="#"><img src="img/reservas.png" alt="Reservas"></a>
-                <br>
-                <a href="#"><img src="img/reportes.png" alt="Reportes"></a>
-                <br>
-                <a href="#"><img src="img/ayuda.png" alt="Ayuda"></a>
+            <div class="nav_lateral">
+                <a href="disponibilidad.html">Disponibilidad</a>
+                <a href="facturas.html">Facturas</a>
+                <a href="#">Mensualidad</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="reportes.html">Reportes</a>
+                <a href="#">Registro </a>
+                <a href="#">Ayuda</a>
             </div>
 
             <div class="barra-central">
@@ -77,10 +71,26 @@
                         <label for="lplaca"></label>
                         <input type="text, number" name="placa" id="lplaca">
                     </form>
-                </div>
-
+                </div>               
             </div>
         </div>
     </main>
+
+    <div class="tablas">
+        <table>
+            <thead>
+                <tr>
+                    <th>Placa</th>
+                    <th>Dia Reserva</th>
+                    <th>Hora Entrada</th>
+                    <th>Hora Salida</th>
+                    <th>Total Hora</th>
+                    <th>Tarifa</th>
+                    <th>Recibo</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
 </body>
 </html>
