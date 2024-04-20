@@ -25,7 +25,9 @@
  /************ PAGINA RESERVAS ***************/
 
 .cabecera{
+   position: relative;
     display: flex;
+    width: 100%;
     gap: 20px;
     background-color: var(--color-primary);
     padding: 5px 5px;
@@ -49,6 +51,7 @@
 
 
  .contenedor{
+   position: absolute;
    display:inline-flex;
     margin: 0;
     width: 2rem;
@@ -67,12 +70,6 @@
     display: inline;
    }
 
-   @media (min-width: 760px) {
-      .barra-central{
-      }
-       
-   }
-
 
 .placa1 input{
     width: 50rem;
@@ -83,11 +80,27 @@
 
 .form1{
     display: grid;
-    width: 22rem;
-    height: 20rem;
+    width: 18.5rem;
+    height: 18rem;
     margin-left: 11%;
-    padding: 1px 2px;
+    padding: 5px 5px;
+    margin: 1px 1px;
+    font-size:large;
+    font-weight: 700;
    }
+
+   .form2{
+      position: relative;
+      display: grid;
+      width: 18.5rem;
+      height: 20rem;
+      bottom: 20px;
+      margin-left: 11%;
+      font-size:large;
+      font-weight: 700;
+      text-align: center;
+     }
+
 
 .placa2 input{
     width: 50rem;
@@ -98,18 +111,22 @@
 
  }
 
- .tablas{
+ .tablas table{
    position: absolute;
+   display: flex;
+   justify-content: center;
+   width: 90%;
    border:  1px solid black;
    top: 440px;
    left: 150px;
-   height: 60%;
-   width: 90%;
+   height: 60%; 
+   
  }
 
  tr, th{
    position: relative;
    width: 20%;
-   /* border: 1px solid black; */
+   border: 1px solid black;
+   padding: 5px;
  }
 
