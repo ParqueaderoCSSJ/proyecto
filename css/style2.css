@@ -25,8 +25,8 @@ body {
 
 .inputmat{
       position: fixed;
-      left: 200px;
-      top: 85px;
+      right: 56%;
+      top: 12%;
       width: 30%;
       height: 150px;
       border-radius: 25px;
@@ -78,8 +78,7 @@ body {
 .submit{
       position: fixed;
       left: 850px;
-      top: 155px;
-      height: 35px;
+      top: 165px;
       width: 125px;
       text-align: center;
 }
@@ -87,8 +86,7 @@ body {
 .reset{
       position: fixed;
       left: 850px;
-      top: 185px;
-      height: 35px;
+      top: 195px;
       width: 125px;
       text-align: center;
 }
@@ -96,14 +94,22 @@ body {
 .decorar{
       color: black;
       background-color: white;
-      border-radius: 5px;
+      border-radius: 6px;
       padding: 3.5px;
+}
+
+.decorar1{
+      color: black;
+      background-color: white;
+      border-radius: 6px;
+      padding: 3.5px;
+      width: 80px;
 }
 
 .leftbox{
       position: fixed;
-      left: 1000px;
-      top: 85px;
+      left: 67.5%;
+      top: 12%;
       width: 30%;
       height: 150px;
       border-radius: 25px;
