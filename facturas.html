@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -35,38 +37,38 @@
             <a href="#">Registro </a>
             <a href="#">Ayuda</a>
         </div>
-<!-- Input para ingresar datos -->
-            <form action="">
+        <!-- Input para ingresar datos -->
+        <form action="">
             <div class="facturas">
                 <div class="cajaderecha">
                     <label for="lmatricula"></label>
-                        <input class="inputmat" type="text" name="matricula" id="lmatricula">
+                    <input class="inputmat" type="text" name="matricula" id="lmatricula">
                 </div>
-<!-- Inputs horas -->
+                <!-- Inputs horas -->
                 <div class="datos">
                     <div class="inputenterhour">
-                    <label for="lhora_entrada">Hora entrada</label>
+                        <label for="lhora_entrada">Hora entrada</label>
                         <input class="decorar" class="decoration1" type="time" name="hora_entrada" id="lhora_entrada">
                     </div>
                     <div class="inputouthour">
-                    <label for="lhora_salida">Hora salida</label>
+                        <label for="lhora_salida">Hora salida</label>
                         <input class="decorar" type="time" name="hora_salida" id="lhora_salida">
                     </div>
                     <div class="hours">
-                    <label for="ltotal_hours">Total tiempo</label>
+                        <label for="ltotal_hours">Total tiempo</label>
                         <input class="decorar" type="time" name="horas" id="ltotal_hours">
                     </div>
                 </div>
-<!-- Escoger moto/carro -->
+                <!-- Escoger moto/carro -->
                 <div class="tipoybotones">
                     <div class="list">
-                    <legend>Tarifa</legend>
+                        <legend>Tarifa</legend>
                         <label for="lmoto">Moto</label>
-                            <input type="radio" name="Tarifa" id="lmoto" value="Moto">
+                        <input type="radio" name="Tarifa" id="lmoto" value="Moto">
                         <label for="lcarro">Carro</label>
-                            <input type="radio" name="Tarifa" id="lcarro" value="carro">
+                        <input type="radio" name="Tarifa" id="lcarro" value="carro">
                     </div>
-<!-- Botones para guardar y reset -->
+                    <!-- Botones para guardar y reset -->
                     <div class="submit">
                         <input class="decorar1" type="submit" value="Guardar">
                     </div>
@@ -74,36 +76,37 @@
                         <input class="decorar1" type="reset" value="Reiniciar">
                     </div>
                 </div>
-<!-- Caja izquierda -->
+                <!-- Caja izquierda -->
                 <div class="cajaizquierda">
                     <label for="leftbox"></label>
-                        <input class="leftbox" type="text" name="izqcaja" id="leftbox">
+                    <input class="leftbox" type="text" name="izqcaja" id="leftbox">
                 </div>
-            </form>
-<!-- tabla -->
-                <div class="tablacompleta ">
-                    <table class="tabla">
-                        <tr class="primerafila">
-                            <th>Placa</th>
-                            <th>Tarifa</th>
-                            <th>Hora Entrada</th>
-                            <th>Hora Salida</th>
-                            <th>Total Tiempo</th>
-                            <th>Recibo</th>
-                        </tr>
-                        <tr>
-                            <td>LWC657</td>
-                            <td>Moto</td>
-                            <td>3:45 PM</td>
-                            <td>5:00 PM</td>
-                            <td>2:00 horas</td>
-                            <td><a href="#">Recibo</a></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+        </form>
+        <!-- tabla -->
+        <div class="tablacompleta ">
+            <table class="tabla">
+                <tr class="primerafila">
+                    <th>Placa</th>
+                    <th>Tarifa</th>
+                    <th>Hora Entrada</th>
+                    <th>Hora Salida</th>
+                    <th>Total Tiempo</th>
+                    <th>Recibo</th>
+                </tr>
+                <tr>
+                    <td>LWC657</td>
+                    <td>Moto</td>
+                    <td>3:45 PM</td>
+                    <td>5:00 PM</td>
+                    <td>2:00 horas</td>
+                    <td><a href="#">Recibo</a></td>
+                </tr>
+            </table>
+        </div>
+        </div>
     </main>
-    <footer>        
+    <footer>
     </footer>
 </body>
+
 </html>
