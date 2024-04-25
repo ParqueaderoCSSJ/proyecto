@@ -32,17 +32,59 @@ img {
 .main {
    display: flex;
 }
-.graphics {
+.reports {
    display: grid;
-   grid-template-columns: 50% 50%;
-   margin-top: 2rem;
+   grid-template-columns: 75% 25%;
+   grid-template-rows: 10% 60%;
+   width: 70%;
    margin: 0 auto;
-   column-gap: 4rem;
+   padding: 0 auto;
 }
-
-.graphics div {
-   width: 35rem;
+.reports h2 {
    display: flex;
    align-items: center;
+   justify-content: center;
+}
+.cont_reports {
+   display: flex;
+}
+.graphics {
+   grid-column: 1;
+   grid-row: 2;
+   margin: 0 auto;
+}
+.vehicle_type {
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   display: flex;
+   gap: 2rem;
+}
+.vehicle_type input,label {
+   cursor: pointer;
+}
+.btn_reports {
+   grid-column: 2;
+   grid-row: 2;
+   margin-left: 3rem;
+}
+.buttons h4  {
+   margin-bottom: 1rem;
+}
+.buttons button {
+   display: flex;
+   margin-bottom: 1rem;
+   background-color: var(--color-primary);
+   border-style: none;
+   padding: 5px 10px;
+   border-radius: 1rem;
+   color: white;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+.buttons button:hover {
+   cursor: pointer;
+   position: relative;
+   bottom: 2px;
+   box-shadow: -1px 1px 3px black;
 }
 

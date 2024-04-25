@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reportes</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style4.css">
-    
+
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -25,7 +27,7 @@
                 <img src="img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
             </a>
         </div>
-    </header>   
+    </header>
     <main class="main">
         <div class="nav_lateral">
             <a href="disponibilidad.html">Disponibilidad</a>
@@ -36,22 +38,37 @@
             <a href="#">Registro </a>
             <a href="#">Ayuda</a>
         </div>
-        <div class="graphics">
-            <div>
-                <img src="img/Rep1_Celd_Gen.png" alt="Grafico de celtas totales mensuales">
+        <div class="reports">
+            <h2>Reportes de Ingresos</h2>
+            <!-- <div class="cont_reports"> -->
+                <div class="graphics">
+                    <div>
+                        <img src="img/Rep4_Celd_Ingr.png" alt="Grafico de celtas totales mensuales">
+                    </div>
+                </div>
+                <div class="btn_reports">
+                    <h4>Vehiculo</h4>
+                    <div class="vehicle_type">
+                        <div>
+                            <label for="lcar">Carro</label>
+                            <input type="radio" name="vehicle_type" id="lcar">
+                        </div>
+                        <div>
+                            <label for="lmotorcycle">Moto</label>
+                            <input type="radio" name="vehicle_type" id="lmotorcycle">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <h4>Reporte</h4>
+                        <button type="button">Diario</button>
+                        <button type="button">Semanal</button>
+                        <button type="button">Mensual</button>
+                        <button type="button">Anual</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="img/Rep2_Celd_Res.png" alt="Grafico de celtas de reserva totales mensuales">
-            </div>
-            <div>
-                <img src="img/Rep3_Celd_Men.png
-                " alt=" Grafico de celtas de Mensualidad totales mensuales">
-            </div>
-            <div>
-                <img src="img/Rep4_Celd_Ingr.png" alt="Grafico ingresos totales diarios">
-            </div>
-
-        </div>
+        <!-- </div> -->
     </main>
 </body>
+
 </html>
