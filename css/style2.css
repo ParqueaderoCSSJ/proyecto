@@ -19,15 +19,30 @@ body {
 }
  /************ PAGINA FACTURAS ***************/
 
-.matricula{
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      display:flex;
-      flex-direction: column;
+/* Facturas es el papá */
+
+.main{
+      display: flex;
+}
+
+.facturas{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      flex-wrap: wrap;
+      margin-left: 25px;
+      margin-right: 25px;
+}
+
+.cajaderecha{
+      padding: 15px;
+      width: 35%;
+      order: 1;
+      margin-top: 10.5px;
 }
 
 .inputmat{
-      margin-left: 150px;
-      width: 30%;
+      width: 100%;;
       height: 150px;
       border-radius: 25px;
       font-size: 90px;
@@ -36,52 +51,59 @@ body {
       text-transform: uppercase;
 }
 
-.inputs{
-      display: block;
-      margin-left: 650px;
+.datos{
+      padding: 15px;
+      width: 15%;
+      order: 2;
+      padding-left: 35px;
 }
 
 .inputenterhour{
-      height: 35px;
+      height: 55px;
       width: 125px;
       text-align: center;
       border-radius: 10px;
 }
 
 .inputouthour{
-      height: 35px;
+      height: 55px;
       width: 125px;
       text-align: center;
       border-radius: 10px;
 }
 
 .hours{
-      height: 35px;
+      height: 55px;
       width: 125px;
       text-align: center;
       border-radius: 10px;
+}
+
+.tipoybotones{
+      padding: 15px;
+      width: 15%;
+      order: 3;
+      padding-left: 35px;
 }
 
 .list{
-      margin-left: 800px;
       height: 35px;
       width: 125px;
       text-align: center;
       border-radius: 10px;
-}
-
-.botones{
-      margin-left: 800px;
+      margin-top: 25px;
 }
 
 .submit{
       width: 125px;
       text-align: center;
+      margin-top: 25px;
 }
 
 .reset{
       width: 125px;
       text-align: center;
+      margin-top: 5px;
 }
 
 .decorar{
@@ -93,29 +115,41 @@ body {
 
 .decorar1{
       color: black;
-      background-color: rgb(159, 192, 213);
+      background-color: rgb(153, 208, 242);
       border-radius: 6px;
       padding: 3.5px;
       width: 80px;
       font-weight: bold;
 }
 
+.cajaizquierda{
+      padding: 15px;
+      width: 35%;
+      order: 4;
+      margin-top: 10.5px;
+}
+
 .leftbox{
-      margin-left: 970px;
-      width: 30%;
+      width: 100%;
       height: 150px;
       border-radius: 25px;
       font-size: 90px;
       text-align: center;
       background-color: white;
+      text-transform: uppercase;
+}
+
+.tablacompleta{
+      padding: 15px;
+      width: 100%;
+      order: 5;
 }
 
 .tabla{
       background-color: white;
       text-align: center;
-      border: 1px solid black;
       border-collapse: collapse;
-      margin-left: 150px;
+      width: 100%;
 }
 
 th, td{
