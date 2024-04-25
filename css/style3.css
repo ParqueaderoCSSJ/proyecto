@@ -1,162 +1,84 @@
 /*********** CAMILO **************/
 /************ GLOBALES ***************/
 :root {
-    --color-primary: rgb(43, 148, 151);
-    --color-secundary: rgb(0, 119, 255, 0.089);
-    --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-   }
- *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
- } 
+   --color-primary: rgb(43, 148, 151);
+   --color-secundary: rgb(0, 119, 255, 0.089);
+   --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
- html {
-    font-size: 62.5%;
- }
- body {
-    font-size: 1.6rem;
-    font-family: var(--font) ;
- }
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
 
- *, *:before, *:after {
-   box-sizing: inherit; /* hack para box model*/
+html {
+   font-size: 62.5%;
+}
 
- /************ PAGINA RESERVAS ***************/
-
-.cabecera{
-   position: relative;
-    display: flex;
-    width: 100%;
-    gap: 20px;
-    background-color: var(--color-primary);
-    padding: 5px 5px;
-    border-radius: 2px;
-    box-shadow: 4px 6px 2px;
-    box-shadow: 1px 1px 3px black;
-    border-radius: 0 0 10px 10px;
-   }
-
- .logotipo img{
-    width: 70px;
-    height: 70px;
-    padding-top: 25%;
-    }
-
-.logo-app img{
-    width: 50%;
-    justify-content: center;
-    margin: 0 150%;
-   }
+body {
+   font-size: 1.6rem;
+   font-family: var(--font);
+}
 
 
- .contenedor{
-   position: absolute;
-   display:inline-flex;
-    margin: 0;
-    width: 2rem;
-    height: 800px;
-    background-color: rgba(175, 190, 190, 0.192);
-    
-   }
- 
-   
- .barra-central{
-    background-color: rgba(175, 190, 190, 0.192);
-    width: 900rem;
-    height: 25rem;
-    margin-top: 20px;
-    padding: 20px;
-    display: inline;
-   }
+/************ PAGINA RESERVAS ***************/
+.main {
+   display: flex;
+}
+
+.contenedor {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+
+}
+.info-contenedor {
+   width: 90%;
+   display: flex;
+   margin: 0 auto;
+   gap: 2rem;
+}
 
 
-.placa1 input{
-    width: 50rem;
-    height: 20rem;
-    margin-left: 1%;
-    border-radius: 15px;
-   }
-
-.form1{
-    display: grid;
-    width: 18.5rem;
-    height: 18rem;
-    margin-left: 11%;
-    padding: 5px 5px;
-    margin: 1px 1px;
-    font-size:large;
-    text-align: center;
-    justify-content: center;
-    font-weight: 700;
-   }
-
-   .form2{
-      position: relative;
-      display: grid;
-      width: 18.5rem;
-      height: 20rem;
-      top: 10px;
-      bottom: 10px;
-      margin-left: 8%;
-      font-size:large;
-      font-weight: 700;
-      text-align: center;
-     }
-
-     .botones{
-      position: relative;
-      display: grid;
-      width: 18rem;
-      height: 11rem;
-      top: 10px;
-      bottom: 10px;
-      margin-left: 1%;
-      padding-bottom: 50px;
-      font-size:large;
-      font-weight: bold;
-      text-align: center;
-     }
 
 
-.placa2 input{
-    width: 50rem;
-    height: 20rem;
-    margin-left: 1%;
-    border-radius: 15px;
-   }
 
- }
 
- .tablas table{
-  position: relative;
-  display: block;
-  border-collapse: collapse;
-  width: 90%;
-  left: 160px;
-  top: 320px;
- } 
 
- tr, th{
-  position: relative;
+
+.botones {
+   display: grid;
+   width: 18rem;
+   height: 11rem;
+   top: 10px;
+   bottom: 10px;
+   margin-left: 1%;
+   padding-bottom: 50px;
+   font-size: large;
+   font-weight: bold;
+   text-align: center;
+}
+
+
+
+
+tr,
+th {
    width: 20%;
    border: 1px solid black;
    padding: 5px;
- }
+}
 
- tr, td{
-  border: 1px solid black;
-  padding: 5px;
-  margin: 5px;
- }
+tr,
+td {
+   border: 1px solid black;
+   padding: 5px;
+   margin: 5px;
+}
 
- tbody, td{
-  text-align: center;
- }
-
- .form1 input{
-   
-  padding: 8px;
-  border-radius: 10px;
- }
+tbody,
+td {
+   text-align: center;
+}
 

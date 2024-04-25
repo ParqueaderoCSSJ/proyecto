@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,111 +8,97 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style3.css">
 </head>
+
 <body>
-    <header class="cabecera">
-        <div class="logotipo">
-            <a href="#"><img src="img/logo.png" alt="Inicio"></a>
+    <header class="header">
+        <div class="logo">
+            <a href="disponibilidad.html">
+                <img src="img/logo.png" alt="Logo parqueadero">
+            </a>
         </div>
-        <div class="logo-app">
-            <a href="#"><img src="img/logo1.png" alt="Logo Empresa"></a>
+        <div class="logo_cssj">
+            <a href="disponibilidad.html">
+                <img src="img/logo_cssj.png" alt="Logo parqueadero">
+            </a>
+        </div>
+        <div class="logout">
+            <a href="index.html">
+                <img src="img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
+            </a>
         </div>
     </header>
-    <main>
-         <div class="contenedor">
-            <div class="nav_lateral">
-                <a href="disponibilidad.html">Disponibilidad</a>
-                <a href="facturas.html">Facturas</a>
-                <a href="#">Mensualidad</a>
-                <a href="reservas.html">Reservas</a>
-                <a href="reportes.html">Reportes</a>
-                <a href="#">Registro </a>
-                <a href="#">Ayuda</a>
-            </div>
-
-            <div class="barra-central">
-                    <form class="placa1">
-                        <label for="lplaca"></label>
-                        <input type="text, number" name="placa" id="lplaca">
-                    </form>
-            </div>
-             
-            <div class="barra-central">
-                    <form class="form1">
-                        <label for="lhora"></label>Hora de Entrada<br>
-                        <input type="date" name="hora" id="lhora">
-                        <br>
-                        <label for="lhorario"></label>Hora de Salida<br>
-                        <input type="date" name="hora" id="lhorario">
-                        <br>
-                        <label for="ltiempo"></label>Total Tiempo<br>
-                        <input type="date" name="hora" id="ltiempo">
-                    </form>
-            </div>
-
-            <div class="barra-central">
-                    <form class="form2">
-                        <fieldset>
-                            <legend>Tarifa</legend>
-                            <label for="lmoto">Moto</label>
-                            <input type="radio" name="moto" id="lmoto" value="motocicleta">
-                            <label for="lcarro">Automovil</label>
-                            <input type="radio" name="carro" id="lcarro" value="automovil">
-                        </fieldset>
-
-                       <!--<label for="ltarifa">Tarifa</label><br>
-                        <select name="tarifa" id="ltarifa">
-                            <option value="Moto">Moto</option>
-                            <option value="Automovil">Automóvil</option>
-                        </select> -->
-                         
-                        <br>
-                        <div class="botones">
-                            <input type="submit" value="Guardar">
-                        <br>
-                        <br>
+    <main class="main">
+        <div class="nav_lateral">
+            <a href="disponibilidad.html">Disponibilidad</a>
+            <a href="facturas.html">Facturas</a>
+            <a href="#">Mensualidad</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="reportes.html">Reportes</a>
+            <a href="#">Registro </a>
+            <a href="#">Ayuda</a>
+        </div>
+        <div class="contenedor">
+            <div class="info-contenedor">
+                <div>
+                    <label for="lplaca"></label>
+                    <input type="text, number" name="placa" id="lplaca">
+                </div>
+                <div>
+                    <label for="lhora"></label>Hora de Entrada<br>
+                    <input type="date" name="hora" id="lhora">
+                    <br>
+                    <label for="lhorario"></label>Hora de Salida<br>
+                    <input type="date" name="hora" id="lhorario">
+                    <br>
+                    <label for="ltiempo"></label>Total Tiempo<br>
+                    <input type="date" name="hora" id="ltiempo">
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Tarifa</legend>
+                        <label for="lmoto">Moto</label>
+                        <input type="radio" name="moto" id="lmoto" value="motocicleta">
+                        <label for="lcarro">Automovil</label>
+                        <input type="radio" name="carro" id="lcarro" value="automovil">
+                    </fieldset>
+                    <div class="botones">
+                        <input type="submit" value="Guardar">
                         <input type="reset" value="Reiniciar">
-                        </div>
-                        
-
-                    </form>
+                    </div>
+                </div>
+                <div>
+                    <label for="lprecio"></label>
+                    <input type="text, number" name="precio" id="lprecio">
+                </div>
             </div>
-
-                <div class="barra-central">
-                    <form class="placa2">
-                        <label for="lplaca"></label>
-                        <input type="text, number" name="placa" id="lplaca">
-                    </form>
-                </div>               
+            <div class="tablas">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Placa</th>
+                            <th>Dia Reserva</th>
+                            <th>Hora Entrada</th>
+                            <th>Hora Salida</th>
+                            <th>Total Hora</th>
+                            <th>Tarifa</th>
+                            <th>Recibo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WTS-964</td>
+                            <td>09/12/2023</td>
+                            <td>8:43</td>
+                            <td>11:34</td>
+                            <td>2:51</td>
+                            <td>Automovil</td>
+                            <td>$9.000</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>
-
-    <div class="tablas">
-        <table>
-            <thead>
-                <tr>
-                    <th>Placa</th>
-                    <th>Dia Reserva</th>
-                    <th>Hora Entrada</th>
-                    <th>Hora Salida</th>
-                    <th>Total Hora</th>
-                    <th>Tarifa</th>
-                    <th>Recibo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>WTS-964</td>
-                    <td>09/12/2023</td>
-                    <td>8:43</td>
-                    <td>11:34</td>
-                    <td>2:51</td>
-                    <td>Automovil</td>
-                    <td>$9.000</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
 </body>
+
 </html>
