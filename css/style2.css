@@ -19,8 +19,6 @@ body {
 }
  /************ PAGINA FACTURAS ***************/
 
-/* Facturas es el papá */
-
 .main{
       display: flex;
 }
@@ -114,8 +112,8 @@ body {
 }
 
 .decorar1{
-      color: black;
       background-color: rgb(153, 208, 242);
+      color: white;
       border-radius: 6px;
       padding: 3.5px;
       width: 80px;
@@ -161,4 +159,15 @@ th, td{
 
 .primerafila{
       background-color: rgba(118, 200, 215, 0.495);
+}
+
+ /************ PAGINA MENSUALIDAD ***************/
+
+.mensualidad{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      flex-wrap: wrap;
+      margin-left: 25px;
+      margin-right: 25px;
 }
