@@ -19,9 +19,6 @@
     font-family: var(--font) ;
  }
 
- *, *:before, *:after {
-   box-sizing: inherit; /* hack para box model*/
- }
  /************ PAGINA RESERVAS ***************/
 
 .cabecera{
