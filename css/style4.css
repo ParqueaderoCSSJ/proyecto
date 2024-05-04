@@ -1,31 +1,5 @@
 /************ GLOBALES ***************/
-:root {
-   --color-primary: rgb(43, 148, 151);
-   --color-secundary: rgb(0, 119, 255, 0.089);
-   --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
-* {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-}
-
-html {
-   font-size: 62.5%;
-}
-
-/*Esto es para establecer el tamaño de duente para todoa la pagina y para definir el tipo de fuente
- que tambien esta guardado arriba
- */
-body {
-   font-size: 1.6rem;
-   font-family: var(--font);
-}
-
-img {
-   width: 100%;
-}
 
 /************ PAGINA REPORTES ***************/
 
@@ -34,24 +8,29 @@ img {
 }
 .reports {
    display: grid;
-   grid-template-columns: 75% 25%;
-   grid-template-rows: 10% 60%;
-   width: 70%;
-   margin: 0 auto;
-   padding: 0 auto;
+   grid-template-columns: 70% 20%;
+   grid-template-rows: 10% 70%;
+   justify-content:  center;
+   align-content: center;
+   width: var(--wigth-main);
+   height: var(--height-main);
 }
 .reports h2 {
    display: flex;
    align-items: center;
    justify-content: center;
 }
-.cont_reports {
-   display: flex;
-}
 .graphics {
    grid-column: 1;
    grid-row: 2;
    margin: 0 auto;
+   display: flex;
+   align-items: center;
+}
+.graphics img {
+   margin: 0 auto;
+   height: 90%;
+   width: 95%;
 }
 .vehicle_type {
    margin-top: 1rem;
@@ -65,7 +44,7 @@ img {
 .btn_reports {
    grid-column: 2;
    grid-row: 2;
-   margin-left: 3rem;
+   margin-top: 2rem;
 }
 .buttons h4  {
    margin-bottom: 1rem;

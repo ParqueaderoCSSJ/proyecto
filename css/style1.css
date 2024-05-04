@@ -1,22 +1,6 @@
 /*********** JOHAN **************/
 /************** GLOBALES *****************/
-:root {
-    --color-primary: rgb(43, 148, 151);
-    --color-secundary: rgb(0, 119, 255, 0.089);
-    --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
- }
- *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
- } 
- html {
-    font-size: 62.5%;
- }
- body {
-    font-size: 1.6rem;
-    font-family: var(--font) ;
- }
+
 /************ PAGINA LOGIN ***************/
  .body_login {
     background-image: url(../img/fondo.jpg);
@@ -60,7 +44,6 @@
  
  .formulario form{
     padding: 0 40px;
-    box-sizing: border-box;
  }
  
  form .usuario{
@@ -174,8 +157,9 @@
    display: flex;
    flex-wrap: wrap; 
    justify-content: center;
-   width: 700px;
    margin: 0 auto;
+   width: var(--wigth-main);
+   height: var(--height-main);
 }
 
 .main {
