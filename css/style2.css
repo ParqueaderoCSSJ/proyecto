@@ -1,8 +1,6 @@
 /*********** SEBASTIAN V **************/
 /************ GLOBALES ***************/
 
-/* Facturas es el papá */
-
 .main{
       display: flex;
 }
@@ -98,8 +96,10 @@ form {
       padding: 3.5px;
 }
 
-.decorar1 {
+
+.decorar1{
       background-color: rgb(153, 208, 242);
+      color: white;
       border-radius: 6px;
       padding: 3.5px;
       width: 80px;
@@ -146,10 +146,10 @@ td {
 .primerafila {
       background-color: rgba(118, 200, 215, 0.495);
 }
+ /************ PAGINA MENSUALIDAD ***************/
 
-/************ PAGINA MENSUALIDAD ***************/
+.mensualidad{
 
-.mensualidad {
       display: flex;
       flex-direction: row;
       align-content: center;
