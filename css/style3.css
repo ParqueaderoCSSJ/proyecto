@@ -1,24 +1,91 @@
 /*********** CAMILO **************/
-/************ GLOBALES ***************/
-:root {
-   --color-primary: rgb(43, 148, 151);
-   --color-secundary: rgb(0, 119, 255, 0.089);
-   --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+/************ GLOBALES **************/
 
-* {
-   padding: 0;
+/************ PAGINA RESERVAS ***************/
+
+.logotipo img {
+   width: 70px;
+   height: 70px;
+   padding-top: 25%;
+}
+.logo-app img {
+   width: 50%;
+   justify-content: center;
+   margin: 0 150%;
+}
+.contenedor {
+   display: inline-flex;
    margin: 0;
-   box-sizing: border-box;
+   width: var(--wigth-main);
+   height: var(--height-main);
+}
+.barra-central {
+   justify-content: center;
+   background-color: rgba(175, 190, 190, 0.192);
+   width: 900rem;
+   height: 25rem;
+   margin-top: 20px;
+   padding: 20px;
+   display: inline;
 }
 
-html {
-   font-size: 62.5%;
+.placa1 input {
+   width: 50rem;
+   height: 20rem;
+   margin-left: 1%;
+   border-radius: 15px;
 }
 
-body {
-   font-size: 1.6rem;
-   font-family: var(--font);
+.form1 {
+   display: grid;
+   width: 18.5rem;
+   height: 18rem;
+   margin-left: 11%;
+   padding: 5px 5px;
+   margin: 1px 1px;
+   font-size: large;
+   text-align: center;
+   justify-content: center;
+   font-weight: 700;
+}
+
+.form2 {
+   position: relative;
+   display: grid;
+   width: 18.5rem;
+   height: 20rem;
+   top: 10px;
+   bottom: 10px;
+   margin-left: 8%;
+   font-size: large;
+   font-weight: 700;
+   text-align: center;
+}
+
+.botones {
+   position: relative;
+   display: grid;
+   width: 8em;
+   height: 11rem;
+   top: 10px;
+   bottom: 10px;
+   margin-left: 1%;
+   padding-bottom: 50px;
+   font-size: large;
+   font-weight: bold;
+   text-align: center;
+}
+
+.botones input {
+   background-color: rgb(43, 148, 151);
+   border-radius: 7px;
+   font-weight: bold;
+   letter-spacing: 5px;
+}
+
+.botones input:hover {
+   background-color: rgb(43, 148, 151);
+   box-shadow: 0 0 20px;
 }
 
 
@@ -40,13 +107,6 @@ body {
    gap: 2rem;
 }
 
-
-
-
-
-
-
-
 .botones {
    display: grid;
    width: 18rem;
@@ -60,11 +120,32 @@ body {
    text-align: center;
 }
 
+tr,
+th {
+   width: 20%;
+   border: 1px solid black;
+   padding: 5px;
+}
+.placa2 input {
+   width: 50rem;
+   height: 20rem;
+   margin-left: 1%;
+   border-radius: 15px;
+}
 
-
+.tablas table {
+   position: relative;
+   display: block;
+   border-collapse: collapse;
+   width: 90%;
+   left: 160px;
+   top: 320px;
+   border-radius: 7px;
+}
 
 tr,
 th {
+   position: relative;
    width: 20%;
    border: 1px solid black;
    padding: 5px;
@@ -77,8 +158,17 @@ td {
    margin: 5px;
 }
 
+th {
+   background-color: rgb(43, 148, 151);
+   ;
+}
+
 tbody,
 td {
    text-align: center;
 }
 
+.form1 input {
+   padding: 8px;
+   border-radius: 10px;
+}
