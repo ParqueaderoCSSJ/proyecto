@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style3.css">
 </head>
 
-<body>
+<body><!-- cabecera -->
     <header class="header">
         <div class="logo">
             <a href="disponibilidad.html">
@@ -27,7 +27,7 @@
             </a>
         </div>
     </header>
-    <main class="main">
+    <main class="main"><!-- barra lateral -->
         <div class="nav_lateral">
             <a href="disponibilidad.html">Disponibilidad</a>
             <a href="facturas.html">Facturas</a>
@@ -37,40 +37,46 @@
             <a href="#">Registro </a>
             <a href="#">Ayuda</a>
         </div>
-        <div class="contenedor">
-            <div class="info-contenedor">
-                <div>
-                    <label for="lplaca"></label>
-                    <input type="text, number" name="placa" id="lplaca">
-                </div>
-                <div>
-                    <label for="lhora"></label>Hora de Entrada<br>
-                    <input type="date" name="hora" id="lhora">
-                    <br>
-                    <label for="lhorario"></label>Hora de Salida<br>
-                    <input type="date" name="hora" id="lhorario">
-                    <br>
-                    <label for="ltiempo"></label>Total Tiempo<br>
-                    <input type="date" name="hora" id="ltiempo">
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Tarifa</legend>
-                        <label for="lmoto">Moto</label>
-                        <input type="radio" name="moto" id="lmoto" value="motocicleta">
-                        <label for="lcarro">Automovil</label>
-                        <input type="radio" name="carro" id="lcarro" value="automovil">
-                    </fieldset>
+        <!-- entrada de registro -->
+        <form action="">
+            <div class="contenedor">
+                <div class="info-contenedor">
+                    <div class="caja-entradadatos">
+                        <label for="lplaca"></label>
+                        <input type="text, number" name="placa" id="lplaca">
+                    </div>
+                    <div class="datos-entrada">
+                        <label for="lhora"></label>Hora de Entrada<br>
+                        <input type="date" name="hora" id="lhora">
+                        <br>
+                        <label for="lhorario"></label>Hora de Salida<br>
+                        <input type="date" name="hora" id="lhorario">
+                        <br>
+                        <label for="ltiempo"></label>Total Tiempo<br>
+                        <input type="date" name="hora" id="ltiempo">
+                    </div>
+                    <div class="tarifa">
+                        <fieldset>
+                            <legend>Tarifa</legend>
+                            <label for="lmoto">Moto</label>
+                            <input type="radio" name="moto" id="lmoto" value="motocicleta">
+                            <label for="lcarro">Automovil</label>
+                            <input type="radio" name="carro" id="lcarro" value="automovil">
+                        </fieldset>
+                    </div>
+                    
                     <div class="botones">
                         <input type="submit" value="Guardar">
+                        <br>
                         <input type="reset" value="Reiniciar">
+                     </div>
+                    
+                    <div class="salida-datos">
+                        <label for="lprecio"></label>
+                        <input type="text, number" name="precio" id="lprecio">
                     </div>
                 </div>
-                <div>
-                    <label for="lprecio"></label>
-                    <input type="text, number" name="precio" id="lprecio">
-                </div>
-            </div>
+        </form>
             <div class="tablas">
                 <table>
                     <thead>
