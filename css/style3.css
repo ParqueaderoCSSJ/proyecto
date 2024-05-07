@@ -25,6 +25,7 @@
 .info-contenedor {
    width: 90%;
    display: flex;
+   justify-content: space-around;
    margin: 0 auto;
    gap: 2rem;
 }
@@ -45,6 +46,9 @@
    margin-left: 1%;
    border-radius: 15px;
 }
+.tarifa {
+   border: none;
+}
 
 .form1 {
    display: grid;
@@ -60,12 +64,9 @@
 }
 
 .form2 {
-   position: relative;
    display: grid;
    width: 18.5rem;
    height: 20rem;
-   top: 10px;
-   bottom: 10px;
    margin-left: 8%;
    font-size: large;
    font-weight: 700;
@@ -73,29 +74,29 @@
 }
 
 .botones {
-   position: relative;
-   display: grid;
-   width: 8em;
-   height: 11rem;
-   top: 10px;
-   bottom: 10px;
-   margin-left: 1%;
-   padding-bottom: 50px;
-   font-size: large;
-   font-weight: bold;
+   width: 10rem;
    text-align: center;
 }
 
 .botones input {
+   width: 100%;
+   height: 3rem;
    background-color: rgb(43, 148, 151);
    border-radius: 7px;
+   font-size: 1.7rem;
    font-weight: bold;
-   letter-spacing: 5px;
+   border: none;
+   color:white;
+   margin-top: 1rem;
 }
 
 .botones input:hover {
+   position: relative;
+   bottom: 2px;
+   right: 2px;
    background-color: rgb(43, 148, 151);
-   box-shadow: 0 0 20px;
+   box-shadow: 2px 2px 3px rgb(73, 73, 73);
+   cursor: pointer;
 }
 
 tr,
@@ -111,23 +112,17 @@ th {
    margin-left: 1%;
    border-radius: 15px;
 }
-
+.tablas{
+   width: 90%;
+   margin: 0 auto;
+}
 .tablas table {
    border-collapse: collapse;
-   width: 90%;
    border-radius: 7px;
-   /* position: relative;
-   display: block;
-   border-collapse: collapse;
-   width: 90%;
-   left: 160px;
-   top: 320px;
-   border-radius: 7px; */
 }
 
 tr,
 th {
-   position: relative;
    width: 20%;
    border: 1px solid black;
    padding: 5px;
