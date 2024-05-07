@@ -25,6 +25,7 @@
 .info-contenedor {
    width: 90%;
    display: flex;
+   justify-content: space-around;
    margin: 0 auto;
    gap: 2rem;
 }
@@ -40,11 +41,13 @@
 }
 
 .placa1 input {
-   width: 50rem;
-   height: 20rem;
+   width: 32rem;
+   height: 16rem;
    margin-left: 1%;
+   margin-top: 20px;
    border-radius: 15px;
 }
+
 
 .form1 {
    display: grid;
@@ -53,49 +56,46 @@
    margin-left: 11%;
    padding: 5px 5px;
    margin: 1px 1px;
-   font-size: large;
+   margin-top: 20px;
    text-align: center;
    justify-content: center;
-   font-weight: 700;
 }
 
 .form2 {
-   position: relative;
-   display: grid;
-   width: 18.5rem;
-   height: 20rem;
-   top: 10px;
-   bottom: 10px;
-   margin-left: 8%;
-   font-size: large;
-   font-weight: 700;
+   display: flex;
+   width: 10rem;
+   height: 10rem;
+   margin-top: 20px;
+   padding-bottom: 20px;
    text-align: center;
+   border: none;
+   
 }
 
 .botones {
-   position: relative;
-   display: grid;
-   width: 8em;
-   height: 11rem;
-   top: 10px;
-   bottom: 10px;
-   margin-left: 1%;
-   padding-bottom: 50px;
-   font-size: large;
-   font-weight: bold;
+   width: 10rem;
    text-align: center;
 }
 
 .botones input {
+   width: 100%;
+   height: 3rem;
    background-color: rgb(43, 148, 151);
    border-radius: 7px;
+   font-size: 1.7rem;
    font-weight: bold;
-   letter-spacing: 5px;
+   border: none;
+   color:white;
+   margin-top: 1rem;
 }
 
 .botones input:hover {
+   position: relative;
+   bottom: 2px;
+   right: 2px;
    background-color: rgb(43, 148, 151);
-   box-shadow: 0 0 20px;
+   box-shadow: 2px 2px 3px rgb(73, 73, 73);
+   cursor: pointer;
 }
 
 tr,
@@ -106,27 +106,30 @@ th {
 }
 
 .placa2 input {
-   width: 50rem;
-   height: 20rem;
+   width: 32rem;
+   height: 16rem;
    margin-left: 1%;
+   margin-top: 20px;
    border-radius: 15px;
 }
-
+.tablas{
+   width: 90%;
+   margin: 0 auto;
+   margin-top: 25px;
+}
 .tablas table {
    border-collapse: collapse;
-   width: 90%;
    border-radius: 7px;
 }
 
 tr,
 th {
-   position: relative;
    width: 20%;
    border: 1px solid black;
    padding: 5px;
 }
 
 .form1 input {
-   padding: 8px;
+   padding: 9px;
    border-radius: 10px;
 }
