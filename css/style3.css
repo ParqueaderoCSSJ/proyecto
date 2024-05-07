@@ -41,14 +41,13 @@
 }
 
 .placa1 input {
-   width: 50rem;
-   height: 20rem;
+   width: 32rem;
+   height: 16rem;
    margin-left: 1%;
+   margin-top: 20px;
    border-radius: 15px;
 }
-.tarifa {
-   border: none;
-}
+
 
 .form1 {
    display: grid;
@@ -57,20 +56,20 @@
    margin-left: 11%;
    padding: 5px 5px;
    margin: 1px 1px;
-   font-size: large;
+   margin-top: 20px;
    text-align: center;
    justify-content: center;
-   font-weight: 700;
 }
 
 .form2 {
-   display: grid;
-   width: 18.5rem;
-   height: 20rem;
-   margin-left: 8%;
-   font-size: large;
-   font-weight: 700;
+   display: flex;
+   width: 10rem;
+   height: 10rem;
+   margin-top: 20px;
+   padding-bottom: 20px;
    text-align: center;
+   border: none;
+   
 }
 
 .botones {
@@ -107,14 +106,16 @@ th {
 }
 
 .placa2 input {
-   width: 50rem;
-   height: 20rem;
+   width: 32rem;
+   height: 16rem;
    margin-left: 1%;
+   margin-top: 20px;
    border-radius: 15px;
 }
 .tablas{
    width: 90%;
    margin: 0 auto;
+   margin-top: 25px;
 }
 .tablas table {
    border-collapse: collapse;
@@ -129,6 +130,6 @@ th {
 }
 
 .form1 input {
-   padding: 8px;
+   padding: 9px;
    border-radius: 10px;
 }
