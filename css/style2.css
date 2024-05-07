@@ -1,139 +1,115 @@
 /*********** SEBASTIAN V **************/
 /************ GLOBALES ***************/
 
-.main{
-      display: flex;
-}
-form {
+
+
+/************ PAGINA FACTURAS ***************/
+
+.facturas, .mensualidad {
       width: var(--width-main);
       height: var(--height-main);
 }
-/************ PAGINA FACTURAS ***************/
-
-.facturas {
+.form_facturas, .form_mensualidad {
       display: flex;
       flex-wrap: wrap;
-      margin-left: 25px;
-      margin-right: 25px;
+      width: 95%;
+      height: 15rem;
+      margin: 3rem auto;
+      justify-content: space-between;
+      gap: 1rem;
+
 }
 
-.cajaderecha {
-      padding: 15px;
+.cajaderecha, .cajaizquierda {
       width: 35%;
-      order: 1;
-      margin-top: 10.5px;
 }
 
-.inputmat {
+.inputmat, .leftbox {
       width: 100%;
       height: 150px;
       border-radius: 25px;
       font-size: 90px;
       text-align: center;
+      padding: 0 1rem;
       background-color: white;
       text-transform: uppercase;
 }
+.inputmat, .leftbox, .decorar{
+      border: 1px solid black;
+}
 
 .datos {
-      padding: 15px;
-      width: 15%;
-      order: 2;
-      padding-left: 35px;
+      width: 11.5rem;
+      height: 100%;
 }
 
 .inputenterhour {
       height: 55px;
       width: 100%;
-      text-align: center;
       border-radius: 10px;
 }
 
 .inputouthour {
       height: 55px;
       width: 100%;
-      text-align: center;
       border-radius: 10px;
 }
 
 .hours {
       height: 55px;
       width: 100%;
-      text-align: center;
       border-radius: 10px;
 }
 
 .tipoybotones {
-      padding: 15px;
-      width: 15%;
-      order: 3;
-      padding-left: 35px;
-}
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+} 
 
 .list {
-      height: 35px;
-      width: 125px;
-      text-align: center;
-      border-radius: 10px;
-      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+} 
+.list legend {
+      font-size: 17px;
+      font-weight: bold;
+      text-align: left;
 }
-
+ 
 .submit {
-      width: 125px;
       text-align: center;
-      margin-top: 25px;
 }
 
 .reset {
-      width: 125px;
       text-align: center;
-      margin-top: 5px;
-}
+} 
 
 .decorar {
       color: black;
       background-color: white;
-      border-radius: 6px;
-      padding: 3.5px;
-      width: 100%;
-}
-
-
-.decorar1{
-      background-color: rgb(153, 208, 242);
-      color: white;
-      border-radius: 6px;
-      padding: 3.5px;
-      width: 80px;
-      font-weight: bold;
-}
-
-.cajaizquierda {
-      padding: 15px;
-      width: 35%;
-      order: 4;
-      margin-top: 10.5px;
-}
-
-.leftbox {
-      width: 100%;
-      height: 150px;
-      border-radius: 25px;
-      font-size: 90px;
+      border-radius: 5px;
+      width: 90%;
       text-align: center;
-      background-color: white;
-      text-transform: uppercase;
+}
+.decoration1 {
+      padding: 2px;
+      margin-bottom: 3px;
 }
 
 .tablacompleta {
       width: 100%;
-      order: 5;
+      padding-top: 1rem;
 }
 
 .tabla {
       background-color: white;
       text-align: center;
       border-collapse: collapse;
-      width: 100%;
+      width: 95%;
+      margin: 0 auto;
 }
 
 th,
@@ -145,16 +121,15 @@ td {
 }
 
 .primerafila {
-      background-color: rgba(118, 200, 215, 0.495);
+      background-color: #76C9D7;
+}
+.delete{
+      width: 3rem;
+}
+.delete:hover {
+      position: relative;
+      bottom: 2px;
+      right: 2px;
+      cursor: pointer;
 }
  /************ PAGINA MENSUALIDAD ***************/
-
-.mensualidad{
-
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      flex-wrap: wrap;
-      margin-left: 25px;
-      margin-right: 25px;
-}
