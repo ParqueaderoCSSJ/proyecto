@@ -31,7 +31,7 @@
         <div class="nav_lateral">
             <a href="disponibilidad.html">Disponibilidad</a>
             <a href="facturas.html">Facturas</a>
-            <a href="#">Mensualidad</a>
+            <a href="mensualidad.html">Mensualidad</a>
             <a href="reservas.html">Reservas</a>
             <a href="reportes.html">Reportes</a>
             <a href="#">Registro </a>
@@ -41,30 +41,36 @@
             <div class="info-contenedor">
                 <div class="placa1">
                     <label for="lplaca"></label>
-                    <input type="text, number" name="placa" id="lplaca">
+                    <input type="text" name="placa" id="lplaca">
                 </div>
                 <div class="form1">
-                    <label for="lhora"></label>Hora de Entrada<br>
-                    <input type="date" name="hora" id="lhora">
-                    <br>
-                    <label for="lhorario"></label>Hora de Salida<br>
-                    <input type="date" name="hora" id="lhorario">
-                    <br>
-                    <label for="ltiempo"></label>Total Tiempo<br>
-                    <input type="date" name="hora" id="ltiempo">
-                </div>
-                <div >
-                    <fieldset class="form2">
-                        <legend>Tarifa</legend>
-                        <label for="lmoto">Moto</label>
-                        <input type="radio" name="moto" id="lmoto" value="motocicleta">
-                        <label for="lcarro">Automovil</label>
-                        <input type="radio" name="carro" id="lcarro" value="automovil">
-                    </fieldset>
-                    <div class="botones">
-                        <input type="button" value="Imprimir">
-                        <input type="submit" value="Guardar">
+                    <div>
+                        <label for="lhora">Hora Entrada</label>
+                        <input type="date" name="hora" id="lhora">
                     </div>
+                    <div>
+                        <label for="lhorario">Hora Salida</label>
+                        <input type="date" name="hora" id="lhorario">
+                    </div>
+                    <div>
+                        <label for="ltiempo">Total Tiempo</label>
+                        <input type="date" name="hora" id="ltiempo">
+                    </div>
+                </div>
+                <div class="form2">
+                    <fieldset>
+                        <legend>Tarifa</legend>
+                        <div>
+                            <label for="lmoto">Moto</label>
+                            <input type="radio" name="moto" id="lmoto" value="motocicleta">
+                        </div>
+                        <div>
+                            <label for="lcarro">Carro</label>
+                            <input type="radio" name="carro" id="lcarro" value="automovil">
+                        </div>
+                    </fieldset>
+                        <input class="button"  type="button" value="Imprimir">
+                        <input class="button" type="submit" value="Guardar">
                 </div>
                 <div class="placa2">
                     <label for="lprecio"></label>
@@ -74,25 +80,57 @@
             <div class="tablas">
                 <table>
                     <thead>
-                        <tr>
+                        <tr class="primerafila">
                             <th>Placa</th>
+                            <th>Tarifa</th>
                             <th>Dia Reserva</th>
                             <th>Hora Entrada</th>
                             <th>Hora Salida</th>
                             <th>Total Hora</th>
-                            <th>Tarifa</th>
                             <th>Recibo</th>
+                            <th>Eliminar</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>WTS-964</td>
-                            <td>09/12/2023</td>
-                            <td>8:43</td>
-                            <td>11:34</td>
-                            <td>2:51</td>
-                            <td>Automovil</td>
-                            <td>$9.000</td>
+                            <td>LWC65B</td>
+                            <td>Moto</td>
+                            <td>02/07/2024</td>
+                            <td>03:45 PM</td>
+                            <td>05:00 PM</td>
+                            <td>02:00 horas</td>
+                            <td><a href="#">LWC65B</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>BWC690</td>
+                            <td>Carro</td>
+                            <td>03/04/2024</td>
+                            <td>04:00 PM</td>
+                            <td>05:00 PM</td>
+                            <td>01:00 horas</td>
+                            <td><a href="#">BWC690</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>DEC165</td>
+                            <td>Carro</td>
+                            <td>05/03/2024</td>
+                            <td>11:33 AM PM</td>
+                            <td>02:10 PM</td>
+                            <td>02:00 horas</td>
+                            <td><a href="#">DEC165</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>MOP48M</td>
+                            <td>Moto</td>
+                            <td>02/03/2024</td>
+                            <td>05:11 PM</td>
+                            <td>07:23 PM</td>
+                            <td>02:00 horas</td>
+                            <td><a href="#">MOP487</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
                         </tr>
                     </tbody>
                 </table>
