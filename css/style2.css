@@ -43,21 +43,21 @@ form {
 
 .inputenterhour {
       height: 55px;
-      width: 125px;
+      width: 100%;
       text-align: center;
       border-radius: 10px;
 }
 
 .inputouthour {
       height: 55px;
-      width: 125px;
+      width: 100%;
       text-align: center;
       border-radius: 10px;
 }
 
 .hours {
       height: 55px;
-      width: 125px;
+      width: 100%;
       text-align: center;
       border-radius: 10px;
 }
@@ -94,6 +94,7 @@ form {
       background-color: white;
       border-radius: 6px;
       padding: 3.5px;
+      width: 100%;
 }
 
 
