@@ -5,11 +5,11 @@
 
 /************ PAGINA FACTURAS ***************/
 
-.facturas {
+.facturas, .mensualidad {
       width: var(--width-main);
       height: var(--height-main);
 }
-.form_facturas {
+.form_facturas, .form_mensualidad {
       display: flex;
       flex-wrap: wrap;
       width: 95%;
@@ -40,6 +40,7 @@
 
 .datos {
       width: 11.5rem;
+      height: 100%;
 }
 
 .inputenterhour {
@@ -92,17 +93,13 @@
 .decorar {
       color: black;
       background-color: white;
-      border-radius: 6px;
+      border-radius: 5px;
       width: 90%;
       text-align: center;
 }
-
-.decorar1{
-      background-color: rgb(153, 208, 242);
-      color: white;
-      border-radius: 6px;
-      width: 80px;
-      font-weight: bold;
+.decoration1 {
+      padding: 2px;
+      margin-bottom: 3px;
 }
 
 .tablacompleta {
@@ -139,12 +136,3 @@ td {
       cursor: pointer;
 }
  /************ PAGINA MENSUALIDAD ***************/
-
-.mensualidad{
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      flex-wrap: wrap;
-      margin-left: 25px;
-      margin-right: 25px;
-}
