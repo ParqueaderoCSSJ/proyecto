@@ -3,7 +3,7 @@
     --color-secundary: rgb(0, 119, 255, 0.089);
     --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     --height-main: calc(100vh - 50px);
-    --wigth-main: calc(100% - 150px);
+    --width-main: calc(100% - 150px);
  }
  *{
     box-sizing: border-box;
