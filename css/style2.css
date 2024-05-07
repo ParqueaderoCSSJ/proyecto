@@ -5,7 +5,7 @@
       display: flex;
 }
 form {
-      width: var(--wigth-main);
+      width: var(--width-main);
       height: var(--height-main);
 }
 /************ PAGINA FACTURAS ***************/

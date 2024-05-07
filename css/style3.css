@@ -16,7 +16,7 @@
 }
 
 .contenedor {
-   width: var(--wigth-main);
+   width: var(--width-main);
    height: var(--height-main);
    display: flex;
    flex-direction: column;
@@ -116,13 +116,6 @@ th {
    border-collapse: collapse;
    width: 90%;
    border-radius: 7px;
-   /* position: relative;
-   display: block;
-   border-collapse: collapse;
-   width: 90%;
-   left: 160px;
-   top: 320px;
-   border-radius: 7px; */
 }
 
 tr,
