@@ -28,18 +28,18 @@
         </div>
     </header>
     <main class="main">
-                <div class="nav_lateral">
-                    <a href="disponibilidad.html">Disponibilidad</a>
-                    <a href="facturas.html">Facturas</a>
-                    <a href="mensualidad.html">Mensualidad</a>
-                    <a href="reservas.html">Reservas</a>
-                    <a href="reportes.html">Reportes</a>
-                    <a href="#">Registro </a>
-                    <a href="#">Ayuda</a>
-                </div>
-<!-- Input para ingresar datos -->
-        <form action="">
-            <div class="facturas">
+        <div class="nav_lateral">
+            <a href="disponibilidad.html">Disponibilidad</a>
+            <a href="facturas.html">Facturas</a>
+            <a href="mensualidad.html">Mensualidad</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="reportes.html">Reportes</a>
+            <a href="#">Registro </a>
+            <a href="#">Ayuda</a>
+        </div>
+        <!-- Input para ingresar datos -->
+        <div class="facturas">
+            <form class="form_facturas">
                 <div class="cajaderecha">
                     <label for="lmatricula"></label>
                     <input class="inputmat" type="text" name="matricula" id="lmatricula">
@@ -47,15 +47,15 @@
                 <!-- Inputs horas -->
                 <div class="datos">
                     <div class="inputenterhour">
-                        <label for="lhora_entrada">Hora entrada</label>
+                        <label for="lhora_entrada">Hora Entrada</label>
                         <input class="decorar" class="decoration1" type="time" name="hora_entrada" id="lhora_entrada">
                     </div>
                     <div class="inputouthour">
-                        <label for="lhora_salida">Hora salida</label>
+                        <label for="lhora_salida">Hora Salida</label>
                         <input class="decorar" type="time" name="hora_salida" id="lhora_salida">
                     </div>
                     <div class="hours">
-                        <label for="ltotal_hours">Total tiempo</label>
+                        <label for="ltotal_hours">Total Tiempo</label>
                         <input class="decorar" type="time" name="horas" id="ltotal_hours">
                     </div>
                 </div>
@@ -63,46 +63,82 @@
                 <div class="tipoybotones">
                     <div class="list">
                         <legend>Tarifa</legend>
-                        <label for="lmoto">Moto</label>
-                        <input type="radio" name="Tarifa" id="lmoto" value="Moto">
-                        <label for="lcarro">Carro</label>
-                        <input type="radio" name="Tarifa" id="lcarro" value="carro">
+                        <div>
+                            <label for="lmoto">Moto</label>
+                            <input type="radio" name="Tarifa" id="lmoto" value="Moto">
+                        </div>
+                        <div>
+                            <label for="lcarro">Carro</label>
+                            <input type="radio" name="Tarifa" id="lcarro" value="carro">
+                        </div>
                     </div>
                     <!-- Botones para guardar y reset -->
-                    <div class="submit">
-                        <input class="decorar1" type="submit" value="Guardar">
-                    </div>
-                    <div class="reset">
-                        <input class="decorar1" type="reset" value="Reiniciar">
-                    </div>
+                    
+                        <div class="submit">
+                            <input class="button" type="submit" value="Imprimir">
+                        </div>
+                        <div class="reset">
+                            <input class="button" type="reset" value="Guardar">
+                        </div>
+                    
                 </div>
                 <!-- Caja izquierda -->
                 <div class="cajaizquierda">
                     <label for="leftbox"></label>
                     <input class="leftbox" type="text" name="izqcaja" id="leftbox">
                 </div>
-        </form>
-        <!-- tabla -->
-        <div class="tablacompleta ">
-            <table class="tabla">
-                <tr class="primerafila">
-                    <th>Placa</th>
-                    <th>Tarifa</th>
-                    <th>Hora Entrada</th>
-                    <th>Hora Salida</th>
-                    <th>Total Tiempo</th>
-                    <th>Recibo</th>
-                </tr>
-                <tr>
-                    <td>LWC657</td>
-                    <td>Moto</td>
-                    <td>3:45 PM</td>
-                    <td>5:00 PM</td>
-                    <td>2:00 horas</td>
-                    <td><a href="#">Recibo</a></td>
-                </tr>
-            </table>
-        </div>
+
+            </form>
+            <!-- tabla -->
+            <div class="tablacompleta ">
+                <table class="tabla">
+                    <tr class="primerafila">
+                        <th>Placa</th>
+                        <th>Tarifa</th>
+                        <th>Hora Entrada</th>
+                        <th>Hora Salida</th>
+                        <th>Total Tiempo</th>
+                        <th>Recibo</th>
+                        <th>Eliminar</th>
+                    </tr>
+                    <tr>
+                        <td>LWC65B</td>
+                        <td>Moto</td>
+                        <td>03:45 PM</td>
+                        <td>05:00 PM</td>
+                        <td>02:00 horas</td>
+                        <td><a href="#">LWC65B</a></td>
+                        <td><img class="delete" src="img/delete.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>BWC690</td>
+                        <td>Carro</td>
+                        <td>04:00 PM</td>
+                        <td>05:00 PM</td>
+                        <td>01:00 horas</td>
+                        <td><a href="#">BWC690</a></td>
+                        <td><img class="delete" src="img/delete.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>DEC165</td>
+                        <td>Carro</td>
+                        <td>11:33 AM PM</td>
+                        <td>02:10 PM</td>
+                        <td>02:00 horas</td>
+                        <td><a href="#">DEC165</a></td>
+                        <td><img class="delete" src="img/delete.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>MOP487</td>
+                        <td>Carro</td>
+                        <td>05:11 PM</td>
+                        <td>07:23 PM</td>
+                        <td>02:00 horas</td>
+                        <td><a href="#">MOP487</a></td>
+                        <td><img class="delete" src="img/delete.png" alt=""></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </main>
     <footer>
