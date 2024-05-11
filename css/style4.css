@@ -12,7 +12,7 @@
    grid-template-rows: 10% 70%;
    justify-content:  center;
    align-content: center;
-   width: var(--wigth-main);
+   width: var(--width-main);
    height: var(--height-main);
 }
 .reports h2 {
@@ -49,21 +49,8 @@
 .buttons h4  {
    margin-bottom: 1rem;
 }
-.buttons button {
-   display: flex;
+.button {
    margin-bottom: 1rem;
-   background-color: var(--color-primary);
-   border-style: none;
-   padding: 5px 10px;
-   border-radius: 1rem;
-   color: white;
-   font-size: 1.5rem;
-   font-weight: bold;
 }
-.buttons button:hover {
-   cursor: pointer;
-   position: relative;
-   bottom: 2px;
-   box-shadow: -1px 1px 3px black;
-}
+
 
