@@ -57,7 +57,7 @@ form .usuario{
 
 .usuario input{
    width: 100%;
-   padding: 0 5px;
+   padding: 5px;
    height: 40px;
    border: none;
    background: none;
@@ -66,8 +66,10 @@ form .usuario{
 .usuario label{
    position: absolute;
    left: 5px;
+   top: -10px;
    color: rgb(255, 255, 255) ;
    pointer-events: none;
+   
 }
 .usuario span::before{
    content: '';
@@ -81,9 +83,10 @@ form .usuario{
 }
 .usuario input:focus ~ label,
 .usuario input:focus ~ label{
-   top: -7px;
+   top: -20px; 
    color: #534b57;
 }
+
 .usuario input:focus ~ span::before,
 .usuario input:focus ~ span::before{
    width: 100%;
