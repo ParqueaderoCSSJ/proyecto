@@ -1,7 +1,6 @@
 /*********** JOHAN **************/
 /************** GLOBALES *****************/
-
-/************ PAGINA LOGIN ***************/
+  /************ PAGINA LOGIN ***************/
 .body_login {
    background-image: url(../img/fondo.jpg);
    background-repeat: no-repeat;
@@ -126,7 +125,7 @@ form .usuario{
 
 
 
- /****PAGINA DISPONIBILIDAD****/
+   /****PAGINA DISPONIBILIDAD****/
 /*graficas(imagenes jajaja)*/
 
 /* .main {
@@ -176,3 +175,8 @@ form .usuario{
         max-width: calc(33.33% - 30px); /
     }
 }
+
+
+ /********PAGINA AYUDA OP***********/
+
+ 
