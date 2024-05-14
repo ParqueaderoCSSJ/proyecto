@@ -179,4 +179,40 @@ form .usuario{
 
  /********PAGINA AYUDA OP***********/
 
+ .container_ayuda {
+   width: 80%;
+   margin: 0 auto;
+ }
  
+ .header_navegacion,
+ .pag_disponibilidad,
+ .pag_facturas,
+ .pag_mensualidad,
+ .pag_reservas,
+ .pag_reportes,
+ .pag_registro {
+   margin-bottom: 30px;
+ }
+ 
+ .header_navegacion h2,
+ .pag_disponibilidad h2,
+ .pag_facturas h2,
+ .pag_mensualidad h2,
+ .pag_reservas h2,
+ .pag_reportes h2,
+ .pag_registro h2 {
+   font-size: 24px;
+   font-weight: bold;
+   color: #1a1a1a;
+ }
+ 
+ .header_navegacion p,
+ .pag_disponibilidad p,
+ .pag_facturas p,
+ .pag_mensualidad p,
+ .pag_reservas p,
+ .pag_reportes p,
+ .pag_registro p {
+   font-size: 16px;
+   color: #333;
+ }
