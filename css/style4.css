@@ -1,11 +1,10 @@
 /************ GLOBALES ***************/
 
-
-/************ PAGINA REPORTES ***************/
-
-.main {
+main {
    display: flex;
 }
+/************ PAGINA REPORTES ***************/
+
 .reports {
    display: grid;
    grid-template-columns: 70% 20%;
@@ -49,8 +48,62 @@
 .buttons h4  {
    margin-bottom: 1rem;
 }
-.button {
+.buttons button {
    margin-bottom: 1rem;
 }
 
+/* REGISTRO DE CLIENTE */
+.bg-customer-regis{
+   background-image: url(../img/fondo.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.bg-form-cust{
+   background-color: var(--color-Bar-nav);
+   border-radius: 2rem;
+   color: white;
+}
+.bg-form-cust h2{
+   text-align: center;
+   margin: 2rem 0;
+}
+.form-cust {
+   display: flex;
+   gap: 2rem;
+   margin: 0 4rem;
+   margin-bottom: 4rem;
+}
+.col > div {
+   display: flex;
+   flex-direction: column;
+}
+.col > div {
+   display: flex;
+   flex-direction: column;
+   margin-top: 1rem;
+}
+div .gender {
+   flex-direction: row;
+   gap: 2rem;
+}
 
+div .btn-cust{
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.btn-cust input {
+   margin-top: 1rem;
+}
+
+@media (max-width: 476px) {
+    .form-cust{
+      flex-direction: column;
+      gap: 0;
+    }
+}

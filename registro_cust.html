@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+    <main class="bg-customer-regis">
+        <div class="bg-form-cust">
+            <h2>Registro</h2>
+            <form class="form-cust">
+                <div class="col">
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="lastname">Apellido</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                    <div>
+                        <label for="dni">N° Docuemento</label>
+                        <input type="number" name="dni" id="dni" required>
+                    </div>
+                    <div class="gender">
+                        <label for="gender">Sexo: </label>
+                        <div>
+                            <div>
+                                <input type="radio" name="gender" id="men" value="men" required>
+                                <label for="men">Hombre</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="women" value="women">
+                                <label for="women">Mujer</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="phone">Telefono</label>
+                        <input type="number" name="phone" id="phone" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="user">Usuario</label>
+                        <input type="text" name="user" id="user" required>
+                    </div>
+                    <div>
+                        <label for="password">Constraseña</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="conf-password">Confirmar Contraseña</label>
+                        <input type="password" name="conf-password" id="conf-password" required>
+                    </div>
+                    <div class="btn-cust">
+                        <input class="button" type="reset" value="Limpiar">
+                        <input class="button" type="submit" value="Guardar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
