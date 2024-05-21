@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="disponibilidad.html">
+                <img src="img/logo.png" alt="Logo parqueadero">
+            </a>
+        </div>
+        <div class="logo_cssj">
+            <a href="disponibilidad.html">
+                <img src="img/logo_cssj.png" alt="Logo parqueadero">
+            </a>
+        </div>
+        <div class="logout">
+            <a href="index.html">
+                <img src="img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="nav_lateral">
+            <a href="disponibilidad.html">Disponibilidad</a>
+            <a href="facturas.html">Facturas</a>
+            <a href="mensualidad.html">Mensualidad</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="reportes.html">Reportes</a>
+            <a href="registro.html">Registro</a>
+            <a href="ayuda.html">Ayuda</a>
+        </div>
+
+        <div class="caja-reg-principal">
+            
+            <h1 class="title">Registro De Usuarios</h1>
+            
+            <div class="caja-Reg">
+              <form class="formularios">
+                    <div class="dos-section">
+
+
+                        <div class="seccion1">
+                            
+                            <div>
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" name="Nombre" id="Nombre">
+                             </div>
+
+                            <div>
+                            
+                            <label for="Apellido">Apellido</label>
+                            <input type="text" name="Apellido" id="Apellido">
+                            </div>
+
+                    
+                            <div>
+                            <label for="Documento">No° Documento</label>
+                            <input type="number text" name="Documento" id="Documento">
+                            </div>
+
+                            <div class="radio">
+                                <legend>Sexo</legend>
+                                <div>
+                                    <div>
+                                        <input type="radio" name="Hombre" id="Hombre">
+                                        <label for="Hombre">Hombre</label>                                      
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="Mujer" id="Mujer">
+                                        <label for="Mujer">Mujer</label>                                     
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+
+                            <label for="Telefono">Telefono</label>
+                            <input type="tel" name="Telefono" id="Telefono">
+                             </div>
+
+                             <div>
+                            <label for="Correo">Correo Electronico</label>
+                            <input type="email" name="Correo" id="Correo">
+                            </div>
+                        </div>
+
+                        <div class="seccion2">
+                            <div>
+                                 <label for="Roll">Roll</label>
+                                 <div>
+                                 <select name="Roll" id="Roll">
+                                    <option value=""></option>
+                                <option value="valor1">Area Administrativa</option>
+                                <option value="valor2">Administración</option>
+                                </select>
+                                </div>
+                            </div>
+
+                            <div>
+                            <label for="Cargo">Cargo</label>
+                            <div>
+                            <select name="Roll" id="Roll">
+                                <option value=""></option>
+                                <option value="valor1">Operador</option>
+                                <option value="valor2">Registro</option>
+                                <option value="valor2">Usuario</option>
+                            </select>
+                            </div>
+                            </div>
+
+                            <div>
+                            <label for="Usuario">Usuario</label>
+                            <input type="text" name="Usuario" id="Usuario">
+                            </div>
+
+                            <div>
+                            <label for="Contraseña">Contraseña</label>
+                            <input type="password" name="Contraseña" id="Contraseña">
+                            </div>
+                            
+                            <div>
+                            <label for="Confirmar">Confirmar Contraseña</label>
+                            <input type="password" name="Confirmar" id="Confirmar">
+                            
+                            </div>
+                            <div class="botones">
+                                <input class="button" type="submit" value="Guardar">
+                                <input class="button" type="reset" value="Eliminar">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
