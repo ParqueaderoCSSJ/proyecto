@@ -17,7 +17,11 @@ main {
    margin: 0 150%;
 }
 
-.contenedor{
+.nav_lateral {
+   height: 100vh;
+}
+
+.contenedor {
    width: var(--width-main);
    height: var(--height-main);
 }
@@ -119,4 +123,79 @@ td {
    bottom: 2px;
    right: 2px;
    cursor: pointer;
+}
+
+/* caja de registro */
+
+.caja-reg-principal {
+   margin: 0 auto;
+}
+
+.title {
+   text-align: center;
+   margin-top: 20px;
+
+}
+
+.caja-Reg {
+   background-color: var(--color-Bar-nav);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   width: 100%;
+   border-radius: 20px;
+   color: white;
+      
+}
+
+.dos-section {
+   display: flex;
+   justify-content: center;
+   padding: 60px 80px;
+   gap: 4rem;
+}
+
+.seccion1 > div, .seccion2 > div {
+   margin: 5px 0;
+}
+
+.seccion1 input, .seccion2 input {
+  width: 100%;
+}
+
+#Hombre, #Mujer {
+   width: 10px;
+}
+
+.seccion1, .seccion2 {
+   width: 200px;
+}
+ .seccion2 select {
+   width: 100%;
+   height: 19px;  
+   border-radius: 0px;
+ }
+.radio {
+   display: flex;
+   gap: 20px;
+}
+
+
+
+div .botones {
+   display: flex;
+   margin-top: 20px;
+   gap: 20px;
+}
+
+@media (max-width: 800px) {
+   .dos-section {
+      flex-wrap: wrap;
+      gap: 0px;
+      padding: 30px 60px;
+   }
+   .caja-Reg{
+      width: 70%;
+   }
 }
