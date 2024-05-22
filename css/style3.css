@@ -157,7 +157,7 @@ td {
 }
 
 .seccion1 > div, .seccion2 > div {
-   margin: 5px 0;
+   margin-top: 1rem;
 }
 
 .seccion1 input, .seccion2 input {
@@ -179,6 +179,7 @@ td {
 .radio {
    display: flex;
    gap: 20px;
+   height: 3.9rem;
 }
 
 
