@@ -74,7 +74,7 @@
 
 .nav_lateral a {
    display: flex;
-   margin: 1rem 0;
+   margin: 5px 0;
    text-decoration: none;
    color: white;
    font-weight: bold;
@@ -84,10 +84,8 @@
    width: 100%;
 }
 
-.nav_lateral a:hover {
+.nav_lateral a:hover, .active {
    background-color: rgb(118, 201, 215);
-   box-shadow: black;
-   padding: 10px;
    border-radius: 12px;
    font-size: 1.65rem;
 }
