@@ -91,15 +91,11 @@ form .usuario{
    width: 100%;
 }
 
-.reestablecer{
-   margin: -5px 0 20px 5px;
+
+.reestablecer {
+   margin-bottom: 2rem;
    color: blue;
    cursor: pointer;
-   padding: 10px;
-}
-
-.reestablecer:hover{
-   text-decoration: underline;
 }
 
 .btn_login {

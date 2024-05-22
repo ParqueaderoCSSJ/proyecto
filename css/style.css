@@ -19,9 +19,6 @@
     font-family: var(--font) ;
     background-color: var(--color-secundary);
  }
- main{
-   display: flex;
- }
  img {
    width: 100%;
  }
@@ -106,12 +103,12 @@
    font-size: 1.5rem;
    font-weight: bold;
    justify-content: center;
-   box-shadow: 1px 1px 3px gray;
+   box-shadow: 1px 1px 3px rgb(34, 34, 34);
+   cursor: pointer;
 }
 .button:hover {
-   cursor: pointer;
    position: relative;
-   bottom: 2px;
-   right: 2px;
-   box-shadow: 1px 1px 3px black;
+   bottom: 1px;
+   right: 1px;
+   box-shadow: 3px 3px 6px black;
 }
