@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensualidad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="disponibilidad.html">
-                <img src="img/logo.png" alt="Logo parqueadero">
-            </a>
-        </div>
-        <div class="logo_cssj">
-            <a href="disponibilidad.html">
-                <img src="img/logo_cssj.png" alt="Logo parqueadero">
-            </a>
-        </div>
-        <div class="logout">
-            <a href="index.html">
-                <img src="img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
-            </a>
+    <header class="header navbar">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="disponibilidad.html">
+                    <img src="img/logo.png" alt="Logo parqueadero">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                    <path
+                        d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                    </path>
+                </svg>
+            </button>
+            <div class="logo_cssj">
+                <a href="disponibilidad.html">
+                    <img src="img/logo_cssj.png" alt="Logo parqueadero">
+                </a>
+            </div>
+            <div class="logout">
+                <a href="index.html">
+                    <img src="img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
+                </a>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="nav-lat">
+                        <a href="disponibilidad.html">Disponibilidad</a>
+                        <a href="facturas.html">Facturas</a>
+                        <a class="active" href="mensualidad.html">Mensualidad</a>
+                        <a href="reservas.html">Reservas</a>
+                        <a href="reportes.html">Reportes</a>
+                        <a href="registro.html">Registro</a>
+                        <a href="ayuda.html">Ayuda</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -35,56 +65,58 @@
             <a href="registro.html">Registro</a>
             <a href="ayuda.html">Ayuda</a>
         </div>
+        <!-- Input para ingresar datos -->
         <div class="mensualidad">
-            <form class="form_mensualidad">
-                <div class="cajaderecha">
-                    <label for="lmatricula"></label>
-                    <input class="inputmat" type="text" name="matricula" id="lmatricula">
-                </div>
-                <!-- Inputs horas -->
-                <div class="datos">
-                    <div class="inputenterhour">
-                        <label for="lhora_entrada">Dia Entrada</label>
-                        <input class="decorar decoration1" type="date" name="hora_entrada" id="lhora_entrada">
+            <form class="form_facturas">
+                <div>
+                    <div class="cajaderecha">
+                        <label for="lmatricula"></label>
+                        <input class="inputmat" type="text" name="matricula" id="lmatricula" placeholder="PLACA">
                     </div>
-                    <div class="inputouthour">
-                        <label for="lhora_salida">Dia Salida</label>
-                        <input class="decorar decoration1" type="date" name="hora_salida" id="lhora_salida">
-                    </div>
-                    <div class="hours">
-                        <label for="ltotal_hours">Total Dias</label>
-                        <input class="decorar decoration1" type="number" name="horas" id="ltotal_hours">
+                    <!-- Inputs horas -->
+                    <div class="datos">
+                        <div class="inputenterhour">
+                            <label for="lhora_entrada">Hora Entrada</label>
+                            <input class="decorar" class="decoration1" type="time" name="hora_entrada" id="lhora_entrada">
+                        </div>
+                        <div class="inputouthour">
+                            <label for="lhora_salida">Hora Salida</label>
+                            <input class="decorar" type="time" name="hora_salida" id="lhora_salida">
+                        </div>
+                        <div class="hours">
+                            <label for="ltotal_hours">Total Tiempo</label>
+                            <input class="decorar" type="time" name="horas" id="ltotal_hours">
+                        </div>
                     </div>
                 </div>
                 <!-- Escoger moto/carro -->
-                <div class="tipoybotones">
-                    <div class="list">
-                        <legend>Tarifa</legend>
-                        <div>
-                            <label for="lmoto">Moto</label>
-                            <input type="radio" name="Tarifa" id="lmoto" value="Moto">
+                <div>
+                    <div class="tipoybotones">
+                        <div class="list">
+                            <legend>Tarifa</legend>
+                            <div>
+                                <label for="lmoto">Moto</label>
+                                <input type="radio" name="Tarifa" id="lmoto" value="Moto">
+                            </div>
+                            <div>
+                                <label for="lcarro">Carro</label>
+                                <input type="radio" name="Tarifa" id="lcarro" value="carro">
+                            </div>
                         </div>
-                        <div>
-                            <label for="lcarro">Carro</label>
-                            <input type="radio" name="Tarifa" id="lcarro" value="carro">
-                        </div>
-                    </div>
-                    <!-- Botones para guardar y reset -->
-                    
+                        <!-- Botones para guardar y reset -->
                         <div class="submit">
                             <input class="button" type="submit" value="Imprimir">
                         </div>
                         <div class="reset">
                             <input class="button" type="reset" value="Guardar">
                         </div>
-                    
+                    </div>
+                    <!-- Caja izquierda -->
+                    <div class="cajaizquierda">
+                        <label for="leftbox"></label>
+                        <input class="leftbox disable" type="text" name="izqcaja" id="leftbox" placeholder="TARIFA">
+                    </div>
                 </div>
-                <!-- Caja izquierda -->
-                <div class="cajaizquierda">
-                    <label for="leftbox"></label>
-                    <input class="leftbox" type="text" name="izqcaja" id="leftbox">
-                </div>
-
             </form>
             <!-- tabla -->
             <div class="tablacompleta ">
@@ -136,9 +168,11 @@
                     </tr>
                 </table>
             </div>
-        </div>  
+        </div>
     </main>
-    <footer>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

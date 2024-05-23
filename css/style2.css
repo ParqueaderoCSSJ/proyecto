@@ -1,8 +1,13 @@
 /*********** SEBASTIAN V **************/
 /************ GLOBALES ***************/
-
 main {
       display: flex;
+}
+html {
+      overflow: auto;
+}
+.inputenterhour input, .inputouthour input, .hours input  {
+      width: 100%;
 }
 
 /************ PAGINA FACTURAS ***************/
@@ -13,24 +18,29 @@ main {
 }
 .form_facturas, .form_mensualidad {
       display: flex;
-      flex-wrap: wrap;
       width: 95%;
-      height: 15rem;
       margin: 3rem auto;
       justify-content: space-between;
-      gap: 1rem;
+      gap: 2rem;
 
+}
+.form_facturas > div, .mensualidad > div{
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      width: 100%;
 }
 
 .cajaderecha, .cajaizquierda {
-      width: 35%;
+      display: flex;
+      width: 100%;
 }
 
-.inputmat, .leftbox {
+.form_facturas .inputmat, .form_facturas .leftbox {
       width: 100%;
-      height: 150px;
+      height: 100%;
       border-radius: 25px;
-      font-size: 90px;
+      font-size: 7rem;
       text-align: center;
       padding: 0 1rem;
       background-color: white;
@@ -39,54 +49,48 @@ main {
 .inputmat, .leftbox, .decorar{
       border: 1px solid black;
 }
-
-.datos {
-      width: 11.5rem;
-      height: 100%;
+.leftbox {
+      pointer-events: none;
 }
 
-.inputenterhour {
-      height: 55px;
-      width: 100%;
-      border-radius: 10px;
-}
-
-.inputouthour {
-      height: 55px;
-      width: 100%;
-      border-radius: 10px;
-}
-
-.hours {
-      height: 55px;
-      width: 100%;
-      border-radius: 10px;
-}
-
-.tipoybotones {
-      height: 100%;
+.datos, .tipoybotones {
+      max-width: 11rem;
+      min-width:11rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-} 
+      align-items: center;
+}
+
+.inputenterhour, .inputouthour, .hours {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+}
 
 .list {
       display: flex;
       flex-direction: column;
-      gap: 3px;
-} 
+}
+.list div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+}
+.list label:hover, .list input:hover{
+      cursor: pointer;
+}
 .list legend {
       font-size: 17px;
       font-weight: bold;
       text-align: left;
+      margin-bottom: 0;
 }
  
-.submit {
+.submit, .reset {
       text-align: center;
-}
-
-.reset {
-      text-align: center;
+      margin-top: 5px;
 } 
 
 .decorar {
@@ -104,6 +108,9 @@ main {
 .tablacompleta {
       width: 100%;
       padding-top: 1rem;
+      height: 36rem;
+      overflow-y: auto;
+      overflow-x: auto;
 }
 
 .tabla {
@@ -112,6 +119,7 @@ main {
       border-collapse: collapse;
       width: 95%;
       margin: 0 auto;
+      margin-bottom: 1rem;
 }
 
 th,
@@ -135,3 +143,27 @@ td {
       cursor: pointer;
 }
  /************ PAGINA MENSUALIDAD ***************/
+
+ @media (max-width: 960px) {
+      .navbar-toggler {
+         display: block;
+      }
+      .logo {
+         display: none;
+      }
+      .nav_lateral {
+         display: none;
+      }
+      .facturas, .mensualidad{
+            width: 100%;
+            margin: 0 auto;
+      }
+   }
+   @media (max-width: 768px) {
+      .form_facturas, .mensualidad {
+            flex-direction: column;
+      }
+      .form_facturas > div:nth-child(2), .mensualidad > div:nth-child(2){
+            flex-direction: row-reverse;
+      }
+   }

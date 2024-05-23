@@ -159,14 +159,4 @@
    width: 2rem;
    height: 2rem;
 }
-@media (max-width: 768px) {
-   .navbar-toggler {
-      display: block;
-   }
-   .logo {
-      display: none;
-   }
-   .nav_lateral {
-      display: none;
-   }
-}
+
