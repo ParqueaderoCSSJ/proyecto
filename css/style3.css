@@ -3,6 +3,9 @@
 main {
    display: flex;
 }
+html {
+   overflow-y: hidden;
+}
 /************ PAGINA RESERVAS ***************/
 
 .inputenterhour input, .inputouthour input, .hours input  {
@@ -10,7 +13,9 @@ main {
 }
 
 /************ PAGINA FACTURAS ***************/
-
+.nav_lateral {
+   height: var(--height-main);
+}
 .facturas, .mensualidad {
    width: var(--width-main);
    height: var(--height-main);
@@ -143,6 +148,84 @@ td {
 }
 /************ PAGINA MENSUALIDAD ***************/
 
+/* caja de registro */
+
+.formularios {
+   width: 100%;
+   padding: 3rem 5rem;
+}
+.caja-reg-principal {
+   height: var(--height-main);
+   overflow-y: auto;
+   width: 100%;
+   padding-bottom: 2rem;
+}
+
+.title {
+   text-align: center;
+   margin-top: 20px;
+}
+
+.caja-Reg {
+   background-color: var(--color-Bar-nav);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   width: 55rem;
+   border-radius: 20px;
+   color: white; 
+   gap: 2rem;   
+}
+
+.dos-section {
+   display: flex;
+   justify-content: center;
+   gap: 4rem;
+}
+
+.seccion1 > div, .seccion2 > div {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-top: 1rem;
+}
+
+#Hombre, #Mujer {
+   width: 10px;
+}
+
+.seccion1, .seccion2 {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+ .seccion2 select {
+   width: 100%;
+   height: 19px;  
+   border-radius: 0px;
+ }
+div .radio {
+   flex-direction: row;
+   justify-content: start;
+   gap: 2rem;
+}
+.radio div {
+   display: flex;
+   flex-direction: column;
+}
+.radio div div {
+   display: flex;
+   flex-direction: row;
+}
+
+div .botones {
+   display: flex;
+   flex-direction: row;
+   margin-top: 20px;
+   gap: 20px;
+}
+
 @media (max-width: 960px) {
    .navbar-toggler {
       display: block;
@@ -158,7 +241,15 @@ td {
          margin: 0 auto;
    }
 }
+@media (max-width: 800px) {
+   .dos-section {
+      gap: 5rem;
+      width: 100%;
+   }
+}
+
 @media (max-width: 768px) {
+   
    .form_facturas, .mensualidad {
          flex-direction: column;
    }
@@ -166,79 +257,13 @@ td {
          flex-direction: row-reverse;
    }
 }
-
-/* caja de registro */
-
-.caja-reg-principal {
-   margin: 0 auto;
-}
-
-.title {
-   text-align: center;
-   margin-top: 20px;
-
-}
-
-.caja-Reg {
-   background-color: var(--color-Bar-nav);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 0 auto;
-   width: 100%;
-   border-radius: 20px;
-   color: white;
-      
-}
-
-.dos-section {
-   display: flex;
-   justify-content: center;
-   padding: 60px 80px;
-   gap: 4rem;
-}
-
-.seccion1 > div, .seccion2 > div {
-   margin-top: 1rem;
-}
-
-.seccion1 input, .seccion2 input {
-  width: 100%;
-}
-
-#Hombre, #Mujer {
-   width: 10px;
-}
-
-.seccion1, .seccion2 {
-   width: 200px;
-}
- .seccion2 select {
-   width: 100%;
-   height: 19px;  
-   border-radius: 0px;
- }
-.radio {
-   display: flex;
-   gap: 20px;
-   height: 3.9rem;
-}
-
-
-
-div .botones {
-   display: flex;
-   margin-top: 20px;
-   gap: 20px;
-}
-
-@media (max-width: 800px) {
-   .dos-section {
-      flex-wrap: wrap;
-      gap: 0px;
-      padding: 30px 60px;
+@media (max-width: 576px) {
+   .caja-Reg {
+      width: 80%;
    }
-   .caja-Reg{
-      width: 70%;
+   .dos-section {
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
    }
 }
