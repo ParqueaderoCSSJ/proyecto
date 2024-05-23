@@ -1,6 +1,7 @@
 /*********** JOHAN **************/
 /************** GLOBALES *****************/
   /************ PAGINA LOGIN ***************/
+
 .body_login {
    background-image: url(../img/fondo.jpg);
    background-repeat: no-repeat;
@@ -18,8 +19,6 @@
    background: rgba(43, 147, 151, 0.897);
    border-radius: 10px;
 }
-
-
 
 .container {
    display: flex;
@@ -124,25 +123,27 @@ form .usuario{
    /****PAGINA DISPONIBILIDAD****/
 /*graficas(imagenes jajaja)*/
 
-/* .main {
-   display: grid;
-  } */
-  
-  .graficas {
+.main {
    display: flex;
-   flex-wrap: wrap; 
-   justify-content:center;
+}
+  .graficas {
+   display: flex; 
    width: var(--width-main);
    height: var(--height-main);
+   overflow-y: auto;
 }
 
 .columna {
-   flex: 1;
    display: flex;
    flex-direction: column;
-   align-items: center; 
-   margin: 15px;
+   align-items: center;
+   margin: 0 auto;
+   margin-top: 3rem;
+   margin-bottom: 2rem;
    max-width: calc(50% - 30px); 
+}
+.columna h2 {
+   margin-bottom: 1rem;
 }
 
 .graficasMoto,
@@ -154,9 +155,10 @@ form .usuario{
 
 .graficasMoto img,
 .graficasCarro img {
-   max-width: 70%; 
+   width: 27rem;; 
    height: auto;
    margin: 0 auto; 
+   border-radius: 1rem;
 }
 
 .contenedor-imagenes {
@@ -165,12 +167,21 @@ form .usuario{
    align-items: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media (max-width: 768px) {
     /* Cambios  para pantallas más grandes */
-    .columna {
-        max-width: calc(33.33% - 30px); /
+    .graficas {
+      width: 100%;
     }
 }
+
+@media (max-width: 600px) {
+ .graficas {
+   flex-direction: column;
+ }
+}
+
+
+
 
 
  /********PAGINA AYUDA OP***********/
