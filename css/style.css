@@ -1,6 +1,7 @@
 :root {
     --color-primary: rgb(43, 148, 151);
     --color-Bar-nav: rgb(78, 100, 119);
+    --color-Bar-nav-op: rgba(78, 100, 119, 0.85);
     --color-secundary: rgb(0, 119, 255, 0.089);
     --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     --height-main: calc(100vh - 50px);
@@ -21,6 +22,10 @@
  }
  img {
    width: 100%;
+ }
+
+ input:not(.button) {
+   height: 19px;
  }
 /************ GLOBALES ***************/
 .header {
