@@ -4,35 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LOGIN</title>
+  <title>Login</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style1.css">
 
 </head>
-<body class="body_login">
-<body class="login">
-  <main>
 
-  
-    <div class="formulario">
-      <h1>Inicio De Sesión</h1>
-      <div class="container">
-        <img src="img/logo.png" alt="logo">
+<body class="body-login">
+    <main class="login">
+      <div class="formulario">
+        <h1>Inicio De Sesión</h1>
+        <div class="container">
+          <img src="img/logo.png" alt="logo">
+        </div>
+        <form action="disponibilidad.html">
+          <div class="usuario">
+            <input type="text" name="usuario" id="usuario" required>
+            <label for="usuario">Usuario</label>
+          </div>
+          <div class="usuario">
+            <input type="password" name="contraseña" id="contraseña" required>
+            <label for="contraseña">Contraseña</label>
+          </div>
+          <a class="reestablecer" href="registro_cust.html" >Reestablecer contraseña</a>
+          <input class="btn_login" type="submit" value="Ingresar">
+        </form>
       </div>
-      <form action="disponibilidad.html">
-        <div class="usuario">
-          <input type="text" required>
-          <label>usuario</label>
-        </div>
-        <div class="usuario">
-          <input type="password" required>
-          <label>contraseña</label>
-        </div>
-        <a href="registro_cust.html" class="reestablecer">Reestablecer contraseña</a>
-        <input class="btn_login" type="submit" value="Ingresar"> 
-      </form>
-    </div>
-  </main>
+    </main>
   </body>
-  
-  </html>
+
+</html>
