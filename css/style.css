@@ -1,6 +1,7 @@
 :root {
     --color-primary: rgb(43, 148, 151);
     --color-Bar-nav: rgb(78, 100, 119);
+    --color-Bar-nav-op: rgba(78, 100, 119, 0.85);
     --color-secundary: rgb(0, 119, 255, 0.089);
     --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     --height-main: calc(100vh - 50px);
@@ -21,6 +22,10 @@
  }
  img {
    width: 100%;
+ }
+
+ input:not(.button) {
+   height: 19px;
  }
 /************ GLOBALES ***************/
 .header {
@@ -84,7 +89,7 @@
    width: 100%;
 }
 
-.nav_lateral a:hover, .active {
+.nav_lateral a:hover, .active, .nav-lat a:hover {
    background-color: rgb(118, 201, 215);
    border-radius: 12px;
    font-size: 1.65rem;
@@ -110,3 +115,48 @@
    right: 1px;
    box-shadow: 3px 3px 6px black;
 }
+/* BOOSTRAP */
+.navbar-toggler {
+   display: none;
+}
+.offcanvas-body {
+   width: 100%;
+   padding: 0;
+}
+.offcanvas.offcanvas-start {
+   width: 20rem;
+   background-color: var(--color-Bar-nav);
+
+   border: none;
+   justify-content: start;
+}
+.offcanvas.offcanvas-start  a {
+   display: flex;
+   margin: 5px 0;
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+   justify-content: center;
+   align-items: center;
+   height: 30px;
+   width: 100%;
+}
+
+.btn-close {
+   position: relative;
+   left: 17rem;
+   top: 2px;
+   filter: invert(99%) sepia(1%) saturate(2%) hue-rotate(151deg) brightness(108%) contrast(101%);
+}
+.navbar-toggler {
+   border: 2px solid black;
+   padding: 2px 5px;
+}
+.navbar-toggler:focus {
+   box-shadow: none;
+}
+.icon-menu {
+   width: 2rem;
+   height: 2rem;
+}
+

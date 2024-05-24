@@ -3,105 +3,127 @@
 main {
    display: flex;
 }
+html {
+   overflow-y: hidden;
+}
 /************ PAGINA RESERVAS ***************/
 
-.logotipo img {
-   width: 70px;
-   height: 70px;
-   padding-top: 25%;
+.inputenterhour input, .inputouthour input, .hours input  {
+   width: 100%;
 }
 
-.logo-app img {
-   width: 50%;
-   justify-content: center;
-   margin: 0 150%;
-}
-
+/************ PAGINA FACTURAS ***************/
 .nav_lateral {
-   height: 100vh;
+   height: var(--height-main);
 }
-
-.contenedor {
+.facturas, .mensualidad {
    width: var(--width-main);
    height: var(--height-main);
 }
-.info-contenedor {
+.form_facturas, .form_mensualidad {
    display: flex;
    width: 95%;
-   height: 15rem;
    margin: 3rem auto;
    justify-content: space-between;
-   gap: 1rem;
+   gap: 2rem;
+
 }
-.placa1, .placa2 {
-   width: 35%;
-}
-.placa1 input, .placa2 input {
+.form_facturas > div, .mensualidad > div{
+   display: flex;
+   justify-content: space-between;
+   gap: 2rem;
    width: 100%;
-   height: 150px;
+}
+
+.cajaderecha, .cajaizquierda {
+   display: flex;
+   width: 100%;
+}
+
+.form_facturas .inputmat, .form_facturas .leftbox {
+   width: 100%;
+   height: 100%;
    border-radius: 25px;
-   font-size: 90px;
+   font-size: 7rem;
    text-align: center;
    padding: 0 1rem;
    background-color: white;
    text-transform: uppercase;
+}
+.inputmat, .leftbox, .decorar{
    border: 1px solid black;
 }
+.leftbox {
+   pointer-events: none;
+}
 
-.form1 {
-   width: 11.5rem;
-   height: 100%;
+.datos, .tipoybotones {
+   max-width: 11rem;
+   min-width:11rem;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   align-items: center;
 }
 
-.form1 input {
-   width: 90%;
-   text-align: center;
-   border-radius: 5px;
-   border: 1px solid black;
-   padding: 2px;
-}
-.hours {
-   height: 55px;
+.inputenterhour, .inputouthour, .hours {
    width: 100%;
-   text-align: center;
+   display: flex;
+   flex-direction: column;
    border-radius: 10px;
 }
 
-.form2 {
-   height: 100%;
+.list {
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
-} 
-
-.form2 fieldset {
-   border: none;
+}
+.list div {
    display: flex;
-   flex-direction: column;
-   gap: 3px;
-} 
-.form2 legend {
+   align-items: center;
+   gap: 1rem;
+}
+.list label:hover, .list input:hover{
+   cursor: pointer;
+}
+.list legend {
    font-size: 17px;
    font-weight: bold;
    text-align: left;
-   margin-bottom: 3px;
-   
+   margin-bottom: 0;
 }
 
-.tablas {
+.submit, .reset {
+   text-align: center;
+   margin-top: 5px;
+} 
+
+.decorar {
+   color: black;
+   background-color: white;
+   border-radius: 5px;
+   width: 90%;
+   text-align: center;
+}
+.decoration1 {
+   padding: 2px;
+   margin-bottom: 3px;
+}
+
+.tablacompleta {
    width: 100%;
    padding-top: 1rem;
+   height: 36rem;
+   overflow-y: auto;
+   overflow-x: auto;
 }
 
-.tablas table {
+.tabla {
    background-color: white;
    text-align: center;
    border-collapse: collapse;
    width: 95%;
    margin: 0 auto;
+   margin-bottom: 1rem;
 }
 
 th,
@@ -124,17 +146,24 @@ td {
    right: 2px;
    cursor: pointer;
 }
+/************ PAGINA MENSUALIDAD ***************/
 
 /* caja de registro */
 
+.formularios {
+   width: 100%;
+   padding: 3rem 5rem;
+}
 .caja-reg-principal {
-   margin: 0 auto;
+   height: var(--height-main);
+   overflow-y: auto;
+   width: 100%;
+   padding-bottom: 2rem;
 }
 
 .title {
    text-align: center;
    margin-top: 20px;
-
 }
 
 .caja-Reg {
@@ -143,25 +172,23 @@ td {
    justify-content: center;
    align-items: center;
    margin: 0 auto;
-   width: 100%;
+   width: 55rem;
    border-radius: 20px;
-   color: white;
-      
+   color: white; 
+   gap: 2rem;   
 }
 
 .dos-section {
    display: flex;
    justify-content: center;
-   padding: 60px 80px;
    gap: 4rem;
 }
 
 .seccion1 > div, .seccion2 > div {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    margin-top: 1rem;
-}
-
-.seccion1 input, .seccion2 input {
-  width: 100%;
 }
 
 #Hombre, #Mujer {
@@ -169,34 +196,80 @@ td {
 }
 
 .seccion1, .seccion2 {
-   width: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
  .seccion2 select {
    width: 100%;
    height: 19px;  
    border-radius: 0px;
  }
-.radio {
-   display: flex;
-   gap: 20px;
-   height: 3.9rem;
+div .radio {
+   flex-direction: row;
+   justify-content: start;
+   gap: 2rem;
 }
-
-
+.radio div {
+   display: flex;
+   flex-direction: column;
+}
+.radio div div {
+   display: flex;
+   flex-direction: row;
+}
 
 div .botones {
    display: flex;
+   flex-direction: row;
    margin-top: 20px;
    gap: 20px;
 }
 
+@media (max-width: 960px) {
+   .navbar-toggler {
+      display: block;
+   }
+   .logo {
+      display: none;
+   }
+   .nav_lateral {
+      display: none;
+   }
+   .facturas, .mensualidad{
+         width: 100%;
+         margin: 0 auto;
+   }
+}
 @media (max-width: 800px) {
    .dos-section {
-      flex-wrap: wrap;
-      gap: 0px;
-      padding: 30px 60px;
+      gap: 5rem;
+      width: 100%;
    }
-   .caja-Reg{
-      width: 70%;
+}
+
+@media (max-width: 768px) {
+   
+   .form_facturas, .mensualidad {
+         flex-direction: column;
+   }
+   .form_facturas > div:nth-child(2), .mensualidad > div:nth-child(2){
+         flex-direction: row-reverse;
+   }
+}
+@media (max-width: 576px) {
+   
+   .caja-Reg {
+      width: 80%;
+   }
+   .dos-section {
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+   }
+}
+@media (max-width: 420px) {
+   .formularios {
+      padding: 3rem 3.5rem;
    }
 }
