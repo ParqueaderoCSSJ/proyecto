@@ -8,6 +8,11 @@ html {
 }
 .inputenterhour input, .inputouthour input, .hours input  {
       width: 100%;
+      font-size: 1.3rem;
+}
+
+#ltotal_hours {
+      pointer-events: none;
 }
 
 /************ PAGINA FACTURAS ***************/
@@ -34,6 +39,7 @@ html {
 .cajaderecha, .cajaizquierda {
       display: flex;
       width: 100%;
+      height: 15rem;
 }
 
 .form_facturas .inputmat, .form_facturas .leftbox {
@@ -53,13 +59,16 @@ html {
       pointer-events: none;
 }
 
-.datos, .tipoybotones {
+.datos, .datos-men, .datos-fac, .tipoybotones {
       max-width: 11rem;
       min-width:11rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+}
+.datos-men, .datos-fac {
+      justify-content: space-around;
 }
 
 .inputenterhour, .inputouthour, .hours {

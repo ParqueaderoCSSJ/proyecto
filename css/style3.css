@@ -258,6 +258,7 @@ div .botones {
    }
 }
 @media (max-width: 576px) {
+   
    .caja-Reg {
       width: 80%;
    }
@@ -265,5 +266,10 @@ div .botones {
       flex-direction: column;
       gap: 0;
       width: 100%;
+   }
+}
+@media (max-width: 420px) {
+   .formularios {
+      padding: 3rem 3.5rem;
    }
 }
