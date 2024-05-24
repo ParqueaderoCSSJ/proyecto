@@ -1,7 +1,9 @@
 /*********** JOHAN **************/
 /************** GLOBALES *****************/
 /************ PAGINA LOGIN ***************/
-
+html {
+   overflow: hidden;
+}
 .body-login {
    background-image: url(../img/fondo.jpg);
    background-repeat: no-repeat;
@@ -76,7 +78,7 @@
    cursor: pointer;
 }
 
-.btn_login {
+ form .btn_login {
    width: 100%;
    height: 50px;
    margin-bottom: 25px;
@@ -152,9 +154,11 @@
 /********PAGINA AYUDA OP***********/
 
 .container_ayuda {
-   width: 80%;
-   margin: 0 auto;
-   margin-top: 3rem;
+   width: 100%;
+   height: var(--height-main);
+   overflow-y: auto;
+   padding: 0 2rem;
+   padding-top: 3rem;
 }
 
 .header_navegacion,
@@ -191,7 +195,15 @@
 }
 
 @media (max-width: 768px) {
-
+   .navbar-toggler {
+      display: block;
+   }
+   .logo {
+      display: none;
+   }
+   .nav_lateral {
+      display: none;
+   }
    /* Cambios  para pantallas más grandes */
    .graficas {
       width: 100%;
@@ -203,7 +215,17 @@
       flex-direction: column;
    }
 }
-
+@media (max-width: 576px) {
+   .navbar-toggler {
+      display: block;
+   }
+   .logo {
+      display: none;
+   }
+   .nav_lateral {
+      display: none;
+   }
+}
 @media (max-width: 478px) {
    .login {
       width: 85%;
