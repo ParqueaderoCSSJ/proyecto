@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+
+<body>
+    <header class="header navbar">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="disponibilidad.html">
+                    <img src="img/logo.png" alt="Logo parqueadero">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                    <path
+                        d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                    </path>
+                </svg>
+            </button>
+            <div class="logo_cssj">
+                <a href="disponibilidad.html">
+                    <img src="img/logo_cssj.png" alt="Logo parqueadero">
+                </a>
+            </div>
+            <div class="logout">
+                <a href="index.html">
+                    <img src="img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
+                </a>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="nav-lat">
+                        <a href="disponibilidad.html">Disponibilidad</a>
+                        <a href="facturas.html">Facturas</a>
+                        <a href="mensualidad.html">Mensualidad</a>
+                        <a href="reservas.html">Reservas</a>
+                        <a href="reportes.html">Reportes</a>
+                        <a class="active" href="registro.html">Registro</a>
+                        <a href="ayuda.html">Ayuda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="nav_lateral">
+            <a href="disponibilidad.html">Disponibilidad</a>
+            <a href="facturas.html">Facturas</a>
+            <a href="mensualidad.html">Mensualidad</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="reportes.html">Reportes</a>
+            <a class="active" href="registro.html">Registro</a>
+            <a href="ayuda.html">Ayuda</a>
+        </div>
+        <div class="caja-reg-principal">
+            <h1 class="title">Registro De Usuarios</h1>
+            <div class="caja-Reg">
+                <form class="formularios">
+                    <div class="dos-section">
+                        <div class="seccion1">
+                            <div>
+                                <label for="Nombre">Nombre</label>
+                                <input type="text" name="Nombre" id="Nombre">
+                            </div>
+                            <div>
+                                <label for="Apellido">Apellido</label>
+                                <input type="text" name="Apellido" id="Apellido">
+                            </div>
+                            <div>
+                                <label for="Documento">No° Documento</label>
+                                <input type="number text" name="Documento" id="Documento">
+                            </div>
+                            <div class="radio">
+                                <label for="">Sexo</label>
+                                <div>
+                                    <div>
+                                        <input type="radio" name="Hombre" id="Hombre">
+                                        <label for="Hombre">Hombre</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="Mujer" id="Mujer">
+                                        <label for="Mujer">Mujer</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="Telefono">Telefono</label>
+                                <input type="tel" name="Telefono" id="Telefono">
+                            </div>
+                            <div>
+                                <label for="Correo">Correo Electronico</label>
+                                <input type="email" name="Correo" id="Correo">
+                            </div>
+                        </div>
+                        <div class="seccion2">
+                            <div>
+                                <label for="Roll">Roll</label>
+                                
+                                    <select name="Roll" id="Roll">
+                                        <option value=""></option>
+                                        <option value="valor1">Administrativa</option>
+                                        <option value="valor2">Operario</option>
+                                        <option value="valor2">Cliente</option>
+                                    </select>
+                            </div>
+                            <div>
+                                <label for="Cargo">Cargo</label>
+                                
+                                    <select name="Roll" id="Roll">
+                                        <option value=""></option>
+                                        <option value="valor1">Gerente</option>
+                                        <option value="valor2">Administrador</option>
+                                        <option value="valor2">Auxiliar</option>
+                                        <option value="valor2">Cajero</option>
+                                    </select>
+                                
+                            </div>
+                            <div>
+                                <label for="Usuario">Usuario</label>
+                                <input type="text" name="Usuario" id="Usuario">
+                            </div>
+                            <div>
+                                <label for="Contraseña">Contraseña</label>
+                                <input type="password" name="Contraseña" id="Contraseña">
+                            </div>
+                            <div>
+                                <label for="Confirmar">Confirmar Contraseña</label>
+                                <input type="password" name="Confirmar" id="Confirmar">
+                            </div>
+                            <div class="botones">
+                                <input class="button" type="submit" value="Eliminar">
+                                <input class="button" type="submit" value="Guardar">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
