@@ -42,7 +42,7 @@ html {
 .type-veh input,label {
    cursor: pointer;
 }
-.type > div {
+.type > aside {
    display:flex;
    align-items: center;
    gap: 1rem;
@@ -84,12 +84,12 @@ html {
    padding-top: 5px;
    padding-bottom: 4rem;
 }
-.bg-form-cust > div{
+.bg-form-cust > aside{
    display: flex;
    justify-content: space-between;
    margin-top: 2rem;
 }
-.bg-form-cust > div a{
+.bg-form-cust > aside a{
    position: relative;
    left: 4rem;
 }
@@ -106,21 +106,21 @@ html {
    gap: 2rem;
    margin: 0 4rem;
 }
-.col > div {
+.col > aside {
    display: flex;
    flex-direction: column;
 }
-.col > div {
+.col > aside {
    display: flex;
    flex-direction: column;
    margin-top: 1rem;
 }
-div .gender {
+aside .gender {
    flex-direction: row;
    gap: 2rem;
 }
 
-div .btn-cust{
+aside .btn-cust{
    flex-direction: row;
    justify-content: space-between;
 }
@@ -185,7 +185,7 @@ div .btn-cust{
       flex-direction: column;
       gap: 0;
    }
-   div .btn-cust{
+   aside .btn-cust{
       justify-content: space-around;
    }
    .form {
@@ -194,7 +194,7 @@ div .btn-cust{
    }
 }
 @media (max-width: 400px) {
-   div .btn-cust{
+   aside .btn-cust{
       justify-content: space-between;
    }
    .graphics img {
