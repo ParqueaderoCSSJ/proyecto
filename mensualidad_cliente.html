@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensualidad Cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+<header class="header navbar">
+    <aside class="container-fluid">
+        <aside class="logo">
+            <a href="disponibilidad.html">
+                <img src="img/logo.png" alt="Logo parqueadero">
+            </a>
+        </aside>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                </path>
+            </svg>
+        </button>
+        <aside class="logo_cssj">
+            <a href="disponibilidad.html">
+                <img src="img/logo_cssj.png" alt="Logo parqueadero">
+            </a>
+        </aside>
+        <aside class="logout">
+            <a href="index.html">
+                <img src="img/signout.png" alt="Cierre de sesion" title="Cerrar Sesion">
+            </a>
+        </aside>
+        <aside class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+            <aside class="offcanvas-body">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <aside class="nav-lat">
+                    <a href="#">Disponibilidad</a>
+                    <a class="active" href="mensualidad_cliente.html">Mensualidad</a>
+                    <a href="#">Reservas</a>
+                    <a href="#">Ayuda</a>
+                </aside>
+            </aside>
+        </aside>
+    </aside>
+</header>
+<main class="main">
+    <aside class="nav_lateral">
+        <a href="#">Disponibilidad</a>
+        <a class="active" href="mensualidad_cliente.html">Mensualidad</a>
+        <a href="#">Reservas</a>
+        <a href="#">Ayuda</a>
+    </aside>
+    <aside class="container-mensualidadCliente">
+        <aside class="inputs">
+        <form class="espacio1">
+
+            <aside class="columna1">
+                <aside class="form-group1">
+                <label for="placa">Placa</label>
+                <input type="text" id="placa" name="placa">
+                </aside>
+
+                <aside class="form-group1">
+                <label for="tipo-vehiculo">Tipo de Vehículo</label>
+                <select id="tipo-vehiculo" name="tipo-vehiculo">
+                    <option value="auto">Auto</option>
+                    <option value="moto">Moto</option>
+                </select>
+                 </aside>
+            </aside>
+
+            <aside class="columna2">
+                <aside class="form-group2">
+                <label for="hora-entrada">Hora de Entrada</label>
+                <input type="time" id="hora-entrada" name="hora-entrada">
+                </aside>
+
+                <aside class="form-group2">
+                <label for="hora-salida">Hora de Salida</label>
+                <input type="time" id="hora-salida" name="hora-salida">
+                </aside>
+            </aside>
+
+            <aside class="columna3">
+                <aside class="form-group3">
+                <label for="hora-total">Hora Total</label>
+                <input type="text" id="hora-total" name="hora-total">
+                </aside>
+
+                <aside class="form-group3">
+                <label for="fecha-reserva">Fecha de Reserva</label>
+                <input type="date" id="fecha-reserva" name="fecha-reserva">
+                </aside>
+            </aside>
+        
+            <aside class="columna4">
+                <aside class="botonesyTexto">
+                    <label for="notas"></label>
+                    <textarea id="notas" cols="50" name="notas" class="form-control"></textarea>
+                </aside>
+            </aside>    
+
+            <aside class="columna5">
+                <aside class="botonesyTexto">
+                <button class="button" type="button">Eliminar</button>
+                <button class="button" type="submit">Guardar</button>
+                </aside>
+            </aside>            
+        </form>
+    </aside>
+    
+    <section class="zona3">
+        <aside class="parking-lot">
+            <h2>PISO 1</h2>
+            <aside class="grid">
+                <aside class="parking-spot green">PIC01</aside>
+                <aside class="parking-spot green">PIC02</aside>
+                <aside class="parking-spot red">PIC03</aside>
+                <aside class="parking-spot green">PIC04</aside>
+                <aside class="parking-spot green">PIC05</aside>
+                <aside class="parking-spot red">PIC06</aside>
+                <aside class="parking-spot green">PIC07</aside>
+                <aside class="parking-spot red">PIC08</aside>
+                <aside class="parking-spot green">PIC09</aside>
+                <aside class="parking-spot red">PIC10</aside>
+                <aside class="parking-spot red">PIC11</aside>
+                <aside class="parking-spot green">PIC12</aside>
+                <aside class="parking-spot red">PIC13</aside>
+                <aside class="parking-spot green">PIC14</aside>
+                <aside class="parking-spot red">PIC15</aside>
+                <aside class="parking-spot red">PIC16</aside>
+                <aside class="parking-spot green">PIC17</aside>
+                <aside class="parking-spot red">PIC18</aside>
+                <aside class="parking-spot green">PIC19</aside>
+                <aside class="parking-spot green">PIC20</aside>
+                <aside class="parking-spot red">PIC21</aside>
+                <aside class="parking-spot green">PIC22</aside>
+                <aside class="parking-spot green">PIC23</aside>
+                <aside class="parking-spot red">PIC24</aside>
+                <aside class="parking-spot green">PIC25</aside>
+                <aside class="parking-spot green">PIC26</aside>
+                <aside class="parking-spot green">PIC27</aside>
+                <aside class="parking-spot green">PIC28</aside>
+                <aside class="parking-spot red">PIC29</aside>
+                <aside class="parking-spot green">PIC30</aside>
+                <aside class="parking-spot green">PIC31</aside>
+                <aside class="parking-spot green">PIC32</aside>
+            </aside>
+        </aside>
+    </section>
+</aside> 
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
