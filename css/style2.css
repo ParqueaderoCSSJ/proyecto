@@ -32,7 +32,7 @@ html {
       gap: 2rem;
 
 }
-.form_facturas > div, .mensualidad > div{
+.form_facturas > aside, .mensualidad > aside{
       display: flex;
       justify-content: space-between;
       gap: 2rem;
@@ -85,7 +85,7 @@ html {
       display: flex;
       flex-direction: column;
 }
-.list div {
+.list aside {
       display: flex;
       align-items: center;
       gap: 1rem;
@@ -175,7 +175,7 @@ td {
       .form_facturas, .mensualidad {
             flex-direction: column;
       }
-      .form_facturas > div:nth-child(2), .mensualidad > div:nth-child(2){
+      .form_facturas > aside:nth-child(2), .mensualidad > aside:nth-child(2){
             flex-direction: row-reverse;
       }
 }
