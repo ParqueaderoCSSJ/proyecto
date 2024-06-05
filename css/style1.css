@@ -354,3 +354,159 @@ textarea {
 .red {
    background-color: red;
 }
+
+
+
+/*PAGINA RESERVA_OP*/
+
+.nav_lateral {
+   height: var(--height-main);
+}
+
+
+.facturas {
+   width: var(--width-main);
+   height: var(--height-main);
+}
+
+.form_facturas {
+   display: flex;
+   width: 95%;
+   margin: 3rem auto;
+   justify-content: space-between;
+   gap: 2rem;
+}
+
+.form_facturas > aside {
+   display: flex;
+   justify-content: space-between;
+   gap: 2rem;
+   width: 100%;
+}
+
+.cajaderecha, .cajaizquierda {
+   display: flex;
+   width: 100%;
+}
+
+.form_facturas .inputmat, .form_facturas .leftbox {
+   width: 100%;
+   height: 100%;
+   border-radius: 25px;
+   font-size: 7rem;
+   text-align: center;
+   padding: 0 1rem;
+   background-color: white;
+   text-transform: uppercase;
+}
+
+.inputmat, .leftbox, .decorar {
+   border: 1px solid black;
+}
+
+.leftbox {
+   pointer-events: none;
+}
+
+.datos, .tipoybotones {
+   max-width: 11rem;
+   min-width: 11rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.inputenterhour, .inputouthour, .hours {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+}
+
+.list {
+   display: flex;
+   flex-direction: column;
+}
+
+.list aside {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+.list label:hover, .list input:hover {
+   cursor: pointer;
+}
+
+.list legend {
+   font-size: 17px;
+   font-weight: bold;
+   text-align: left;
+   margin-bottom: 0;
+}
+
+.submit, .reset {
+   text-align: center;
+   margin-top: 5px;
+}
+
+.decorar {
+   color: black;
+   background-color: white;
+   border-radius: 5px;
+   width: 90%;
+   text-align: center;
+}
+
+.decoration1 {
+   padding: 2px;
+   margin-bottom: 3px;
+}
+
+.tablacompleta {
+   width: 100%;
+   height: 36rem;
+   max-height: 300px;
+   overflow-y: auto;
+}
+
+.tabla {
+   background-color: white;
+   text-align: center;
+   border-collapse: collapse;
+   width: 95%;
+   margin: 0 auto;
+   margin-bottom: 1rem;
+}
+
+th,
+td {
+   border: 1px solid rgb(149, 137, 137);
+   padding: 0;
+   width: 208px;
+   height: 50px;
+}
+
+th {
+   border: #000000;
+   position: sticky;
+   top: 0;
+   background-color: #76C9D7;
+   z-index: 1;
+}
+
+.primerafila {
+   background-color: #76C9D7;
+}
+
+.delete {
+   width: 3rem;
+}
+
+.delete:hover {
+   position: relative;
+   bottom: 2px;
+   right: 2px;
+   cursor: pointer;
+}
