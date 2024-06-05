@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva cliente</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="disponibilidad.html">
+                <img src="img/logo.png" alt="Logo parqueadero">
+            </a>
+        </div>
+        <div class="logo_cssj">
+            <a href="disponibilidad.html">
+                <img src="img/logo_cssj.png" alt="Logo parqueadero">
+            </a>
+        </div>
+        <div class="logout">
+            <a href="index.html">
+                <img src="img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="nav_lateral">
+            <a href="#">Disponibilidad</a>
+            <a href="#">Facturas</a>
+            <a href="#">Mensualidad</a>
+            <a href="#">Reservas</a>
+            <a href="#">Ayuda</a>
+        </div>
+<section class="principal">
+        <div class="facturas">
+            <div class="form_facturas">
+                <div>
+                    <div class="cajaderecha">
+                        <label for="lmatricula"></label>
+                        <input class="inputmat" type="text" name="matricula" id="lmatricula" placeholder="PLACA">
+                    </div>
+                    <!-- Inputs horas -->
+                    <div class="datos-fac">
+                        <div class="inputenterhour">
+                            <label for="lhora_entrada">Dia entrada</label>
+                            <input class="decorar" class="decoration1" type="date" name="hora_entrada" id="lhora_entrada">
+                        </div>
+                        <div class="inputouthour">
+                            <label for="lhora_salida">Dia salida</label>
+                            <input class="decorar" type="date" name="hora_salida" id="lhora_salida">
+                        </div>
+                    </div>
+                </div>
+                <!-- Escoger moto/carro -->
+                <div>
+                    <div class="tipoybotones">
+                        <div class="list">
+                            <legend>Tarifa</legend>
+                            <div>
+                                <label for="lmoto">Moto</label>
+                                <input type="radio" name="Tarifa" id="lmoto" value="Moto">
+                            </div>
+                            <div>
+                                <label for="lcarro">Carro</label>
+                                <input type="radio" name="Tarifa" id="lcarro" value="carro">
+                            </div>
+                        </div>
+                        <!-- Botones para guardar y reset -->
+                        <div class="submit">
+                            <input class="button" type="submit" value="Imprimir">
+                        </div>
+                        <div class="reset">
+                            <input class="button" type="reset" value="Guardar">
+                        </div>
+                    </div>
+                    <!-- Caja izquierda -->
+                    <div class="cajaizquierda">
+                        <label for="leftbox"></label>
+                        <input class="leftbox disable" type="text" name="izqcaja" id="leftbox" placeholder="TARIFA">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <aside class="elegir">    
+            <h3>PISO 1</h3>
+            <br>
+                <div class="escoger">
+                    <div>P1</div>
+                    <div>P2</div>
+                    <div class="no_disponible">P3</div>
+                    <div>P4</div>
+                    <div class="no_disponible">P5</div>
+                    <div>P6</div>
+                    <div>P7</div>
+                    <div>P8</div>
+                    <div>P9</div>
+                    <div class="no_disponible">P10</div>
+                    <div>P11</div>
+                    <div>P12</div>
+                    <div>P13</div>
+                    <div>P14</div>
+                    <div class="no_disponible">P15</div>
+                    <div>P16</div>
+                    <div>P17</div>
+                    <div>P19</div>
+                    <div>P20</div>
+                    <div>P21</div>
+                    <div class="no_disponible">P22</div>
+                    <div>P23</div>
+                    <div>P24</div>
+                    <div class="no_disponible">P25</div>
+                    <div>P26</div>
+                    <div>P27</div>
+                    <div class="no_disponible">P28</div>
+                    <div>P29</div>
+                </div>
+            </aside>
+            </section>
+        </main>
+    <script>
+        // Obtener todos los elementos de la clase 'escoger'
+const elementosEscoger = document.querySelectorAll('.escoger div');
+
+// Agregar un event listener para cada elemento
+elementosEscoger.forEach(elemento => {
+    elemento.addEventListener('click', () => {
+    // Remover la clase 'selected' de todos los elementos
+    elementosEscoger.forEach(elem => elem.classList.remove('selected'));
+    // Agregar la clase 'selected' al elemento clickeado
+    elemento.classList.add('selected');
+    });
+});
+    </script>
+</body>
+</html>

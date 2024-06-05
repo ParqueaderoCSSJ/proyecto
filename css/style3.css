@@ -191,7 +191,7 @@ td {
    margin-top: 1rem;
 }
 
-#Hombre, #Mujer {
+#Hombre, #Mujer,{
    width: 10px;
 }
 
@@ -200,7 +200,8 @@ td {
    flex-direction: column;
    justify-content: space-between;
 }
- .seccion2 select {
+
+.seccion2 select {
    width: 100%;
    height: 19px;  
    border-radius: 0px;
