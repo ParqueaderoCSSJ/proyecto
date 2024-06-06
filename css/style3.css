@@ -109,43 +109,6 @@ html {
    margin-bottom: 3px;
 }
 
-.tablacompleta {
-   width: 100%;
-   padding-top: 1rem;
-   height: 36rem;
-   overflow-y: auto;
-   overflow-x: auto;
-}
-
-.tabla {
-   background-color: white;
-   text-align: center;
-   border-collapse: collapse;
-   width: 95%;
-   margin: 0 auto;
-   margin-bottom: 1rem;
-}
-
-th,
-td {
-   border: 1px solid black;
-   padding: 0;
-   width: 208px;
-   height: 50px;
-}
-
-.primerafila {
-   background-color: #76C9D7;
-}
-.delete{
-   width: 3rem;
-}
-.delete:hover {
-   position: relative;
-   bottom: 2px;
-   right: 2px;
-   cursor: pointer;
-}
 /************ PAGINA MENSUALIDAD ***************/
 
 /* caja de registro */
@@ -153,6 +116,10 @@ td {
 .formularios {
    width: 100%;
    padding: 3rem 5rem;
+}
+.formularios input:not(.button), .formularios select {
+   border-radius: 2px;
+   border: none;
 }
 .caja-reg-principal {
    height: var(--height-main);
@@ -191,10 +158,6 @@ td {
    margin-top: 1rem;
 }
 
-#Hombre, #Mujer,{
-   width: 10px;
-}
-
 .seccion1, .seccion2 {
    display: flex;
    flex-direction: column;
@@ -203,8 +166,11 @@ td {
 
 .seccion2 select {
    width: 100%;
-   height: 19px;  
-   border-radius: 0px;
+ }
+ .sexo > aside{
+   display: flex;
+   align-items: center;
+   gap: 5px;
  }
 aside .radio {
    flex-direction: row;
@@ -250,9 +216,9 @@ aside .botones {
 }
 
 @media (max-width: 768px) {
-   
    .form_facturas, .mensualidad {
          flex-direction: column;
+         height: 34rem;
    }
    .form_facturas > aside:nth-child(2), .mensualidad > aside:nth-child(2){
          flex-direction: row-reverse;
@@ -300,7 +266,6 @@ aside .botones {
 .pag_reservas h2,
 .pag_reportes h2,
 .pag_registro h2 {
-   font-size: 24px;
    font-weight: bold;
    color: #1a1a1a;
 }

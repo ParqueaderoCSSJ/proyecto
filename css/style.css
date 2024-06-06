@@ -20,20 +20,21 @@
     font-family: var(--font) ;
     background-color: var(--color-secundary);
  }
+ h1, h2, h3, p {
+   font-family: var(--font);
+ }
  img {
    width: 100%;
  }
 
  input:not(.button) {
-   height: 19px;
+   height: 29px;
  }
 /************ GLOBALES ***************/
 .header {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   gap: 2rem;
-   padding: 5px 10px;
    background-color: var(--color-primary);
    width: 100%;
    height: 5rem;
@@ -71,19 +72,19 @@
    align-items: center;
    background-color: var(--color-Bar-nav);
    color: white;
-   width: 15rem;
+   min-width: 15rem;
    padding-top: 1rem;
-   margin-top: 1px;
-   border-radius: 0px 20px 0px 0px;
 }
-
+.offcanvas.offcanvas-start .nav-lat a, .nav_lateral a{
+   padding-left: 2rem;
+   justify-content: flex-start;
+}
 .nav_lateral a {
    display: flex;
    margin: 5px 0;
    text-decoration: none;
    color: white;
    font-weight: bold;
-   justify-content: center;
    align-items: center;
    height: 30px;
    width: 100%;
@@ -91,7 +92,6 @@
 
 .nav_lateral a:hover, .active, .nav-lat a:hover {
    background-color: rgb(118, 201, 215);
-   border-radius: 12px;
    font-size: 1.65rem;
 }
 
@@ -160,3 +160,68 @@
    height: 2rem;
 }
 
+/* TABLAS */
+.hora_entrada, .hora_salida, .dia_entrada, .dia_salida {
+   padding-top: 3px;
+   font-size: 1.3rem;
+}
+.form_facturas, .form_mensualidad{
+   height: 16rem;
+}
+.moto, .carro {
+   height: 22px;
+}
+.tablacompleta {
+   width: 95%;
+   height: 36rem;
+   overflow-y: auto;
+   overflow-x: auto;
+   margin: 0 auto;
+}
+
+.tabla {
+   background-color: white;
+   text-align: center;
+   border-collapse: collapse;
+   max-width: 115.5rem;
+   width: 100%;
+   min-width: 70rem;
+   position: relative;
+}
+.tabla thead {
+   background-color: #76C9D7;
+   margin: 0 auto;
+   position: sticky;
+   top: 0px;
+   z-index: 10;
+   min-width: 70rem;
+   border: none;
+} 
+.tabla th {
+   top: 0;
+   height: 50px;
+}
+
+td {
+   padding: 0;
+   height: 50px;
+   text-align: center;
+}
+
+.delete{
+   width: 3rem;
+}
+.delete:hover {
+   position: relative;
+   bottom: 1px;
+   right: 1px;
+   cursor: pointer;
+}
+
+/* AYUDA */
+.cont_ayuda ul {
+   margin-left: 2rem;
+}
+.header_navegacion aside, .pag_disponibilidad aside, .pag_facturas aside, .pag_mensualidad aside, .pag_reservas aside, .pag_registro aside, .pag_reportes aside  {
+   margin-left: 1rem;
+}

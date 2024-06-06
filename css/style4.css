@@ -9,18 +9,27 @@ html {
 /************ PAGINA REPORTES ***************/
 
 .reports {
-   display: grid;
-   grid-template-columns: 70% 20%;
-   grid-template-rows: 10% 70%;
-   justify-content:  center;
+   display: flex;
+   flex-direction: column;
    align-content: center;
    width: var(--width-main);
    height: var(--height-main);
+   overflow-y: auto;
 }
 .reports h2 {
    display: flex;
    align-items: center;
    justify-content: center;
+   font-weight: bold;
+   margin-top: 2rem;
+}
+.reports > aside {
+   display: flex;
+   flex-direction: row;
+   gap: 2rem;
+   width: 90%;
+   margin: 0 auto;
+   margin-top: 2rem;
 }
 .graphics {
    grid-column: 1;
@@ -31,7 +40,10 @@ html {
 }
 .graphics img {
    margin: 0 auto;
-   width: 40rem;
+   width: 50rem;
+}
+.graphics + aside {
+  margin: 0 auto;
 }
 .type-veh {
    margin-top: 1rem;
@@ -48,9 +60,6 @@ html {
    gap: 1rem;
 }
 .btn_reports {
-   grid-column: 2;
-   grid-row: 2;
-   margin-top: 4.2rem;
 }
 .buttons h4  {
    margin-bottom: 1rem;
@@ -128,6 +137,26 @@ aside .btn-cust{
 .btn-cust input {
    margin-top: 1.6rem;
 }
+@media (max-width: 830px){
+   .reports > aside{
+      flex-direction: column-reverse;
+   }
+   .type-veh {
+      text-align: center;
+   }
+   .type {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
+   }
+   .buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+   }
+}
 @media (max-width: 768px) {
     .nav_lateral {
       display: none;
@@ -151,30 +180,17 @@ aside .btn-cust{
 }
 @media (max-width: 576px) {
    .reports {
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
       overflow-y: auto;
       align-content: start;
    }
    .reports h2 {
-      grid-column: 1;
-      grid-row: 1;
       margin: 2rem 0;
-   }
-   .btn_reports {
-      grid-column: 1;
-      grid-row: 2;
-      flex-direction: row;
-      align-items: start;
-      margin: 0 auto;
-      gap: 10rem;
-      margin-bottom: 1rem;
    }
    .graphics {
       grid-row: 3;
    }
    .graphics img {
-      width: 35rem;
+      width: 100%;
    }
    .bg-form-cust {
       width: 80%;
@@ -199,5 +215,9 @@ aside .btn-cust{
    }
    .graphics img {
       width: 30rem;
+   }
+   .buttons {
+      display: grid;
+      grid-template-columns: 50% 50%;
    }
 }

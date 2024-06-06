@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style1.css">
+</head>
+
+<body>
+    <header class="header navbar">
+        <aside class="container-fluid">
+            <aside class="logo">
+                <a href="../disponibilidad.html">
+                    <img src="../img/logo.png" alt="Logo parqueadero">
+                </a>
+            </aside>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                    <path
+                        d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                    </path>
+                </svg>
+            </button>
+            <aside class="logo_cssj">
+                <a href="../disponibilidad.html">
+                    <img src="../img/logo_parqueadero.png" alt="Logo parqueadero">
+                </a>
+            </aside>
+            <aside class="logout">
+                <a href="../index.html">
+                    <img src="../img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
+                </a>
+            </aside>
+            <aside class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <aside class="offcanvas-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <aside class="nav-lat">
+                        <a href="../operario/disponibilidad.html">Disponibilidad</a>
+                        <a href="../operario/facturas.html">Facturas</a>
+                        <a href="../operario/mensualidad.html">Mensualidad</a>
+                        <a href="../operario/reservas.html">Reservas</a>
+                        <a class="active" href="#">Ayuda</a>
+                    </aside>
+                </aside>
+            </aside>
+        </aside>
+    </header>
+    <main class="main">
+        <aside class="nav_lateral">
+            <a href="../operario/disponibilidad.html">Disponibilidad</a>
+            <a href="../operario/facturas.html">Facturas</a>
+            <a href="../operario/mensualidad.html">Mensualidad</a>
+            <a href="../operario/reservas.html">Reservas</a>
+            <a class="active" href="#">Ayuda</a>
+        </aside>
+        <aside class="container_ayuda">
+            <aside class="cont_ayuda">
+                <aside class="header_navegacion">
+                    <h2>Encabezado y Barra de Navegación</h2>
+                    <aside>
+                        <p>El encabezado de la página incluye:</p>
+                        <ul>
+                            <li><strong>Logos:</strong> Dos logos que redirigen a la página de disponibilidad.</li>
+                            <li><strong>Botón de Menú:</strong> Un botón para mostrar y ocultar el menú de navegación
+                                lateral.</li>
+                            <li><strong>Logo de Cierre de Sesión:</strong> Un logo que redirige a la página de inicio de
+                                sesión.</li>
+                        </ul>
+                        <p>La barra de navegación lateral, visible al hacer clic en el botón de menú, permite acceder a
+                            las siguientes secciones:</p>
+                        <ul>
+                            <li>Disponibilidad</li>
+                            <li>Facturas (sección activa)</li>
+                            <li>Mensualidad</li>
+                            <li>Reservas</li>
+                            <li>Reportes</li>
+                            <li>Registro</li>
+                            <li>Ayuda</li>
+                        </ul>
+                    </aside>
+                </aside>
+                <aside class="pag_disponibilidad">
+                    <h2>Sección de Disponibilidad</h2>
+                    <aside>
+                        <p>Esta sección permite al personal del parqueadero ver el estado de las celdas
+                            disponibles y ocupadas tanto para motos como para carros. Se presentan gráficas que
+                            ayudan a visualizar la disponibilidad de manera clara y rápida.</p>
+
+                        <h3>Motos</h3>
+                        <p>Para las motos, se muestran las siguientes gráficas:</p>
+                        <ul>
+                            <li><strong>Celdas Generales:</strong> Muestra el estado general de todas las celdas
+                                disponibles para motos.</li>
+                            <li><strong>Celdas de Reservas:</strong> Muestra el estado de las celdas reservadas
+                                para motos.</li>
+                            <li><strong>Celdas de Mensualidad:</strong> Muestra el estado de las celdas ocupadas
+                                por clientes con mensualidad para motos.</li>
+                        </ul>
+
+                        <h3>Carros</h3>
+                        <p>Para los carros, se muestran las siguientes gráficas:</p>
+                        <ul>
+                            <li><strong>Celdas Generales:</strong> Muestra el estado general de todas las celdas
+                                disponibles para carros.</li>
+                            <li><strong>Celdas de Reservas:</strong> Muestra el estado de las celdas reservadas
+                                para carros.</li>
+                            <li><strong>Celdas de Mensualidad:</strong> Muestra el estado de las celdas ocupadas
+                                por clientes con mensualidad para carros.</li>
+                        </ul>
+                        <p>Este sistema de disponibilidad está diseñado para facilitar la gestión del
+                            parqueadero, permitiendo al personal ver rápidamente el estado de las celdas y
+                            optimizar el uso del espacio disponible tanto para motos como para carros.</p>
+                    </aside>
+                </aside>
+                <aside class="pag_facturas">
+                    <h2>Sección de Facturas</h2>
+                    <aside>
+                        <p>Esta sección permite al personal del parqueadero gestionar y registrar las facturas
+                            de
+                            los clientes. Aquí están las funcionalidades principales:</p>
+                        <h3>Formulario de Ingreso de Datos</h3>
+                        <ul>
+                            <li><strong>Placa:</strong> Un campo para ingresar la placa del vehículo.</li>
+                            <li><strong>Hora de Entrada y Salida:</strong> Campos para registrar la hora de
+                                entrada
+                                y salida del vehículo.</li>
+                            <li><strong>Tipo de Vehículo:</strong> Opciones para seleccionar si es una moto o un
+                                carro.</li>
+                            <li><strong>Botones de Acción:</strong></li>
+                            <ul>
+                                <li><strong>Imprimir:</strong> Para imprimir los datos ingresados.</li>
+                                <li><strong>Guardar:</strong> Para guardar la información ingresada.</li>
+                            </ul>
+                        </ul>
+                        <h3>Tabla de Registros</h3>
+                        <p>Incluye las siguientes columnas para cada registro:</p>
+                        <ul>
+                            <li>Placa</li>
+                            <li>Tarifa (Moto o Carro)</li>
+                            <li>Hora de Entrada</li>
+                            <li>Hora de Salida</li>
+                            <li>Total de Tiempo</li>
+                            <li>Recibo (enlace para ver detalles)</li>
+                            <li>Eliminar (botón para eliminar el registro)</li>
+                        </ul>
+                        <p>Esta tabla muestra todos los registros de facturación ingresados, permitiendo al
+                            personal
+                            revisar y gestionar las facturas de manera eficiente.</p>
+                    </aside>
+                </aside>
+                <aside class="pag_mensualidad">
+                    <h2>Sección de Mensualidad</h2>
+                    <aside>
+                        <p>Esta sección permite gestionar los registros de mensualidad de los clientes,
+                            ingresando y visualizando los datos necesarios para el control de las tarifas y
+                            tiempos de uso de los espacios del parqueadero.</p>
+
+                        <h3>Formulario de Ingreso de Datos</h3>
+                        <p>El formulario incluye los siguientes campos:</p>
+                        <ul>
+                            <li><strong>Placa:</strong> Un campo de texto para ingresar la placa del vehículo.
+                            </li>
+                            <li><strong>Día de Entrada y Salida:</strong> Dos campos de fecha para registrar el día de
+                                entrada y salida del vehículo.</li>
+                            <li><strong>Tarifa:</strong> Opciones para seleccionar si el vehículo es una moto o
+                                un carro.</li>
+                        </ul>
+                        <p>El formulario también incluye botones para:</p>
+                        <ul>
+                            <li><strong>Imprimir:</strong> Para generar un recibo impreso.</li>
+                            <li><strong>Guardar:</strong> Para guardar los datos ingresados.</li>
+                        </ul>
+
+                        <h3>Tabla de Registros</h3>
+                        <p>La tabla muestra los registros de los vehículos con mensualidad, incluyendo la
+                            siguiente información:</p>
+                        <ul>
+                            <li><strong>Placa:</strong> La placa del vehículo.</li>
+                            <li><strong>Tarifa:</strong> Si el vehículo es una moto o un carro.</li>
+                            <li><strong>Hora de Entrada y Salida:</strong> Las horas de entrada y salida del vehículo.
+                            </li>
+                            <li><strong>Total Tiempo:</strong> El tiempo total que el vehículo ha permanecido en el
+                                parqueadero.</li>
+                            <li><strong>Recibo:</strong> Un enlace para ver el recibo del vehículo.</li>
+                            <li><strong>Eliminar:</strong> Una opción para eliminar el registro del vehículo.
+                            </li>
+                        </ul>
+                        <p>El sistema de mensualidad está diseñado para facilitar la gestión de los clientes con
+                            mensualidad, permitiendo registrar y visualizar fácilmente los datos relevantes,optimizando
+                            así la operarioistración del parqueadero.</p>
+                    </aside>
+                </aside>
+                <aside class="pag_reservas">
+
+                    <aside>
+                        <h2>Sección de Reservas</h2>
+                        <aside>
+                            <p>Esta sección permite gestionar las reservas de espacios en el parqueadero, ingresando y
+                                visualizando los datos necesarios para organizar las reservas de los clientes.</p>
+
+                            <h3>Formulario de Ingreso de Datos</h3>
+                            <p>El formulario incluye los siguientes campos:</p>
+                            <ul>
+                                <li><strong>Placa:</strong> Un campo de texto para ingresar la placa del vehículo.</li>
+                                <li><strong>Día de Reserva:</strong> Un campo de fecha para registrar el día de reserva
+                                    del espacio.</li>
+                                <li><strong>Hora de Entrada y Salida:</strong> Dos campos de hora para registrar la hora
+                                    de entrada y salida del vehículo.</li>
+                                <li><strong>Tarifa:</strong> Opciones para seleccionar si el vehículo es una moto o un
+                                    carro.</li>
+                            </ul>
+                            <p>El formulario también incluye botones para:</p>
+                            <ul>
+                                <li><strong>Imprimir:</strong> Para generar un recibo impreso.</li>
+                                <li><strong>Guardar:</strong> Para guardar los datos ingresados.</li>
+                            </ul>
+
+                            <h3>Tabla de Reservas</h3>
+                            <p>La tabla muestra las reservas de espacios en el parqueadero, incluyendo la siguiente
+                                información:</p>
+                            <ul>
+                                <li><strong>Placa:</strong> La placa del vehículo reservado.</li>
+                                <li><strong>Tarifa:</strong> Si el vehículo reservado es una moto o un carro.</li>
+                                <li><strong>Hora de Entrada y Salida:</strong> Las horas de entrada y salida del
+                                    vehículo reservado.</li>
+                                <li><strong>Total Tiempo:</strong> El tiempo total de la reserva.</li>
+                                <li><strong>Recibo:</strong> Un enlace para ver el recibo de la reserva.</li>
+                                <li><strong>Eliminar:</strong> Una opción para eliminar la reserva.</li>
+                            </ul>
+                            <p>El sistema de reservas está diseñado para facilitar la gestión de las reservas de
+                                espacios en el parqueadero, permitiendo registrar y visualizar fácilmente los datos
+                                relevantes, optimizando así la organización de los espacios disponibles.</p>
+                        </aside>
+                    </aside>
+                </aside>
+                <aside class="pag_reportes">
+                    <h2>Sección de Reportes</h2>
+                    <aside>
+                        <p>Esta sección permite generar reportes de ingresos del parqueadero, ofreciendo opciones para
+                            filtrar los datos según diferentes criterios.</p>
+
+                        <h3>Gráfico de Ingresos</h3>
+                        <p>El gráfico muestra los ingresos del parqueadero en un período de tiempo determinado.</p>
+
+                        <h3>Filtros de Reporte</h3>
+                        <p>Los filtros permiten seleccionar el tipo de vehículo y el período de tiempo del reporte:</p>
+                        <ul>
+                            <li><strong>Tipo de Vehículo:</strong> Opciones para seleccionar si el reporte es para
+                                carros o motos.</li>
+                            <li><strong>Período de Tiempo:</strong> Botones para seleccionar el período del reporte
+                                (diario, semanal, mensual o anual).</li>
+                        </ul>
+                        <p>La página de reportes proporciona una forma fácil y visual de analizar los ingresos del
+                            parqueadero, permitiendo a los operarioistradores tomar decisiones informadas basadas en los
+                            datos recopilados.</p>
+                    </aside>
+                </aside>
+                <aside class="pag_registro">
+                    <aside>
+                        <h2>Sección de Registro de Usuarios</h2>
+                        <aside>
+                            <p>Esta sección permite registrar nuevos usuarios en el sistema del parqueadero.</p>
+
+                            <h3>Formulario de Registro</h3>
+                            <p>El formulario recopila la siguiente información del usuario:</p>
+                            <ul>
+                                <li><strong>Nombre y Apellidos</strong></li>
+                                <li><strong>Tipo de Documento y Número de Documento</strong></li>
+                                <li><strong>Sexo</strong></li>
+                                <li><strong>Teléfono</strong></li>
+                                <li><strong>Correo Electrónico</strong></li>
+                                <li><strong>Rol y Cargo</strong></li>
+                                <li><strong>Usuario y Contraseña</strong></li>
+                            </ul>
+                            <p>El formulario también incluye botones para eliminar o guardar el registro.</p>
+                            <p>La página de registro proporciona una interfaz para agregar nuevos usuarios al sistema
+                                del parqueadero, permitiendo operarioistrar sus roles y permisos de acceso.</p>
+                        </aside>
+                    </aside>
+                </aside>
+            </aside>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -110,6 +110,7 @@ html {
 
 .graficas {
    display: flex;
+   flex-direction: column;
    width: var(--width-main);
    height: var(--height-main);
    overflow-y: auto;
@@ -127,19 +128,19 @@ html {
 
 .columna h2 {
    margin-bottom: 1rem;
+   font-weight: bold;
 }
 
 .graficasMoto,
 .graficasCarro {
-   display: grid;
-   grid-template-rows: repeat(3, auto);
+   display: flex;
+   flex-direction: row;
    grid-gap: 10px;
 }
 
 .graficasMoto img,
 .graficasCarro img {
-   width: 27rem;
-   ;
+   width: 28rem;
    height: auto;
    margin: 0 auto;
    border-radius: 1rem;
@@ -159,6 +160,11 @@ html {
    overflow-y: auto;
    padding: 0 2rem;
    padding-top: 3rem;
+}
+.cont_ayuda{
+   width: 80%;
+   margin: 0 auto;
+   margin-top: 2rem;
 }
 
 .header_navegacion,
@@ -194,6 +200,16 @@ html {
    color: #333;
 }
 
+@media (max-width: 1040px){
+   .graficas {
+      flex-direction: row;
+   }
+   .graficasMoto,
+   .graficasCarro {
+   display: flex;
+   flex-direction: column;
+   }
+}
 @media (max-width: 768px) {
    .navbar-toggler {
       display: block;
@@ -207,6 +223,10 @@ html {
    /* Cambios  para pantallas más grandes */
    .graficas {
       width: 100%;
+   }
+   .cont_ayuda{
+      width: 90%;
+      margin-top: 0;
    }
 }
 
@@ -235,31 +255,14 @@ html {
     }
 }
 
-
-
 /* PAGINA DE MENSUALIDAD CLIENTE*/
-
-
-
 
 .container-mensualidadCliente {
    width: var(--width-main);
    height: var(--height-main);
-   padding: 20px;
    display: flex;
    flex-direction: column;
    gap: 20px;
-}
-
-
-
-.container-mensualidadCliente label {
-   font-weight: bold;
-}
-
-.container-mensualidadCliente input,
-.container-mensualidadCliente select {
-   width: 100%;
 }
 
 .espacio1 {
@@ -309,8 +312,8 @@ textarea {
    background-color: rgba(78, 100, 119, 0.85);
    color: white;
    text-align: center;
-   padding: 20px;
-   margin: auto;
+   padding: 2rem;
+   margin: 0 auto;
    border-radius: 10px;
    width: 100%;
 }
@@ -327,13 +330,17 @@ textarea {
 
 .zona3{
    padding-top: 40px;
+   width: 95%;
+   margin: 0 auto;
 }
 
 .grid {
-   display: grid;
-   grid-template-columns: repeat(8, 1fr);
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 auto;
    gap: 15px;
-   justify-items: center;
+   justify-content: baseline;
+   margin-left: 3rem;
 }
 
 .parking-spot {
@@ -365,8 +372,9 @@ textarea {
 
 
 .facturas {
-   width: var(--width-main);
    height: var(--height-main);
+   overflow-y: auto;
+   padding-bottom: 2rem;
 }
 
 .form_facturas {
@@ -509,4 +517,13 @@ th {
    bottom: 2px;
    right: 2px;
    cursor: pointer;
+}
+.form_facturas input:not(.button){
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 13px;
+}
+@media (max-width: 768px){
+ .container-mensualidadCliente {
+   width: 100%;
+ }
 }

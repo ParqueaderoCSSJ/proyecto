@@ -36,13 +36,13 @@ html {
       display: flex;
       justify-content: space-between;
       gap: 2rem;
-      width: 100%;
+      width: 95%;
 }
 
 .cajaderecha, .cajaizquierda {
       display: flex;
       width: 100%;
-      height: 15rem;
+      height: 16rem;
 }
 
 .form_facturas .inputmat, .form_facturas .leftbox {
@@ -117,68 +117,7 @@ html {
       margin-bottom: 3px;
 }
 
-.tablacompleta {
-      width: 100%;
-      padding-top: 1rem;
-      height: 36rem;
-      overflow-y: auto;
-      overflow-x: auto;
-}
-
-.tabla {
-      background-color: white;
-      text-align: center;
-      border-collapse: collapse;
-      width: 95%;
-      margin: 0 auto;
-      margin-bottom: 1rem;
-}
-
-th,
-td {
-      border: 1px solid black;
-      padding: 0;
-      width: 208px;
-      height: 50px;
-}
-
-.primerafila {
-      background-color: #76C9D7;
-}
-.delete{
-      width: 3rem;
-}
-.delete:hover {
-      position: relative;
-      bottom: 2px;
-      right: 2px;
-      cursor: pointer;
-}
  /************ PAGINA MENSUALIDAD ***************/
-
-@media (max-width: 960px) {
-      .navbar-toggler {
-            display: block;
-      }
-      .logo {
-            display: none;
-      }
-      .nav_lateral {
-            display: none;
-      }
-      .facturas, .mensualidad{
-            width: 100%;
-            margin: 0 auto;
-      }
-}
-@media (max-width: 768px) {
-      .form_facturas, .mensualidad {
-            flex-direction: column;
-      }
-      .form_facturas > aside:nth-child(2), .mensualidad > aside:nth-child(2){
-            flex-direction: row-reverse;
-      }
-}
 
 /* RESERVA CLIENTE */
 
@@ -212,7 +151,7 @@ td {
       justify-content: center;
 }
 
-.escoger div{
+.escoger aside{
       background-color: rgb(100, 237, 255);
       width: 150px;
       border-radius: 10px;
@@ -224,11 +163,11 @@ td {
       cursor: pointer;
 }
 
-div .no_disponible{
+aside .no_disponible{
       cursor: none;
       background-color: rgb(252, 95, 95);
 }
-.escoger div.selected {
+.escoger aside.selected {
       background-color: rgb(83, 255, 106); /* Color seleccionado */
       }
 
@@ -268,7 +207,6 @@ div .no_disponible{
 .graficasMoto img,
 .graficasCarro img {
       width: 27rem;
-      ;
       height: auto;
       margin: 0 auto;
       border-radius: 1rem;
@@ -317,7 +255,7 @@ div .no_disponible{
       gap: 4rem;
 }
 
-.seccion1 > div, .seccion2 > div {
+.seccion1 > aside, .seccion2 > aside {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -338,21 +276,21 @@ div .no_disponible{
       height: 19px;  
       border-radius: 0px;
 }
-div .radio {
+aside .radio {
       flex-direction: row;
       justify-content: start;
       gap: 2rem;
 }
-.radio div {
+.radio aside {
       display: flex;
       flex-direction: column;
 }
-.radio div div {
+.radio aside aside {
       display: flex;
       flex-direction: row;
 }
 
-div .botones {
+aside .botones {
       display: flex;
       flex-direction: row;
       margin-top: 20px;
@@ -401,4 +339,33 @@ color: #1a1a1a;
 .pag_registro p {
 font-size: 14px;
 color: black;
+}
+
+@media (max-width: 960px) {
+      .navbar-toggler {
+            display: block;
+      }
+      .logo {
+            display: none;
+      }
+      .nav_lateral {
+            display: none;
+      }
+      .facturas, .mensualidad{
+            width: 100%;
+            margin: 0 auto;
+      }
+      .tabla{
+            /* margin: 0 1rem; */
+            margin-bottom: 2rem;
+      }
+}
+@media (max-width: 768px) {
+      .form_facturas, .mensualidad {
+            flex-direction: column;
+            height: 34rem;
+      }
+      .form_facturas > aside:nth-child(2), .mensualidad > aside:nth-child(2){
+            flex-direction: row-reverse;
+      }
 }
