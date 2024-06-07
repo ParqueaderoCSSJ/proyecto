@@ -1,172 +1,194 @@
 /**** JOHAN *****/
 /***** GLOBALES ******/
 /**** PAGINA LOGIN *****/
+/* Estilos generales para el documento HTML */
 html {
-   overflow: hidden;
+   overflow: hidden; /* Oculta el desbordamiento de contenido fuera del área visible */
 }
+
+/* Estilos para el cuerpo de la página de inicio de sesión */
 .body-login {
-   background-image: url(../img/fondo.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   background-image: url(../img/fondo.jpg); /* Imagen de fondo */
+   background-repeat: no-repeat; /* No repetir la imagen de fondo */
+   background-size: cover; /* Cubrir el área completa del contenedor */
+   background-position: center; /* Posicionar la imagen de fondo en el centro */
+   height: 100vh; /* Altura igual al 100% de la altura del viewport */
+   display: flex; /* Mostrar como un contenedor flexible */
+   align-items: center; /* Alinear elementos verticalmente */
+   justify-content: center; /* Alinear elementos horizontalmente */
 }
 
+/* Estilos para el formulario de inicio de sesión */
 .formulario {
-   width: 400px;
-   background: rgba(43, 147, 151, 0.7);
-   border-radius: 10px;
+   width: 400px; /* Ancho del formulario */
+   background: rgba(43, 147, 151, 0.7); /* Color de fondo con transparencia */
+   border-radius: 10px; /* Radio de borde */
 }
 
+/* Estilos para el contenedor de imagen */
 .container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 200px;
-   margin: 0 auto;
+   display: flex; /* Mostrar como un contenedor flexible */
+   justify-content: center; /* Alinear elementos horizontalmente */
+   align-items: center; /* Alinear elementos verticalmente */
+   width: 200px; /* Ancho del contenedor */
+   margin: 0 auto; /* Margen automático a los lados */
 }
 
+/* Estilos para la imagen dentro del contenedor */
 .container img {
-   max-width: 100%;
-   max-height: 100%;
+   max-width: 100%; /* Ancho máximo de la imagen */
+   max-height: 100%; /* Altura máxima de la imagen */
 }
 
+/* Estilos para el encabezado del formulario */
 .formulario h1 {
-   text-align: center;
-   padding: 5px;
-   border-bottom: 1px solid rgb(41, 38, 38);
-   color: white;
+   text-align: center; /* Alinear el texto al centro */
+   padding: 5px; /* Relleno */
+   border-bottom: 1px solid rgb(41, 38, 38); /* Borde inferior */
+   color: white; /* Color del texto */
 }
 
+/* Estilos para el formulario dentro del contenedor */
 .formulario form {
-   padding: 0 40px;
+   padding: 0 40px; /* Relleno horizontal */
 }
 
+/* Estilos para el campo de usuario */
 .usuario {
-   border-bottom: 2px solid rgb(0, 0, 0);
-   margin-bottom: 2rem;
-   display: flex;
-   flex-direction: column-reverse;
+   border-bottom: 2px solid rgb(0, 0, 0); /* Borde inferior */
+   margin-bottom: 2rem; /* Margen inferior */
+   display: flex; /* Mostrar como contenedor flexible */
+   flex-direction: column-reverse; /* Dirección de la columna invertida */
 }
 
+/* Estilos para la entrada de texto del usuario */
 .usuario input {
-   width: 100%;
-   height: 25px;
-   border: none;
-   background: none;
-   outline: none;
+   width: 100%; /* Ancho completo */
+   height: 25px; /* Altura */
+   border: none; /* Sin borde */
+   background: none; /* Fondo transparente */
+   outline: none; /* Sin contorno al enfocar */
 }
 
+/* Estilos para la etiqueta del campo de usuario */
 .usuario label {
-   color: rgb(255, 255, 255);
-   cursor: pointer;
+   color: rgb(255, 255, 255); /* Color del texto */
+   cursor: pointer; /* Cambiar el cursor a puntero */
 }
 
-.usuario input:focus~label {
-   position: relative;
-   bottom: 1px;
-   color: #3c3241;
-   font-size: 16.5px;
+/* Estilos para la etiqueta del campo de usuario cuando está enfocado */
+.usuario input:focus ~ label {
+   position: relative; /* Posición relativa */
+   bottom: 1px; /* Desplazamiento hacia abajo */
+   color: #3c3241; /* Cambio de color del texto */
+   font-size: 16.5px; /* Cambio de tamaño de fuente */
 }
 
+/* Estilos para el enlace de restablecimiento */
 .reestablecer {
-   display: block;
-   margin: 3rem 0;
-   cursor: pointer;
+   display: block; /* Mostrar como bloque */
+   margin: 3rem 0; /* Margen superior e inferior */
+   cursor: pointer; /* Cambiar el cursor a puntero */
 }
 
- form .btn_login {
-   width: 100%;
-   height: 50px;
-   margin-bottom: 25px;
-   border: 1px solid;
-   background: #7cc2c7b9;
-   border-radius: 25px;
-   font-size: 18px;
-   color: rgb(255, 255, 255);
-   cursor: pointer;
-   outline: none;
-   transition: background 0.3s, border-color 0.3s, color 0.3s;
-   border-color: #7cc2c7b9;
+/* Estilos para el botón de inicio de sesión */
+form .btn_login {
+   width: 100%; /* Ancho completo */
+   height: 50px; /* Altura */
+   margin-bottom: 25px; /* Margen inferior */
+   border: 1px solid; /* Borde de 1 píxel */
+   background: #7cc2c7b9; /* Color de fondo */
+   border-radius: 25px; /* Radio de borde */
+   font-size: 18px; /* Tamaño de fuente */
+   color: rgb(255, 255, 255); /* Color del texto */
+   cursor: pointer; /* Cambiar el cursor a puntero */
+   outline: none; /* Sin contorno al enfocar */
+   transition: background 0.3s, border-color 0.3s, color 0.3s; /* Transiciones suaves */
+   border-color: #7cc2c7b9; /* Color del borde */
 }
 
+/* Estilos para el botón de inicio de sesión cuando se pasa el cursor sobre él */
 .btn_login:hover {
-   background: #064adf;
-   border-color: #064adf;
-   color: #fff;
+   background: #064adf; /* Cambio de color de fondo */
+   border-color: #064adf; /* Cambio de color del borde */
+   color: #fff; /* Cambio de color del texto */
 }
-
-
 
 /*PAGINA DISPONIBILIDAD*/
 /*graficas(imagenes jajaja)*/
 
+/* Estilos para el contenedor principal */
 .main {
-   display: flex;
+   display: flex; /* Mostrar como contenedor flexible */
 }
 
+/* Estilos para el contenedor de gráficas */
 .graficas {
-   display: flex;
-   flex-direction: column;
-   width: var(--width-main);
-   height: var(--height-main);
-   overflow-y: auto;
+   display: flex; /* Mostrar como contenedor flexible */
+   flex-direction: column; /* Dirección de la columna */
+   width: var(--width-main); /* Ancho definido por variable */
+   height: var(--height-main); /* Altura definida por variable */
+   overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
 }
 
+/* Estilos para las columnas de gráficas */
 .columna {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 0 auto;
-   margin-top: 3rem;
-   margin-bottom: 2rem;
-   max-width: calc(50% - 30px);
+   display: flex; /* Mostrar como contenedor flexible */
+   flex-direction: column; /* Dirección de la columna */
+   align-items: center; /* Alinear elementos al centro */
+   margin: 0 auto; /* Margen automático horizontal */
+   margin-top: 3rem; /* Margen superior */
+   margin-bottom: 2rem; /* Margen inferior */
+   max-width: calc(50% - 30px); /* Ancho máximo */
 }
 
+/* Estilos para el título de las columnas */
 .columna h2 {
-   margin-bottom: 1rem;
-   font-weight: bold;
+   margin-bottom: 1rem; /* Margen inferior */
+   font-weight: bold; /* Estilo de fuente en negrita */
 }
 
+/* Estilos para las gráficas de moto y carro */
 .graficasMoto,
 .graficasCarro {
-   display: flex;
-   flex-direction: row;
-   grid-gap: 10px;
+   display: flex; /* Mostrar como contenedor flexible */
+   flex-direction: row; /* Dirección de la fila */
+   grid-gap: 10px; /* Espacio entre elementos */
 }
 
+/* Estilos para las imágenes de las gráficas de moto y carro */
 .graficasMoto img,
 .graficasCarro img {
-   width: 28rem;
-   height: auto;
-   margin: 0 auto;
-   border-radius: 1rem;
+   width: 28rem; /* Ancho de la imagen */
+   height: auto; /* Altura automática para mantener la proporción */
+   margin: 0 auto; /* Margen automático horizontal */
+   border-radius: 1rem; /* Radio de borde */
 }
 
+/* Estilos para el contenedor de imágenes */
 .contenedor-imagenes {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+   display: flex; /* Mostrar como contenedor flexible */
+   flex-direction: column; /* Dirección de la columna */
+   align-items: center; /* Alinear elementos al centro horizontalmente */
 }
 
-/***PAGINA AYUDA OP****/
-
+/* Estilos para la página de ayuda */
 .container_ayuda {
-   width: 100%;
-   height: var(--height-main);
-   overflow-y: auto;
-   padding: 0 2rem;
-   padding-top: 3rem;
-}
-.cont_ayuda{
-   width: 80%;
-   margin: 0 auto;
-   margin-top: 2rem;
+   width: 100%; /* Ancho completo */
+   height: var(--height-main); /* Altura definida por variable */
+   overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
+   padding: 0 2rem; /* Relleno horizontal */
+   padding-top: 3rem; /* Relleno superior */
 }
 
+/* Estilos para el contenedor de ayuda */
+.cont_ayuda {
+   width: 80%; /* Ancho del contenedor */
+   margin-left: 5rem; /* Margen izquierdo */
+   margin-top: 2rem; /* Margen superior */
+}
+
+/* Estilos para las secciones de la navegación y páginas */
 .header_navegacion,
 .pag_disponibilidad,
 .pag_facturas,
@@ -174,9 +196,10 @@ html {
 .pag_reservas,
 .pag_reportes,
 .pag_registro {
-   margin-bottom: 30px;
+   margin-bottom: 30px; /* Margen inferior para separar las secciones */
 }
 
+/* Estilos para los títulos de las secciones */
 .header_navegacion h2,
 .pag_disponibilidad h2,
 .pag_facturas h2,
@@ -184,11 +207,12 @@ html {
 .pag_reservas h2,
 .pag_reportes h2,
 .pag_registro h2 {
-   font-size: 24px;
-   font-weight: bold;
-   color: #1a1a1a;
+   font-size: 24px; /* Tamaño de fuente */
+   font-weight: bold; /* Peso de la fuente */
+   color: #1a1a1a; /* Color del texto */
 }
 
+/* Estilos para los párrafos de las secciones */
 .header_navegacion p,
 .pag_disponibilidad p,
 .pag_facturas p,
@@ -196,334 +220,429 @@ html {
 .pag_reservas p,
 .pag_reportes p,
 .pag_registro p {
-   font-size: 16px;
-   color: #333;
+   font-size: 16px; /* Tamaño de fuente */
+   color: #333; /* Color del texto */
 }
 
+/* Estilos para dispositivos con un ancho máximo de 1040px */
 @media (max-width: 1040px){
+   /* Cambio de dirección de la disposición de las gráficas */
    .graficas {
-      flex-direction: row;
+      flex-direction: row; /* Cambio a disposición en fila */
    }
+   /* Estilos para las gráficas de moto y carro */
    .graficasMoto,
    .graficasCarro {
-   display: flex;
-   flex-direction: column;
+      display: flex; /* Mostrar como contenedor flexible */
+      flex-direction: column; /* Dirección de la columna */
    }
 }
+
+/* Estilos para dispositivos con un ancho máximo de 960px */
+@media (max-width: 960px){
+   /* Ajuste del ancho del contenedor en la página de mensualidad para clientes */
+   .main .container-mensualidadCliente {
+      width: 100%;
+   }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 768px */
 @media (max-width: 768px) {
+   /* Mostrar el botón para desplegar el menú en la barra de navegación */
    .navbar-toggler {
       display: block;
    }
+   /* Ocultar el logo en la barra de navegación */
    .logo {
       display: none;
    }
+   /* Ocultar la barra lateral de navegación */
    .nav_lateral {
       display: none;
    }
-   /* Cambios  para pantallas más grandes */
+   /* Cambios en la disposición de las gráficas para pantallas más grandes */
    .graficas {
-      width: 100%;
+      width: 100%; /* Ancho completo */
    }
+   /* Ajustes en el contenedor de ayuda */
    .cont_ayuda{
-      width: 90%;
-      margin-top: 0;
+      width: 90%; /* Ancho del 90% */
+      margin-top: 0; /* Sin margen superior */
+      margin-left: 0; /* Sin margen izquierdo */
+      margin: 0 auto; /* Margen automático en los lados */
    }
 }
 
+/* Estilos para dispositivos con un ancho máximo de 600px */
 @media (max-width: 600px) {
+   /* Cambio en la disposición de las gráficas a columna */
    .graficas {
-      flex-direction: column;
+      flex-direction: column; /* Cambio a disposición en columna */
    }
 }
+
+/* Estilos para dispositivos con un ancho máximo de 576px */
 @media (max-width: 576px) {
+   /* Mostrar el botón para desplegar el menú en la barra de navegación */
    .navbar-toggler {
       display: block;
    }
+   /* Ocultar el logo en la barra de navegación */
    .logo {
       display: none;
    }
+   /* Ocultar la barra lateral de navegación */
    .nav_lateral {
       display: none;
    }
 }
+
+/* Estilos para dispositivos con un ancho máximo de 478px */
 @media (max-width: 478px) {
+   /* Ajuste del ancho del contenedor de inicio de sesión */
    .login {
-      width: 85%;
+      width: 85%; /* Ancho del 85% */
    } 
+   /* Ajuste del ancho del formulario */
    .formulario {
-      width: 100%;
-    }
+      width: 100%; /* Ancho completo */
+   }
 }
 
-/* PAGINA DE MENSUALIDAD CLIENTE*/
-
+/* Estilos para la página de mensualidad del cliente */
 .container-mensualidadCliente {
-   width: var(--width-main);
-   height: var(--height-main);
+   width: var(--width-main); /* Ancho definido por la variable CSS */
+   height: var(--height-main); /* Altura definida por la variable CSS */
    display: flex;
    flex-direction: column;
-   gap: 20px;
+   gap: 20px; /* Espacio entre elementos */
 }
 
 .espacio1 {
    display: grid;
-   grid-template-columns: repeat(5, 1fr);
-   grid-gap: 20px;
-   padding-top: 20px;
+   grid-template-columns: repeat(5, 1fr); /* Cuadrícula con 5 columnas de tamaño igual */
+   grid-gap: 20px; /* Espacio entre elementos de la cuadrícula */
+   padding-top: 20px; /* Relleno superior */
 }
 
 textarea {
-   resize: none;
-   height: 100px;
-   width: 1000px;
+   resize: none; /* Evitar que el textarea se redimensione */
+   height: 100px; /* Altura fija */
+   width: 1000px; /* Ancho fijo */
 }
 
 .botonesyTexto {
    display: flex;
    flex-direction: column;
-   align-items: flex-end;
-   gap: 30px;
-   grid-column: 3 / span 1;
-}
-.columna4{
-   padding-left: 25%;
-   align-items: center;
-}
-.columna5{
-   padding-top: 30px;
+   align-items: flex-end; /* Alinear elementos al final del eje transversal */
+   gap: 30px; /* Espacio entre elementos */
+   grid-column: 3 / span 1; /* Columnas dentro de la cuadrícula */
 }
 
+/* Estilos para la cuarta columna */
+.columna4 {
+   padding-left: 25%; /* Relleno a la izquierda */
+   align-items: center; /* Alinear elementos al centro */
+}
+
+/* Ajustes de la columna 5 */
+.columna5{
+   padding-top: 30px; /* Espacio superior aumentado */
+}
+
+/* Ajustes de las columnas 1, 2 y 3 */
 .columna1,
 .columna2,
 .columna3{
-   padding-top: 10px;
+   padding-top: 10px; /* Espacio superior incrementado */
 }
+
+/* Ajuste de margen para las columnas 1 a 5 */
 .columna1,  
 .columna2,
 .columna3,
 .columna4,
 .columna5{
-   margin: 0 auto;
+   margin: 0 auto; /* Margen horizontal central */
 }
 
-
-
+/* Estilos para el lote de estacionamiento */
 .parking-lot{
-   background-color: rgba(78, 100, 119, 0.85);
-   color: white;
-   text-align: center;
-   padding: 2rem;
-   margin: 0 auto;
-   border-radius: 10px;
-   width: 100%;
+   background-color: rgba(78, 100, 119, 0.85); /* Color de fondo con transparencia */
+   color: white; /* Color del texto */
+   text-align: center; /* Alineación del texto */
+   padding: 2rem; /* Relleno interno */
+   margin: 0 auto; /* Margen horizontal central */
+   border-radius: 10px; /* Borde redondeado */
+   width: 100%; /* Ancho completo */
 }
+
+/* Estilos para el espacio de estacionamiento */
 .parking-space {
-   margin-top: auto;
-   padding: 0 auto;
+   margin-top: auto; /* Margen superior automático */
+   padding: 0 auto; /* Relleno horizontal automático */
 }
 
+/* Estilos para el título del lote de estacionamiento */
 .parking-lot h2 {
-   text-align: center;
-   font-size: 30px;
-   padding-bottom: 20px;
+   text-align: center; /* Alineación del texto */
+   font-size: 30px; /* Tamaño de fuente */
+   padding-bottom: 20px; /* Espacio inferior */
 }
 
+/* Ajustes de la zona 3 */
 .zona3{
-   padding-top: 40px;
-   width: 95%;
-   margin: 0 auto;
+   padding-top: 2rem; /* Espacio superior aumentado */
+   width: 95%; /* Ancho del 95% */
+   margin: 0 auto; /* Margen horizontal central */
 }
 
+/* Estilos para el contenedor de la cuadrícula */
 .grid {
-   display: flex;
-   flex-wrap: wrap;
-   margin: 0 auto;
-   gap: 15px;
-   justify-content: baseline;
-   margin-left: 3rem;
+   display: flex; /* Mostrar como flexbox */
+   flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+   margin: 0 auto; /* Margen horizontal central */
+   gap: 1rem; /* Espacio entre elementos */
 }
 
+/* Estilos para las etiquetas dentro de la cuadrícula */
+.grid label {
+   margin: 0 auto; /* Margen horizontal central */
+}
+
+/* Estilos para los lugares de estacionamiento */
 .parking-spot {
-   width: 90px;
-   height: 90px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 6px;
-   color: white;
-   font-weight: bold;
+   width: 90px; /* Ancho */
+   height: 90px; /* Alto */
+   display: flex; /* Mostrar como flexbox */
+   align-items: center; /* Alinear elementos verticalmente */
+   justify-content: center; /* Alinear elementos horizontalmente */
+   border-radius: 6px; /* Borde redondeado */
+   color: white; /* Color del texto */
+   font-weight: bold; /* Grosor de la fuente */
 }
 
+/* Estilos para los checkbox (ocultar) */
+input[type="checkbox"]{
+   display: none; /* Ocultar */
+}
+
+/* Estilos para el estado 'verde' del lugar de estacionamiento */
 .green {
-   background-color: green;
+   background-color: rgb(72, 181, 196); /* Color de fondo verde */
+   cursor: pointer; /* Cursor al pasar por encima */
 }
 
+/* Estilos para el estado 'verde' cuando se pasa el mouse por encima */
+.green:hover {
+   background-color: rgb(253, 215, 1); /* Cambio de color de fondo */
+   color: black; /* Cambio de color del texto */
+}
+
+/* Estilos para el estado 'checked' del checkbox (mostrar) */
+input[type="checkbox"]:checked + span {
+   background-color:  rgb(253, 215, 1); /* Color de fondo */
+   width: 100%; /* Ancho completo */
+   height: 100%; /* Alto completo */
+   display: flex; /* Mostrar como flexbox */
+   align-items: center; /* Alinear elementos verticalmente */
+   justify-content: center; /* Alinear elementos horizontalmente */
+   border-radius: 6px; /* Borde redondeado */
+   color: black; /* Color del texto */
+}
+
+/* Estilos para un elemento con fondo rojo */
 .red {
-   background-color: red;
+   background-color: rgb(170, 4, 4); /* Color de fondo rojo */
+   pointer-events: none; /* Deshabilitar eventos de puntero */
 }
 
-
-
-/*PAGINA RESERVA_OP*/
-
+/* Estilos para la barra lateral de navegación */
 .nav_lateral {
-   height: var(--height-main);
+   height: var(--height-main); /* Altura igual a la altura principal */
 }
 
-
+/* Estilos para la sección de facturas */
 .facturas {
-   height: var(--height-main);
-   overflow-y: auto;
-   padding-bottom: 2rem;
+   height: var(--height-main); /* Altura igual a la altura principal */
+   overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
+   padding-bottom: 2rem; /* Espacio inferior */
 }
 
+/* Estilos para el formulario de facturas */
 .form_facturas {
-   display: flex;
-   width: 95%;
-   margin: 3rem auto;
-   justify-content: space-between;
-   gap: 2rem;
+   display: flex; /* Mostrar como flexbox */
+   width: 95%; /* Ancho del 95% */
+   margin: 3rem auto; /* Margen superior e inferior de 3rem, y margen horizontal automático */
+   justify-content: space-between; /* Distribuir el espacio entre los elementos */
+   gap: 2rem; /* Espacio entre los elementos */
 }
 
+/* Estilos para los elementos secundarios del formulario de facturas */
 .form_facturas > aside {
-   display: flex;
-   justify-content: space-between;
-   gap: 2rem;
-   width: 100%;
+   display: flex; /* Mostrar como flexbox */
+   justify-content: space-between; /* Distribuir el espacio entre los elementos */
+   gap: 2rem; /* Espacio entre los elementos */
+   width: 100%; /* Ancho del 100% */
 }
 
+/* Estilos para las cajas derecha e izquierda del formulario */
 .cajaderecha, .cajaizquierda {
-   display: flex;
-   width: 100%;
+   display: flex; /* Mostrar como flexbox */
+   width: 100%; /* Ancho del 100% */
 }
 
-.form_facturas .inputmat, .form_facturas .leftbox {
-   width: 100%;
-   height: 100%;
-   border-radius: 25px;
-   font-size: 7rem;
-   text-align: center;
-   padding: 0 1rem;
-   background-color: white;
-   text-transform: uppercase;
+/* Estilos para los campos de matrícula y caja izquierda */
+.form_facturas #lmatricula, .form_facturas #leftbox {
+   width: 100%; /* Ancho del 100% */
+   height: 100%; /* Altura del 100% */
+   border-radius: 25px; /* Borde redondeado */
+   font-size: 6rem; /* Tamaño de fuente grande */
+   text-align: center; /* Texto centrado */
+   padding: 0 1rem; /* Relleno horizontal */
+   background-color: white; /* Fondo blanco */
+   text-transform: uppercase; /* Convertir texto a mayúsculas */
 }
 
+/* Estilos para los campos de entrada de matrícula, caja izquierda y decorar */
 .inputmat, .leftbox, .decorar {
-   border: 1px solid black;
+   border: 1px solid black; /* Borde sólido negro */
 }
 
+/* Estilos para la caja izquierda */
 .leftbox {
-   pointer-events: none;
+   pointer-events: none; /* Deshabilitar eventos de puntero */
 }
 
+/* Estilos para los contenedores de datos y tipo y botones */
 .datos, .tipoybotones {
-   max-width: 11rem;
-   min-width: 11rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
+   max-width: 11rem; /* Ancho máximo de 11rem */
+   min-width: 11rem; /* Ancho mínimo de 11rem */
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Dirección de columna */
+   justify-content: space-between; /* Distribuir el espacio entre los elementos */
+   align-items: center; /* Alinear los elementos al centro */
 }
 
+/* Estilos para los campos de entrada de hora de entrada, salida y horas */
 .inputenterhour, .inputouthour, .hours {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   border-radius: 10px;
+   width: 100%; /* Ancho del 100% */
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Dirección de columna */
+   border-radius: 10px; /* Borde redondeado */
 }
 
+/* Estilos para la lista de opciones */
 .list {
-   display: flex;
-   flex-direction: column;
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Dirección de columna */
 }
 
+/* Estilos para los elementos dentro de la lista */
 .list aside {
-   display: flex;
-   align-items: center;
-   gap: 1rem;
+   display: flex; /* Mostrar como flexbox */
+   align-items: center; /* Alinear elementos al centro verticalmente */
+   gap: 1rem; /* Espacio entre elementos */
 }
 
+/* Estilos para los elementos de la lista al pasar el mouse */
 .list label:hover, .list input:hover {
-   cursor: pointer;
+   cursor: pointer; /* Cambiar el cursor al pasar el mouse */
 }
 
+/* Estilos para la leyenda de la lista */
 .list legend {
-   font-size: 17px;
-   font-weight: bold;
-   text-align: left;
-   margin-bottom: 0;
+   font-size: 17px; /* Tamaño de fuente */
+   font-weight: bold; /* Peso de fuente en negrita */
+   text-align: left; /* Alinear texto a la izquierda */
+   margin-bottom: 0; /* Eliminar margen inferior */
 }
 
+/* Estilos para los botones de enviar y restablecer */
 .submit, .reset {
-   text-align: center;
-   margin-top: 5px;
+   text-align: center; /* Alinear texto al centro */
+   margin-top: 5px; /* Margen superior */
 }
 
+/* Estilos decorativos */
 .decorar {
-   color: black;
-   background-color: white;
-   border-radius: 5px;
-   width: 90%;
-   text-align: center;
+   color: black; /* Color de texto negro */
+   background-color: white; /* Fondo blanco */
+   border-radius: 5px; /* Borde redondeado */
+   width: 90%; /* Ancho del 90% */
+   text-align: center; /* Alinear texto al centro */
 }
 
+/* Estilos para la decoración */
 .decoration1 {
-   padding: 2px;
-   margin-bottom: 3px;
+   padding: 2px; /* Relleno */
+   margin-bottom: 3px; /* Margen inferior */
 }
 
+/* Estilos para la tabla completa */
 .tablacompleta {
-   width: 100%;
-   height: 36rem;
-   max-height: 300px;
-   overflow-y: auto;
+   width: 100%; /* Ancho del 100% */
+   height: 36rem; /* Altura de 36rem */
+   max-height: 300px; /* Altura máxima de 300px */
+   overflow-y: auto; /* Habilitar desplazamiento vertical */
 }
 
+/* Estilos para la tabla */
 .tabla {
-   background-color: white;
-   text-align: center;
-   border-collapse: collapse;
-   width: 95%;
-   margin: 0 auto;
-   margin-bottom: 1rem;
+   background-color: white; /* Fondo blanco */
+   text-align: center; /* Alinear texto al centro */
+   border-collapse: collapse; /* Colapsar bordes de la tabla */
+   width: 95%; /* Ancho del 95% */
+   margin: 0 auto; /* Margen automático horizontalmente */
+   margin-bottom: 1rem; /* Margen inferior */
 }
 
+/* Estilos para las celdas de encabezado y datos */
 th,
 td {
-   border: 1px solid rgb(149, 137, 137);
-   padding: 0;
-   width: 208px;
-   height: 50px;
+   border: 1px solid rgb(149, 137, 137); /* Borde de 1px sólido */
+   padding: 0; /* Sin relleno */
+   width: 208px; /* Ancho de la celda */
+   height: 50px; /* Altura de la celda */
 }
 
+/* Estilos para las celdas de encabezado */
 th {
-   border: #000000;
-   position: sticky;
-   top: 0;
-   background-color: #76C9D7;
-   z-index: 1;
+   border: #000000; /* Borde negro */
+   position: sticky; /* Fijar la posición */
+   top: 0; /* Fijar en la parte superior */
+   background-color: #76C9D7; /* Color de fondo azul */
+   z-index: 1; /* Índice z para superposición */
 }
 
+/* Estilos para la primera fila */
 .primerafila {
-   background-color: #76C9D7;
+   background-color: #76C9D7; /* Color de fondo azul */
 }
 
+/* Estilos para el botón de eliminar */
 .delete {
-   width: 3rem;
+   width: 3rem; /* Ancho de 3rem */
 }
 
+/* Estilos al pasar el mouse sobre el botón de eliminar */
 .delete:hover {
-   position: relative;
-   bottom: 2px;
-   right: 2px;
-   cursor: pointer;
+   position: relative; /* Posición relativa */
+   bottom: 2px; /* Mover hacia abajo 2px */
+   right: 2px; /* Mover hacia la derecha 2px */
+   cursor: pointer; /* Cambiar cursor a puntero */
 }
+
+/* Estilos para los inputs en el formulario de facturas */
 .form_facturas input:not(.button){
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-size: 13px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Familia de fuentes */
+   font-size: 13px; /* Tamaño de fuente */
 }
+
+/* Estilos para el contenedor de la página de mensualidad cliente en pantallas pequeñas */
 @media (max-width: 768px){
  .container-mensualidadCliente {
-   width: 100%;
+   width: 100%; /* Ancho del 100% */
  }
 }
+

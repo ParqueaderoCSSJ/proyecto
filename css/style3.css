@@ -1,254 +1,332 @@
 /*********** CAMILO **************/
 /************ GLOBALES **************/
+/* Configuración para el contenedor principal */
 main {
-   display: flex;
+   display: flex; /* Mostrar como flexbox para alinear elementos */
 }
+
+/* Estilos generales para el documento HTML */
 html {
-   overflow-y: hidden;
+   overflow-y: hidden; /* Ocultar la barra de desplazamiento vertical */
 }
+
 /************ PAGINA RESERVAS ***************/
 
-.inputenterhour input, .inputouthour input, .hours input  {
-   width: 100%;
+/* Estilos para los campos de entrada de hora en la página de reservas */
+.inputenterhour input,
+.inputouthour input,
+.hours input {
+   width: 100%; /* Ancho completo para ocupar todo el espacio disponible */
 }
 
 /************ PAGINA FACTURAS ***************/
+
+/* Estilos para la navegación lateral */
 .nav_lateral {
-   height: var(--height-main);
-}
-.facturas, .mensualidad {
-   width: var(--width-main);
-   height: var(--height-main);
-}
-.form_facturas, .form_mensualidad {
-   display: flex;
-   width: 95%;
-   margin: 3rem auto;
-   justify-content: space-between;
-   gap: 2rem;
-
-}
-.form_facturas > aside, .mensualidad > aside{
-   display: flex;
-   justify-content: space-between;
-   gap: 2rem;
-   width: 100%;
+   height: var(--height-main); /* Altura igual a la altura principal definida */
 }
 
-.cajaderecha, .cajaizquierda {
-   display: flex;
-   width: 100%;
+/* Estilos para las páginas de facturas y mensualidad */
+.facturas,
+.mensualidad {
+   width: var(--width-main); /* Ancho igual al ancho principal definido */
+   height: var(--height-main); /* Altura igual a la altura principal definida */
 }
 
-.form_facturas .inputmat, .form_facturas .leftbox {
-   width: 100%;
-   height: 100%;
-   border-radius: 25px;
-   font-size: 7rem;
-   text-align: center;
-   padding: 0 1rem;
-   background-color: white;
-   text-transform: uppercase;
-}
-.inputmat, .leftbox, .decorar{
-   border: 1px solid black;
-}
-.leftbox {
-   pointer-events: none;
+/* Estilos para los formularios de facturas y mensualidad */
+.form_facturas,
+.form_mensualidad {
+   display: flex; /* Mostrar como flexbox para alinear elementos */
+   width: 95%; /* Ancho del 95% del contenedor padre */
+   margin: 3rem auto; /* Margen superior e inferior de 3rem, margen horizontal automático */
+   justify-content: space-between; /* Espacio uniformemente entre los elementos */
+   gap: 2rem; /* Espacio de 2rem entre los elementos hijos */
 }
 
-.datos, .tipoybotones {
-   max-width: 11rem;
-   min-width:11rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
+/* Estilos para los aside dentro de los formularios de facturas y mensualidad */
+.form_facturas > aside,
+.mensualidad > aside {
+   display: flex; /* Mostrar como flexbox para alinear elementos */
+   justify-content: space-between; /* Espacio uniformemente entre los elementos */
+   gap: 2rem; /* Espacio de 2rem entre los elementos hijos */
+   width: 100%; /* Ancho completo */
 }
 
-.inputenterhour, .inputouthour, .hours {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   border-radius: 10px;
+/* Estilos para las cajas de la derecha e izquierda en los formularios de facturas y mensualidad */
+.cajaderecha,
+.cajaizquierda {
+   display: flex; /* Mostrar como flexbox para alinear elementos */
+   width: 100%; /* Ancho completo */
 }
 
-.list {
-   display: flex;
-   flex-direction: column;
-}
-.list aside {
-   display: flex;
-   align-items: center;
-   gap: 1rem;
-}
-.list label:hover, .list input:hover{
-   cursor: pointer;
-}
-.list legend {
-   font-size: 17px;
-   font-weight: bold;
-   text-align: left;
-   margin-bottom: 0;
+/* Estilos para los campos de entrada de matrícula y caja izquierda en los formularios de facturas */
+.form_facturas .inputmat,
+.form_facturas .leftbox {
+   width: 100%; /* Ancho completo */
+   height: 100%; /* Altura completa */
+   border-radius: 25px; /* Radio de borde de 25px */
+   font-size: 6rem; /* Tamaño de fuente de 6rem */
+   text-align: center; /* Alineación centrada del texto */
+   padding: 0 1rem; /* Relleno horizontal de 0 a 1rem */
+   background-color: white; /* Color de fondo blanco */
+   text-transform: uppercase; /* Transformar el texto a mayúsculas */
 }
 
-.submit, .reset {
-   text-align: center;
-   margin-top: 5px;
-} 
-
+/* Estilos para los campos de entrada de matrícula, caja izquierda y decoración */
+.inputmat,
+.leftbox,
 .decorar {
-   color: black;
-   background-color: white;
-   border-radius: 5px;
-   width: 90%;
-   text-align: center;
+   border: 1px solid black; /* Borde de 1px sólido negro */
 }
+
+/* Estilos específicos para la caja izquierda */
+.leftbox {
+   pointer-events: none; /* Deshabilitar eventos del mouse en la caja izquierda */
+}
+
+/* Estilos para los contenedores de datos y botones */
+.datos,
+.tipoybotones {
+   max-width: 11rem; /* Ancho máximo de 11rem */
+   min-width: 11rem; /* Ancho mínimo de 11rem */
+   display: flex; /* Mostrar como flexbox para alinear elementos */
+   flex-direction: column; /* Dirección de columna para apilar elementos */
+   justify-content: space-between; /* Espacio uniformemente entre los elementos */
+   align-items: center; /* Alineación centrada verticalmente */
+}
+
+/* Estilos para los campos de entrada de hora */
+.inputenterhour,
+.inputouthour,
+.hours {
+   width: 100%; /* Ancho completo para ocupar todo el espacio disponible */
+   display: flex; /* Mostrar como flexbox para alinear elementos */
+   flex-direction: column; /* Dirección de columna para apilar elementos */
+   border-radius: 10px; /* Radio de borde de 10px */
+}
+
+/* Estilos para la lista de elementos */
+.list {
+   display: flex; /* Mostrar como flexbox para alinear elementos */
+   flex-direction: column; /* Dirección de columna para apilar elementos */
+}
+
+/* Estilos para los elementos individuales de la lista */
+.list aside {
+   display: flex; /* Mostrar como flexbox para alinear elementos */
+   align-items: center; /* Alineación centrada verticalmente */
+   gap: 1rem; /* Espacio de 1rem entre los elementos hijos */
+}
+
+/* Estilos para los elementos de la lista cuando se pasa el mouse sobre ellos */
+.list label:hover,
+.list input:hover {
+   cursor: pointer; /* Cambiar el cursor a puntero al pasar el mouse */
+}
+
+/* Estilos para la leyenda de la lista */
+.list legend {
+   font-size: 17px; /* Tamaño de fuente de 17px */
+   font-weight: bold; /* Negrita */
+   text-align: left; /* Alineación izquierda del texto */
+   margin-bottom: 0; /* Sin margen inferior */
+}
+
+/* Estilos para los botones de envío y restablecimiento */
+.submit,
+.reset {
+   text-align: center; /* Alineación centrada del texto */
+   margin-top: 5px; /* Margen superior de 5px */
+}
+
+/* Estilos para el elemento decorativo */
+.decorar {
+   color: black; /* Color de texto negro */
+   background-color: white; /* Fondo blanco */
+   border-radius: 5px; /* Radio de borde de 5px */
+   width: 90%; /* Ancho del 90% */
+   text-align: center; /* Alineación centrada del texto */
+}
+
+/* Estilos para la decoración adicional */
 .decoration1 {
-   padding: 2px;
-   margin-bottom: 3px;
+   padding: 2px; /* Relleno de 2px */
+   margin-bottom: 3px; /* Margen inferior de 3px */
 }
 
 /************ PAGINA MENSUALIDAD ***************/
 
-/* caja de registro */
-
+/* Estilos para la caja de formularios */
 .formularios {
-   width: 100%;
-   padding: 3rem 5rem;
+   width: 100%; /* Ancho del 100% */
+   padding: 3rem 5rem; /* Relleno superior e inferior de 3rem, relleno izquierdo y derecho de 5rem */
 }
-.formularios input:not(.button), .formularios select {
-   border-radius: 2px;
-   border: none;
+
+/* Estilos para los campos de entrada y selección dentro de la caja de formularios */
+.formularios input:not(.button),
+.formularios select {
+   border-radius: 2px; /* Radio de borde de 2px */
+   border: none; /* Sin borde */
 }
+
+/* Estilos para la caja principal de registro */
 .caja-reg-principal {
-   height: var(--height-main);
-   overflow-y: auto;
-   width: 100%;
-   padding-bottom: 2rem;
+   height: var(--height-main); /* Altura definida por la variable --height-main */
+   overflow-y: auto; /* Permitir desplazamiento vertical si el contenido excede la altura */
+   width: 100%; /* Ancho del 100% */
+   padding-bottom: 2rem; /* Relleno inferior de 2rem */
 }
 
+/* Estilos para el título */
 .title {
-   text-align: center;
-   margin-top: 20px;
+   text-align: center; /* Alineación centrada del texto */
+   margin-top: 20px; /* Margen superior de 20px */
 }
 
+
+/* Estilos para la caja de registro */
 .caja-Reg {
-   background-color: var(--color-Bar-nav);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 0 auto;
-   width: 55rem;
-   border-radius: 20px;
-   color: white; 
-   gap: 2rem;   
+   background-color: var(--color-Bar-nav); /* Color de fondo definido por una variable CSS */
+   display: flex; /* Mostrar como flexbox */
+   justify-content: center; /* Centrar horizontalmente el contenido */
+   align-items: center; /* Centrar verticalmente el contenido */
+   margin: 0 auto; /* Margen superior e inferior automático, margen izquierdo y derecho automático */
+   width: 55rem; /* Ancho fijo de 55rem */
+   border-radius: 20px; /* Radio de borde de 20px */
+   color: white; /* Color de texto blanco */
+   gap: 2rem; /* Espacio entre elementos de 2rem */
 }
 
+/* Estilos para la sección dividida en dos */
 .dos-section {
-   display: flex;
-   justify-content: center;
-   gap: 4rem;
+   display: flex; /* Mostrar como flexbox */
+   justify-content: center; /* Centrar horizontalmente el contenido */
+   gap: 4rem; /* Espacio entre elementos de 4rem */
 }
 
-.seccion1 > aside, .seccion2 > aside {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   margin-top: 1rem;
+/* Estilos para las secciones 1 y 2 */
+.seccion1 > aside,
+.seccion2 > aside {
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Orientación de columna */
+   justify-content: space-between; /* Distribuir uniformemente los elementos */
+   margin-top: 1rem; /* Margen superior de 1rem */
 }
 
-.seccion1, .seccion2 {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
+.seccion1,
+.seccion2 {
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Orientación de columna */
+   justify-content: space-between; /* Distribuir uniformemente los elementos */
 }
 
+/* Estilos para los selectores en la sección 2 */
 .seccion2 select {
-   width: 100%;
- }
- .sexo > aside{
-   display: flex;
-   align-items: center;
-   gap: 5px;
- }
+   width: 100%; /* Ancho del 100% */
+}
+
+/* Estilos para los elementos dentro de la sección de sexo */
+.sexo > aside {
+   display: flex; /* Mostrar como flexbox */
+   align-items: center; /* Centrar verticalmente el contenido */
+   gap: 5px; /* Espacio entre elementos de 5px */
+}
+
+/* Estilos para los radios dentro de la sección de radio */
 aside .radio {
-   flex-direction: row;
-   justify-content: start;
-   gap: 2rem;
+   flex-direction: row; /* Orientación de fila */
+   justify-content: start; /* Alinear al inicio */
+   gap: 2rem; /* Espacio entre elementos de 2rem */
 }
+
+/* Estilos para los radios anidados dentro de la sección de radio */
 .radio aside {
-   display: flex;
-   flex-direction: column;
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Orientación de columna */
 }
+
 .radio aside aside {
-   display: flex;
-   flex-direction: row;
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: row; /* Orientación de fila */
 }
 
+
+/* Estilos para los botones dentro de un aside */
 aside .botones {
-   display: flex;
-   flex-direction: row;
-   margin-top: 20px;
-   gap: 20px;
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: row; /* Orientación de fila */
+   margin-top: 20px; /* Margen superior de 20px */
+   gap: 20px; /* Espacio entre elementos de 20px */
 }
 
+/* Estilos para las reglas de medios */
+
+/* Regla de medios para pantallas con un ancho máximo de 960px */
 @media (max-width: 960px) {
    .navbar-toggler {
-      display: block;
+      display: block; /* Mostrar el botón de la barra de navegación */
    }
    .logo {
-      display: none;
+      display: none; /* Ocultar el logotipo */
    }
    .nav_lateral {
-      display: none;
+      display: none; /* Ocultar la navegación lateral */
    }
-   .facturas, .mensualidad{
-         width: 100%;
-         margin: 0 auto;
+   .facturas, .mensualidad {
+      width: 100%; /* Ancho del 100% */
+      margin: 0 auto; /* Margen automático */
+      overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
    }
 }
+
+/* Regla de medios para pantallas con un ancho máximo de 800px */
 @media (max-width: 800px) {
    .dos-section {
-      gap: 5rem;
-      width: 100%;
+      gap: 5rem; /* Espacio entre elementos de 5rem */
+      width: 100%; /* Ancho del 100% */
    }
 }
 
+/* Regla de medios para pantallas con un ancho máximo de 768px */
 @media (max-width: 768px) {
    .form_facturas, .mensualidad {
-         flex-direction: column;
-         height: 34rem;
+      flex-direction: column; /* Orientación de columna */
+      height: 34rem; /* Altura fija de 34rem */
    }
-   .form_facturas > aside:nth-child(2), .mensualidad > aside:nth-child(2){
-         flex-direction: row-reverse;
+   .form_facturas > aside:nth-child(2), .mensualidad > aside:nth-child(2) {
+      flex-direction: row-reverse; /* Orientación de fila invertida */
    }
 }
+
+/* Regla de medios para pantallas con un ancho máximo de 576px */
 @media (max-width: 576px) {
-   
    .caja-Reg {
-      width: 80%;
+      width: 80%; /* Ancho del 80% */
    }
    .dos-section {
-      flex-direction: column;
-      gap: 0;
-      width: 100%;
+      flex-direction: column; /* Orientación de columna */
+      gap: 0; /* Sin espacio entre elementos */
+      width: 100%; /* Ancho del 100% */
    }
 }
+
+/* Regla de medios para pantallas con un ancho máximo de 420px */
 @media (max-width: 420px) {
    .formularios {
-      padding: 3rem 3.5rem;
+      padding: 3rem 3.5rem; /* Rellenar 3rem arriba y abajo, 3.5rem a los lados */
    }
 }
 
+/* Estilos para el contenedor de ayuda del cliente */
 .container_ayuda {
-   width: 100%;
-   height: var(--height-main);
-   overflow-y: auto;
-   padding: 0 2rem;
-   padding-top: 3rem;
+   width: 100%; /* Ancho del 100% */
+   height: var(--height-main); /* Altura definida por una variable */
+   overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
+   padding: 0 2rem; /* Relleno de 0 arriba y abajo, 2rem a los lados */
+   padding-top: 3rem; /* Relleno superior de 3rem */
 }
 
+/* Estilos para las secciones de la navegación y la ayuda */
 .header_navegacion,
 .pag_disponibilidad,
 .pag_facturas,
@@ -256,9 +334,10 @@ aside .botones {
 .pag_reservas,
 .pag_reportes,
 .pag_registro {
-   margin-bottom: 30px;
+   margin-bottom: 30px; /* Margen inferior de 30px */
 }
 
+/* Estilos para los títulos de las secciones */
 .header_navegacion h2,
 .pag_disponibilidad h2,
 .pag_facturas h2,
@@ -266,10 +345,11 @@ aside .botones {
 .pag_reservas h2,
 .pag_reportes h2,
 .pag_registro h2 {
-   font-weight: bold;
-   color: #1a1a1a;
+   font-weight: bold; /* Fuente en negrita */
+   color: #1a1a1a; /* Color del texto */
 }
 
+/* Estilos para los párrafos de las secciones */
 .header_navegacion p,
 .pag_disponibilidad p,
 .pag_facturas p,
@@ -277,6 +357,6 @@ aside .botones {
 .pag_reservas p,
 .pag_reportes p,
 .pag_registro p {
-   font-size: 16px;
-   color: #333;
+   font-size: 16px; /* Tamaño de fuente de 16px */
+   color: #333; /* Color del texto */
 }

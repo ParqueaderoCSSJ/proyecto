@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facturas</title>
+    <title>Salida</title>
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -17,7 +17,7 @@
     <header class="header navbar">
         <aside class="container-fluid">
             <aside class="logo">
-                <a href="../operario/disponibilidad.html">
+                <a href="disponibilidad.html">
                     <img src="../img/logo.png" alt="Logo parqueadero">
                 </a>
             </aside>
@@ -30,12 +30,12 @@
                 </svg>
             </button>
             <aside class="logo_cssj">
-                <a href="../operario/disponibilidad.html">
+                <a href="disponibilidad.html">
                     <img src="../img/logo_parqueadero.png" alt="Logo parqueadero">
                 </a>
             </aside>
             <aside class="logout">
-                <a href="../operario/index.html">
+                <a href="index.html">
                     <img src="../img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
                 </a>
             </aside>
@@ -44,11 +44,15 @@
                 <aside class="offcanvas-body">
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     <aside class="nav-lat">
-                        <a href="../operario/disponibilidad.html">Disponibilidad</a>
-                        <a class="active" href="#">Facturas</a>
-                        <a href="../operario/mensualidad.html">Mensualidad</a>
-                        <a href="../operario/reservas.html">Reservas</a>
-                        <a href="../operario/ayuda.html">Ayuda</a>
+                        <a href="disponibilidad.html">Disponibilidad</a>
+                        <a href="entrada.html">Entrada</a>
+                        <a class="active" href="#">Salida</a>
+                        <a href="mensualidad.html">Mensualidad</a>
+                        <a href="reservas.html">Reservas</a>
+                        <a href="reportes.html">Reportes</a>
+                        <a href="registro.html">Registro</a>
+                        <a href="ayuda.html">Ayuda</a>
+                        <a href="politicas.html">Políticas</a>
                     </aside>
                 </aside>
             </aside>
@@ -57,11 +61,17 @@
 
     <main class="main">
         <aside class="nav_lateral">
-            <a href="../operario/disponibilidad.html">Disponibilidad</a>
-            <a class="active" href="#">Facturas</a>
-            <a href="../operario/mensualidad.html">Mensualidad</a>
-            <a href="../operario/reservas.html">Reservas</a>
-            <a href="../operario/ayuda.html">Ayuda</a>
+            <a href="disponibilidad.html">Disponibilidad</a>
+            <a href="entrada.html">Entrada</a>
+            <a class="active" href="#">Salida</a>
+            <a href="mensualidad.html">Mensualidad</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="reportes.html">Reportes</a>
+            <a href="registro.html">Registro</a>
+            <a href="ayuda.html">Ayuda</a>
+            <a href="politicas.html">Políticas</a>
+
+           
         </aside>
         <!-- Input para ingresar datos -->
         <aside class="facturas">
@@ -71,40 +81,29 @@
                         <label for="lmatricula"></label>
                         <input class="inputmat" type="text" name="matricula" id="lmatricula" placeholder="PLACA" maxlength="6">
                     </aside>
-                    <!-- Inputs horas -->
-                    <aside class="datos-fac">
-                        <aside class="inputenterhour">
-                            <label for="lhora_entrada">Hora Entrada</label>
-                            <input class="decorar hora_entrada" class="decoration1" type="time" name="hora_entrada">
+                <aside class="tipoybotones">
+                    <aside class="list">
+                        <legend>Tarifa</legend>
+                        <aside class="moto">
+                            <label for="lmoto">Moto</label>
+                            <input type="radio" name="Tarifa" id="lmoto" value="Moto">
                         </aside>
-                        <aside class="inputouthour">
-                            <label for="lhora_salida">Hora Salida</label>
-                            <input class="decorar hora_salida" type="time" name="hora_salida">
+                        <aside class="carro">
+                            <label for="lcarro">Carro</label>
+                            <input type="radio" name="Tarifa" id="lcarro" value="carro">
                         </aside>
                     </aside>
+                    <!-- Botones para guardar y reset -->
+                    <aside class="submit">
+                        <input class="button" type="submit" value="Imprimir">
+                    </aside>
+                    <aside class="reset">
+                        <input class="button" type="reset" value="Guardar">
+                    </aside>
+                </aside>
                 </aside>
                 <!-- Escoger moto/carro -->
                 <aside>
-                    <aside class="tipoybotones">
-                        <aside class="list">
-                            <legend>Tarifa</legend>
-                            <aside class="moto">
-                                <label for="lmoto">Moto</label>
-                                <input type="radio" name="Tarifa" id="lmoto" value="Moto">
-                            </aside>
-                            <aside class="carro">
-                                <label for="lcarro">Carro</label>
-                                <input type="radio" name="Tarifa" id="lcarro" value="carro">
-                            </aside>
-                        </aside>
-                        <!-- Botones para guardar y reset -->
-                        <aside class="submit">
-                            <input class="button" type="submit" value="Imprimir">
-                        </aside>
-                        <aside class="reset">
-                            <input class="button" type="reset" value="Guardar">
-                        </aside>
-                    </aside>
                     <!-- Caja izquierda -->
                     <aside class="cajaizquierda">
                         <label for="leftbox"></label>
@@ -132,7 +131,7 @@
                             <td>03:45 PM</td>
                             <td>05:00 PM</td>
                             <td>02:00 horas</td>
-                            <td><a href="../#">LWC65B</a></td>
+                            <td><a href="#">LWC65B</a></td>
                             
                         </tr>
                         <tr>
@@ -141,16 +140,16 @@
                             <td>04:00 PM</td>
                             <td>05:00 PM</td>
                             <td>01:00 horas</td>
-                            <td><a href="../#">BWC690</a></td>
+                            <td><a href="#">BWC690</a></td>
                             
                         </tr>
                         <tr>
                             <td>DEC165</td>
                         <td>Carro</td>
-                        <td>11:33 AM PM</td>
+                        <td>11:33 AM</td>
                         <td>02:10 PM</td>
                         <td>02:00 horas</td>
-                        <td><a href="../#">DEC165</a></td>
+                        <td><a href="#">DEC165</a></td>
                         
                     </tr>
                     <tr>
@@ -159,7 +158,7 @@
                         <td>05:11 PM</td>
                         <td>07:23 PM</td>
                         <td>02:00 horas</td>
-                        <td><a href="../#">MOP487</a></td>
+                        <td><a href="#">MOP487</a></td>
                         
                     </tr>
                     <tr>
@@ -168,7 +167,7 @@
                         <td>03:45 PM</td>
                         <td>05:00 PM</td>
                         <td>02:00 horas</td>
-                        <td><a href="../#">LWC65B</a></td>
+                        <td><a href="#">LWC65B</a></td>
                         
                     </tr>
                     <tr>
@@ -177,7 +176,7 @@
                         <td>04:00 PM</td>
                         <td>05:00 PM</td>
                         <td>01:00 horas</td>
-                        <td><a href="../#">BWC690</a></td>
+                        <td><a href="#">BWC690</a></td>
                         
                     </tr>
                     <tr>
@@ -186,7 +185,7 @@
                         <td>11:33 AM PM</td>
                         <td>02:10 PM</td>
                         <td>02:00 horas</td>
-                        <td><a href="../#">DEC165</a></td>
+                        <td><a href="#">DEC165</a></td>
                         
                     </tr>
                     <tr>
@@ -195,7 +194,7 @@
                         <td>05:11 PM</td>
                         <td>07:23 PM</td>
                         <td>02:00 horas</td>
-                        <td><a href="../#">MOP487</a></td>
+                        <td><a href="#">MOP487</a></td>
                         
                     </tr>
                 </tbody>

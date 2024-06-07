@@ -3,31 +3,52 @@
 
 <head>
   <meta charset="UTF-8" />
+  <!-- Configuración de caracteres para el documento -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Configuración de la escala inicial y la anchura para dispositivos móviles -->
   <title>Login</title>
+  <!-- Título de la página -->
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <!-- Icono de la pestaña -->
   <link rel="stylesheet" href="css/style.css" />
+  <!-- Enlace a la hoja de estilos principal -->
   <link rel="stylesheet" href="css/style1.css" />
+  <!-- Enlace a otra hoja de estilos -->
 </head>
 
 <body class="body-login">
+  <!-- Cuerpo de la página con clase específica para el login -->
   <main class="login">
+    <!-- Contenedor principal del formulario de login -->
     <aside class="formulario">
+      <!-- Sección del formulario -->
       <h1>Inicio De Sesión</h1>
+      <!-- Título del formulario -->
       <aside class="container">
+        <!-- Contenedor del logo -->
         <img src="img/logo.png" alt="logo" />
+        <!-- Imagen del logo -->
       </aside>
       <form action="disponibilidad.html">
+        <!-- Formulario para el inicio de sesión -->
         <aside class="usuario">
+          <!-- Campo de entrada para el nombre de usuario -->
           <input type="text" name="usuario" id="usuario" required />
+          <!-- Campo de entrada de texto -->
           <label for="usuario">Usuario</label>
+          <!-- Etiqueta para el campo de entrada -->
         </aside>
         <aside class="usuario">
+          <!-- Campo de entrada para la contraseña -->
           <input type="password" name="contraseña" id="contraseña" required />
+          <!-- Campo de entrada de contraseña -->
           <label for="contraseña">Contraseña</label>
+          <!-- Etiqueta para el campo de contraseña -->
         </aside>
         <a class="reestablecer" href="..admin/registro_cust.html">Restablecer contraseña</a>
+        <!-- Enlace para restablecer la contraseña -->
         <input class="btn_login" type="submit" value="Ingresar" />
+        <!-- Botón de envío del formulario -->
       </form>
     </aside>
   </main>

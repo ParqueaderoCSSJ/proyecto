@@ -45,12 +45,14 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     <aside class="nav-lat">
                         <a href="disponibilidad.html">Disponibilidad</a>
-                        <a href="facturas.html">Facturas</a>
+                        <a href="entrada.html">Entrada</a>
+                        <a href="salida.html">Salida</a>
                         <a href="mensualidad.html">Mensualidad</a>
                         <a href="reservas.html">Reservas</a>
                         <a href="reportes.html">Reportes</a>
                         <a class="active" href="#">Registro</a>
                         <a href="ayuda.html">Ayuda</a>
+                        <a href="politicas.html">Políticas</a>
                     </aside>
                 </aside>
             </aside>
@@ -59,36 +61,56 @@
     <main>
         <aside class="nav_lateral">
             <a href="disponibilidad.html">Disponibilidad</a>
-            <a href="facturas.html">Facturas</a>
+            <a href="entrada.html">Entrada</a>
+            <a href="salida.html">Salida</a>
             <a href="mensualidad.html">Mensualidad</a>
             <a href="reservas.html">Reservas</a>
             <a href="reportes.html">Reportes</a>
             <a class="active" href="#">Registro</a>
             <a href="ayuda.html">Ayuda</a>
+            <a href="politicas.html">Políticas</a>
         </aside>
         <aside class="caja-reg-principal">
+            <!-- Contenedor principal del formulario de registro -->
             <h1 class="title">Registro de Usuarios</h1>
+            <!-- Encabezado indicando el propósito del formulario -->
+        
             <aside class="caja-Reg">
+                <!-- Contenedor para el formulario -->
                 <form class="formularios">
+                    <!-- Inicio del formulario -->
                     <aside class="dos-section">
+                        <!-- Contenedor para dividir el formulario en dos secciones -->
+        
                         <aside class="seccion1">
+                            <!-- Primera sección del formulario -->
                             <aside>
+                                <!-- Contenedor del campo "Nombre" -->
                                 <label for="Nombre">Nombre</label>
-                                <input type="text" name="Nombre" id="Nombre"required>
+                                <!-- Etiqueta para el campo de nombre -->
+                                <input type="text" name="Nombre" id="Nombre" required>
+                                <!-- Campo de entrada de texto para el nombre -->
                             </aside>
                             <aside>
+                                <!-- Contenedor del campo "Apellidos" -->
                                 <label for="Apellido">Apellidos</label>
+                                <!-- Etiqueta para el campo de apellidos -->
                                 <input type="text" name="Apellido" id="Apellido" required>
+                                <!-- Campo de entrada de texto para los apellidos -->
                             </aside>
                             <aside>
+                                <!-- Contenedor del campo "Tipo Documento" -->
                                 <label for="Correo">Tipo Documento</label>
+                                <!-- Etiqueta para el campo de tipo de documento -->
                                 <select type="email" name="Correo" id="Correo" required>
-                                    <option value="">Selecionar</option>
-                                    <option value="cedula">Cedúla de ciudadania</option>
+                                    <!-- Menú desplegable para seleccionar el tipo de documento -->
+                                    <option value="">Seleccionar</option>
+                                    <option value="cedula">Cédula de ciudadanía</option>
                                     <option value="tdI">Tarjeta de identidad</option>
-                                    <option value="extranjeria">Cedúla Extranjeria</option>
+                                    <option value="extranjeria">Cédula de extranjería</option>
                                 </select>
                             </aside>
+                            <!-- Otros campos de entrada de información similares -->
                             <aside>
                                 <label for="Documento">No° Documento</label>
                                 <input type="number" name="Documento" id="Documento" required>
@@ -111,19 +133,19 @@
                                 </aside>
                             </aside>
                             <aside>
-                                <label for="Telefono">Telefono</label>
+                                <label for="Telefono">Teléfono</label>
                                 <input type="number" name="Telefono" id="Telefono" required>
                             </aside>
                         </aside>
                         <aside class="seccion2">
                             <aside>
-                                <label for="Correo">Correo Electronico</label>
+                                <label for="Correo">Correo Electrónico</label>
                                 <input type="email" name="Correo" id="Correo">
                             </aside>
                             <aside>
-                                <label for="Roll">Roll</label>
+                                <label for="Roll">Rol</label>
                                 
-                                    <select name="Roll" id="Roll" required>
+                                    <select name="Rol" id="Rol" required>
                                         <option value="">Seleccionar</option>
                                         <option value="valor1">Administrativa</option>
                                         <option value="valor2">Operario</option>
@@ -154,9 +176,12 @@
                                 <label for="Confirmar">Confirmar Contraseña</label>
                                 <input type="password" name="Confirmar" id="Confirmar">
                             </aside>
+                        <!-- Botones para enviar el formulario -->
                             <aside class="botones">
                                 <input class="button" type="submit" value="Eliminar">
+                                <!-- Botón para eliminar -->
                                 <input class="button" type="submit" value="Guardar">
+                                <!-- Botón para guardar -->
                             </aside>
                         </aside>
                     </aside>
