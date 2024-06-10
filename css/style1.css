@@ -395,6 +395,7 @@ textarea {
 /* Ajustes de la zona 3 */
 .zona3{
    padding-top: 2rem; /* Espacio superior aumentado */
+   padding-bottom: 5rem;
    width: 95%; /* Ancho del 95% */
    margin: 0 auto; /* Margen horizontal central */
 }
@@ -425,7 +426,7 @@ textarea {
 }
 
 /* Estilos para los checkbox (ocultar) */
-input[type="checkbox"]{
+input[type="radio"]{
    display: none; /* Ocultar */
 }
 
@@ -442,7 +443,7 @@ input[type="checkbox"]{
 }
 
 /* Estilos para el estado 'checked' del checkbox (mostrar) */
-input[type="checkbox"]:checked + span {
+input[type="radio"]:checked + span {
    background-color:  rgb(253, 215, 1); /* Color de fondo */
    width: 100%; /* Ancho completo */
    height: 100%; /* Alto completo */
@@ -645,6 +646,10 @@ th {
 @media (max-width: 768px){
  .container-mensualidadCliente {
    width: 100%; /* Ancho del 100% */
+ }
+ .green:hover {
+   background-color:  rgb(72, 181, 196);
+   color: white;
  }
 }
 
