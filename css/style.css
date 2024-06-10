@@ -323,6 +323,7 @@ td {
 /* Estilos para la sección de políticas */
 .politicas {
    padding: 5rem 6rem; /* Relleno */
+   padding-bottom: 8rem;
    height: var(--height-main); /* Altura */
    overflow-y: auto; /* Desplazamiento vertical */
 }

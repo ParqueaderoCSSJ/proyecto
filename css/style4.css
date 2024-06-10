@@ -281,6 +281,7 @@ aside .btn-cust {
    .form {
       justify-content: flex-start; /* Alinear contenido al inicio */
       padding-top: 3rem; /* Espacio en la parte superior */
+      align-items: flex-start;
    }
 }
 

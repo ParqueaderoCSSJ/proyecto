@@ -180,7 +180,7 @@ form .btn_login {
    overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
    padding: 0 2rem; /* Relleno horizontal */
    padding-top: 3rem; /* Relleno superior */             
-   padding-bottom: 6rem;
+   padding-bottom: 8rem;
 }
 
 /* Estilos para el contenedor de ayuda */
@@ -389,13 +389,13 @@ textarea {
 .parking-lot h2 {
    text-align: center; /* Alineación del texto */
    font-size: 30px; /* Tamaño de fuente */
-   padding-bottom: 20px; /* Espacio inferior */
+   padding-bottom: 2rem; /* Espacio inferior */
 }
 
 /* Ajustes de la zona 3 */
 .zona3{
    padding-top: 2rem; /* Espacio superior aumentado */
-   padding-bottom: 5rem;
+   padding-bottom: 8rem;
    width: 95%; /* Ancho del 95% */
    margin: 0 auto; /* Margen horizontal central */
 }
