@@ -225,7 +225,7 @@ aside .btn-cust {
    .reports {
       width: 100%; /* Ancho completo */
       margin: 0 auto; /* Centrado horizontal */
-      padding-bottom: 2rem; /* Espacio en la parte inferior */
+      padding-bottom: 6rem; /* Espacio en la parte inferior */
    }
 
    /* Estilos para los botones de informes en pantallas más pequeñas */

@@ -439,10 +439,7 @@ aside .botones {
             width: 100%; /* Ancho completo */
             margin: 0 auto; /* Centrado horizontal */
             height: var(--height-main); /* Altura variable */
-      }
-
-      .tabla {
-            margin-bottom: 2rem; /* Margen inferior de 2rem */
+            padding-bottom: 6rem;
       }
 }
 
@@ -450,8 +447,7 @@ aside .botones {
 @media (max-width: 768px) {
 
       /* Ajustar dirección de elementos en formularios de facturas y mensualidad */
-      .form_facturas,
-      .mensualidad {
+      .form_facturas{
             flex-direction: column; /* Apilar elementos */
             height: 34rem; /* Altura fija */
       }

@@ -129,6 +129,7 @@ form .btn_login {
    width: var(--width-main); /* Ancho definido por variable */
    height: var(--height-main); /* Altura definida por variable */
    overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
+   padding-bottom: 6rem;
 }
 
 /* Estilos para las columnas de gráficas */
@@ -178,7 +179,8 @@ form .btn_login {
    height: var(--height-main); /* Altura definida por variable */
    overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
    padding: 0 2rem; /* Relleno horizontal */
-   padding-top: 3rem; /* Relleno superior */
+   padding-top: 3rem; /* Relleno superior */             
+   padding-bottom: 6rem;
 }
 
 /* Estilos para el contenedor de ayuda */

@@ -174,7 +174,7 @@ html {
    height: var(--height-main); /* Altura definida por la variable --height-main */
    overflow-y: auto; /* Permitir desplazamiento vertical si el contenido excede la altura */
    width: 100%; /* Ancho del 100% */
-   padding-bottom: 2rem; /* Relleno inferior de 2rem */
+   padding-bottom: 6rem; /* Relleno inferior de 2rem */
 }
 
 /* Estilos para el título */
@@ -276,6 +276,7 @@ aside .botones {
       width: 100%; /* Ancho del 100% */
       margin: 0 auto; /* Margen automático */
       overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
+      padding-bottom: 6rem;
    }
 }
 

@@ -330,7 +330,8 @@ td {
 /* Media query para dispositivos con un ancho máximo de 768px */
 @media (max-width: 768px) {
    .politicas {
-      padding: 2rem; /* Relleno reducido */
+      padding: 4rem; /* Relleno reducido */
+      padding-bottom: 6rem;
    }
 }
 
