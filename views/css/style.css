@@ -39,8 +39,10 @@ img {
 }
 
 /* Estilos para los campos de entrada, excepto los botones */
-input:not(.button) {
-   height: 29px; /* Altura de los campos de entrada */
+input:not(.button), select{
+   height: 27px; /* Altura de los campos de entrada */
+   border: none;
+   border-radius: 5px;
 }
 
 /************ GLOBALES ***************/
