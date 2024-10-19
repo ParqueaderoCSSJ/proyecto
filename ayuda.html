@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+    <header class="header navbar">
+        <aside class="container-fluid">
+            <aside class="logo">
+                <a href="usuario/disponibilidad.html">
+                    <img src="img/logo.png" alt="Logo parqueadero">
+                </a>
+            </aside>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                    <path
+                        d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                    </path>
+                </svg>
+            </button>            <!-- Segundo logo de la página -->
+            <aside class="logo_cssj">
+                <a href="disponibilidad.html">
+                    <img src="img/logo_parqueadero.png" alt="Logo parqueadero">
+                </a>
+            </aside>
+            <!-- Icono de cierre de sesión -->
+            <aside class="logout">
+                <a href="index.html">
+                    <img src="img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
+                </a>
+            </aside>
+            <!-- Menú de navegación lateral -->
+            <aside class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <aside class="offcanvas-body">
+                    <!-- Botón para cerrar el menú lateral -->
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <aside class="nav-lat">
+                        <!-- Enlaces de navegación -->
+                        <a href="disponibilidad.html">Disponibilidad</a>
+                        <a href="entrada.html">Entrada</a>
+                        <a href="salida.html">Salida</a>
+                        <a href="mensualidad.html">Mensualidad</a>
+                        <a href="reservas.html">Reservas</a>
+                        <a href="reportes.html">Reportes</a>
+                        <a href="registro.html">Registro</a>
+                        <a class="active" href="#">Ayuda</a>
+                        <a href="politicas.html">Políticas</a>
+                    </aside>
+                </aside>
+            </aside>
+        </aside>
+    </header>
+    <!-- Contenido principal de la página -->
+    <main class="main">
+        <!-- Navegación lateral estática -->
+        <aside class="nav_lateral">
+            <a href="disponibilidad.html">Disponibilidad</a>
+            <a href="entrada.html">Entrada</a>
+            <a href="salida.html">Salida</a>
+            <a href="mensualidad.html">Mensualidad</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="reportes.html">Reportes</a>
+            <a href="registro.html">Registro</a>
+            <a class="active" href="#">Ayuda</a>
+            <a href="politicas.html">Políticas</a>
+        </aside>
+        <!-- Contenedor de la sección de ayuda -->
+        <aside class="container_ayuda">
+            <aside class="cont_ayuda">
+                <!-- Sección de encabezado y barra de navegación -->
+                <aside class="header_navegacion">
+                    <h2>Encabezado y Barra de Navegación</h2>
+                    <aside>
+                        <p>El encabezado de la página incluye:</p>
+                        <ul>
+                            <li><strong>Logos:</strong> Dos logos que redirigen a la página de disponibilidad.</li>
+                            <li><strong>Botón de Menú:</strong> Un botón para mostrar y ocultar el menú de navegación
+                                lateral.</li>
+                            <li><strong>Logo de Cierre de Sesión:</strong> Un logo que redirige a la página de inicio de
+                                sesión.</li>
+                        </ul>
+                        <p>La barra de navegación lateral, visible al hacer clic en el botón de menú, permite acceder a
+                            las siguientes secciones:</p>
+                        <ul>
+                            <li>Disponibilidad</li>
+                            <li>Facturas (sección activa)</li>
+                            <li>Mensualidad</li>
+                            <li>Reservas</li>
+                            <li>Reportes</li>
+                            <li>Registro</li>
+                            <li>Ayuda</li>
+                        </ul>
+                    </aside>
+                </aside>
+                <!-- Sección de disponibilidad -->
+                <aside class="pag_disponibilidad">
+                    <h2>Sección de Disponibilidad</h2>
+                    <aside>
+                        <p>Esta sección permite al personal del parqueadero ver el estado de las celdas
+                            disponibles y ocupadas tanto para motos como para carros. Se presentan gráficas que
+                            ayudan a visualizar la disponibilidad de manera clara y rápida.</p>
+
+                        <h3>Motos</h3>
+                        <p>Para las motos, se muestran las siguientes gráficas:</p>
+                        <ul>
+                            <li><strong>Celdas Generales:</strong> Muestra el estado general de todas las celdas
+                                disponibles para motos.</li>
+                            <li><strong>Celdas de Reservas:</strong> Muestra el estado de las celdas reservadas
+                                para motos.</li>
+                            <li><strong>Celdas de Mensualidad:</strong> Muestra el estado de las celdas ocupadas
+                                por clientes con mensualidad para motos.</li>
+                        </ul>
+
+                        <h3>Carros</h3>
+                        <p>Para los carros, se muestran las siguientes gráficas:</p>
+                        <ul>
+                            <li><strong>Celdas Generales:</strong> Muestra el estado general de todas las celdas
+                                disponibles para carros.</li>
+                            <li><strong>Celdas de Reservas:</strong> Muestra el estado de las celdas reservadas
+                                para carros.</li>
+                            <li><strong>Celdas de Mensualidad:</strong> Muestra el estado de las celdas ocupadas
+                                por clientes con mensualidad para carros.</li>
+                        </ul>
+                        <p>Este sistema de disponibilidad está diseñado para facilitar la gestión del
+                            parqueadero, permitiendo al personal ver rápidamente el estado de las celdas y
+                            optimizar el uso del espacio disponible tanto para motos como para carros.</p>
+                    </aside>
+                </aside>
+                <!-- Sección de facturas -->
+                <aside class="pag_facturas">
+                    <h2>Sección de Facturas</h2>
+                    <aside>
+                        <p>Esta sección permite al personal del parqueadero gestionar y registrar las facturas
+                            de
+                            los clientes. Aquí están las funcionalidades principales:</p>
+                        <h3>Formulario de Ingreso de Datos</h3>
+                        <ul>
+                            <li><strong>Placa:</strong> Un campo para ingresar la placa del vehículo.</li>
+                            <li><strong>Hora de Entrada y Salida:</strong> Campos para registrar la hora de
+                                entrada
+                                y salida del vehículo.</li>
+                            <li><strong>Tipo de Vehículo:</strong> Opciones para seleccionar si es moto o
+                                carro.</li>
+                            <li><strong>Generar Factura:</strong> Botón para calcular y generar la factura
+                                correspondiente.</li>
+                        </ul>
+
+                        <h3>Historial de Facturas</h3>
+                        <p>Una tabla que muestra el historial de facturas generadas, con información como:</p>
+                        <ul>
+                            <li>Placa del vehículo</li>
+                            <li>Hora de entrada y salida</li>
+                            <li>Tipo de vehículo</li>
+                            <li>Monto total</li>
+                        </ul>
+                    </aside>
+                </aside>
+                <!-- Sección de mensualidad -->
+                <aside class="pag_mensualidad">
+                    <h2>Sección de Mensualidad</h2>
+                    <aside>
+                        <p>Esta sección está diseñada para gestionar las mensualidades de los clientes que
+                            utilizan el parqueadero de forma regular. Aquí se encuentran las principales
+                            funcionalidades:</p>
+                        <h3>Registro de Cliente</h3>
+                        <ul>
+                            <li><strong>Datos Personales:</strong> Campos para ingresar nombre, número de
+                                identificación, y otros datos relevantes.</li>
+                            <li><strong>Información del Vehículo:</strong> Campos para registrar la placa y tipo
+                                de vehículo.</li>
+                            <li><strong>Periodo de Mensualidad:</strong> Selección del periodo de tiempo para la
+                                mensualidad.</li>
+                            <li><strong>Botón de Registro:</strong> Botón para registrar al cliente en el sistema
+                                de mensualidades.</li>
+                        </ul>
+
+                        <h3>Listado de Clientes con Mensualidad</h3>
+                        <p>Una tabla que muestra los clientes actuales con mensualidad, incluyendo:</p>
+                        <ul>
+                            <li>Nombre del cliente</li>
+                            <li>Número de identificación</li>
+                            <li>Placa del vehículo</li>
+                            <li>Periodo de mensualidad</li>
+                            <li>Estado del pago</li>
+                        </ul>
+                        <p>Este sistema facilita el seguimiento y la gestión de los clientes con mensualidad,
+                            asegurando que el personal del parqueadero pueda verificar el estado de los pagos y
+                            la
+                            información del cliente de manera eficiente.</p>
+                    </aside>
+                </aside>
+                <!-- Sección de reservas -->
+                <aside class="pag_reservas">
+                    <h2>Sección de Reservas</h2>
+                    <aside>
+                        <p>En esta sección, el personal del parqueadero puede gestionar las reservas de celdas
+                            para
+                            los clientes. Las funcionalidades incluyen:</p>
+                        <h3>Formulario de Reserva</h3>
+                        <ul>
+                            <li><strong>Datos del Cliente:</strong> Campos para ingresar nombre y número de
+                                identificación del cliente.</li>
+                            <li><strong>Información del Vehículo:</strong> Campos para registrar la placa y tipo
+                                de
+                                vehículo.</li>
+                            <li><strong>Fecha y Hora de Reserva:</strong> Selección de la fecha y hora en la que
+                                se
+                                realizará la reserva.</li>
+                            <li><strong>Botón de Confirmar Reserva:</strong> Botón para registrar la reserva en
+                                el
+                                sistema.</li>
+                        </ul>
+
+                        <h3>Listado de Reservas</h3>
+                        <p>Una tabla que muestra las reservas realizadas, incluyendo:</p>
+                        <ul>
+                            <li>Nombre del cliente</li>
+                            <li>Número de identificación</li>
+                            <li>Placa del vehículo</li>
+                            <li>Fecha y hora de la reserva</li>
+                            <li>Estado de la reserva</li>
+                        </ul>
+                    </aside>
+                </aside>
+                <!-- Sección de reportes -->
+                <aside class="pag_reportes">
+                    <h2>Sección de Reportes</h2>
+                    <aside>
+                        <p>Esta sección permite al personal del parqueadero generar y revisar reportes sobre las
+                            actividades y estados del parqueadero. Las principales funcionalidades incluyen:</p>
+                        <h3>Generación de Reportes</h3>
+                        <ul>
+                            <li><strong>Seleccionar Tipo de Reporte:</strong> Opciones para seleccionar el tipo
+                                de
+                                reporte (ej. disponibilidad, mensualidades, facturas).</li>
+                            <li><strong>Rango de Fechas:</strong> Campos para ingresar el rango de fechas para el
+                                reporte.</li>
+                            <li><strong>Botón de Generar Reporte:</strong> Botón para generar el reporte en base
+                                a
+                                los parámetros seleccionados.</li>
+                        </ul>
+
+                        <h3>Visualización de Reportes</h3>
+                        <p>Una tabla o gráfica que muestra la información del reporte generado, permitiendo al
+                            personal analizar los datos y tomar decisiones informadas.</p>
+                    </aside>
+                </aside>
+                <!-- Sección de registro -->
+                <aside class="pag_registro">
+                    <h2>Sección de Registro</h2>
+                    <aside>
+                        <p>En esta sección, el personal del parqueadero puede registrar nuevos usuarios y
+                            gestionar
+                            sus datos. Las funcionalidades incluyen:</p>
+                        <h3>Registro de Usuario</h3>
+                        <ul>
+                            <li><strong>Datos Personales:</strong> Campos para ingresar nombre, número de
+                                identificación, y otros datos relevantes.</li>
+                            <li><strong>Información del Vehículo:</strong> Campos para registrar la placa y tipo
+                                de
+                                vehículo.</li>
+                            <li><strong>Credenciales de Acceso:</strong> Campos para crear un nombre de usuario y
+                                contraseña.</li>
+                            <li><strong>Botón de Registro:</strong> Botón para registrar al usuario en el
+                                sistema.</li>
+                        </ul>
+
+                        <h3>Gestión de Usuarios</h3>
+                        <p>Una tabla que muestra los usuarios registrados, incluyendo:</p>
+                        <ul>
+                            <li>Nombre del usuario</li>
+                            <li>Número de identificación</li>
+                            <li>Placa del vehículo</li>
+                            <li>Tipo de usuario</li>
+                            <li>Estado del usuario</li>
+                        </ul>
+                        <p>Este sistema permite una gestión eficiente de los usuarios del parqueadero,
+                            facilitando
+                            el registro y la administración de sus datos y credenciales de acceso.</p>
+                    </aside>
+                </aside>
+                <!-- Sección de ayuda -->
+                <aside class="pag_ayuda">
+                    <h2>Sección de Ayuda</h2>
+                    <aside>
+                        <p>En esta sección, el personal del parqueadero puede encontrar respuestas a preguntas
+                            frecuentes y guías sobre cómo utilizar el sistema. Las funcionalidades incluyen:</p>
+                        <h3>Preguntas Frecuentes (FAQ)</h3>
+                        <p>Una lista de preguntas comunes con sus respectivas respuestas, ayudando al personal a
+                            resolver dudas rápidamente.</p>
+
+                        <h3>Guías y Manuales</h3>
+                        <p>Documentación detallada sobre cómo utilizar cada sección del sistema, con
+                            instrucciones
+                            paso a paso.</p>
+                    </aside>
+                </aside>
+                <!-- Sección de políticas -->
+                <aside class="pag_politicas">
+                    <h2>Sección de Políticas</h2>
+                    <aside>
+                        <p>Esta sección proporciona información sobre las políticas del parqueadero. Las
+                            principales
+                            secciones incluyen:</p>
+                        <h3>Política de Uso del Parqueadero</h3>
+                        <p>Detalles sobre las normas y reglas que los usuarios deben seguir al utilizar el
+                            parqueadero.</p>
+
+                        <h3>Política de Privacidad</h3>
+                        <p>Información sobre cómo se manejan los datos personales de los usuarios y clientes del
+                            parqueadero.</p>
+                    </aside>
+                </aside>
+            </aside>
+        </aside>
+    </main>
+    <!-- Enlace a los archivos JavaScript de Bootstrap desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

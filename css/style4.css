@@ -1,0 +1,305 @@
+/************ GLOBALES ***************/
+
+/* Estilos generales */
+main {
+   display: flex; /* Mostrar como flexbox */
+}
+html {
+   overflow: hidden; /* Ocultar el desbordamiento */
+}
+
+/************ PAGINA REPORTES ***************/
+
+/* Estilos para el contenedor de la página de reportes */
+.reports {
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Dirección de columnas */
+   align-content: center; /* Alinear contenido al centro */
+   width: var(--width-main); /* Ancho definido por variable */
+   height: var(--height-main); /* Altura definida por variable */
+   overflow-y: auto; /* Desplazamiento vertical automático */
+}
+
+/* Estilos para los títulos de la página de reportes */
+.reports h2 {
+   display: flex; /* Mostrar como flexbox */
+   align-items: center; /* Alinear elementos al centro verticalmente */
+   justify-content: center; /* Alinear elementos al centro horizontalmente */
+   font-weight: bold; /* Texto en negrita */
+   margin-top: 2rem; /* Margen superior */
+}
+
+/* Estilos para los elementos aside en la página de reportes */
+.reports > aside {
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: row; /* Dirección de filas */
+   gap: 2rem; /* Espacio entre elementos */
+   width: 90%; /* Ancho del 90% */
+   margin: 0 auto; /* Margen automático horizontalmente */
+   margin-top: 2rem; /* Margen superior */
+}
+
+/* Estilos para los gráficos en la página de reportes */
+.graphics {
+   grid-column: 1; /* Columna de la cuadrícula */
+   grid-row: 2; /* Fila de la cuadrícula */
+   margin: 0 auto; /* Margen automático */
+   display: flex; /* Mostrar como flexbox */
+   align-items: center; /* Alinear elementos al centro verticalmente */
+}
+
+/* Estilos para las imágenes dentro de .graphics */
+.graphics img {
+   margin: 0 auto; /* Margen automático */
+   width: 50rem; /* Ancho de imagen */
+}
+
+/* Estilos para el aside que sigue a .graphics */
+.graphics + aside {
+  margin: 0 auto; /* Margen automático */
+}
+
+/* Estilos para el tipo de vehículo */
+.type-veh {
+   margin-top: 1rem; /* Margen superior */
+   margin-bottom: 2rem; /* Margen inferior */
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Dirección de columnas */
+}
+
+/* Estilos para los inputs y labels dentro de .type-veh */
+.type-veh input, .type-veh label {
+   cursor: pointer; /* Cambiar cursor a pointer */
+}
+
+/* Estilos para el aside dentro de .type */
+.type > aside {
+   display: flex; /* Mostrar como flexbox */
+   align-items: center; /* Alinear elementos al centro verticalmente */
+   gap: 1rem; /* Espacio entre elementos */
+}
+
+/* Estilos para los botones dentro de .buttons */
+.buttons h4  {
+   margin-bottom: 1rem; /* Margen inferior */
+}
+
+.buttons button {
+   margin-bottom: 1rem; /* Margen inferior */
+}
+
+/* REGISTRO DE CLIENTE */
+/* Estilos para el contenedor principal de la página de registro de clientes */
+.bg-customer-regis {
+   background-image: url(../img/fondo.jpg); /* Imagen de fondo */
+   background-repeat: no-repeat; /* No repetir la imagen */
+   background-size: cover; /* Cubrir todo el contenedor */
+   background-position: center; /* Posición centrada */
+   height: 100vh; /* Altura del 100% del viewport */
+}
+
+/* Estilos para el formulario */
+.form {
+   width: 100%; /* Ancho completo */
+   height: 100vh; /* Altura del 100% del viewport */
+   overflow-y: auto; /* Permitir desplazamiento vertical si es necesario */
+   display: flex; /* Mostrar como flexbox */
+   justify-content: center; /* Centrar horizontalmente */
+   align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilos para el contenedor del formulario */
+.bg-form-cust {
+   width: 55rem; /* Ancho */
+   margin: 0 auto; /* Margen automático en los lados */
+   background-color: var(--color-Bar-nav-op); /* Color de fondo */
+   border-radius: 2rem; /* Borde redondeado */
+   color: white; /* Color de texto */
+   padding-top: 5px; /* Espacio superior */
+   padding-bottom: 4rem; /* Espacio inferior */
+}
+
+/* Estilos para el aside dentro del contenedor del formulario */
+.bg-form-cust > aside {
+   display: flex; /* Mostrar como flexbox */
+   justify-content: space-between; /* Espacio entre elementos */
+   margin-top: 2rem; /* Margen superior */
+}
+
+/* Estilos para los enlaces dentro del aside */
+.bg-form-cust > aside a {
+   position: relative; /* Posición relativa */
+   left: 4rem; /* Desplazamiento a la izquierda */
+}
+
+/* Estilos para los elementos con la clase "bi" */
+.bi {
+   color: rgb(218, 218, 218); /* Color del texto */
+   font-size: 2rem; /* Tamaño de fuente */
+   cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+}
+
+/* Estilos al pasar el cursor sobre elementos con la clase "bi" */
+.bi:hover {
+   color: white; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Estilos para el contenedor del formulario */
+.form-cust {
+   display: flex; /* Mostrar como flexbox */
+   gap: 2rem; /* Espacio entre elementos secundarios */
+   margin: 0 4rem; /* Margen en los lados */
+}
+
+/* Estilos para las columnas dentro del formulario */
+.col > aside {
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Dirección de los elementos */
+   margin-top: 1rem; /* Margen superior */
+}
+
+/* Estilos para el grupo de opciones de género */
+aside .gender {
+   flex-direction: row; /* Dirección de los elementos */
+   gap: 2rem; /* Espacio entre elementos secundarios */
+}
+
+/* Estilos para el grupo de botones */
+aside .btn-cust {
+   flex-direction: row; /* Dirección de los elementos */
+   justify-content: space-between; /* Distribución de espacio entre los elementos */
+}
+
+/* Estilos para los campos de entrada dentro del grupo de botones */
+.btn-cust input {
+   margin-top: 1.6rem; /* Margen superior */
+}
+
+/* Media query para pantallas de máximo 830px */
+@media (max-width: 830px) {
+   /* Reorganización de los elementos dentro de la sección "reports" cuando el ancho de la pantalla es menor o igual a 830px */
+   .reports > aside {
+      flex-direction: column-reverse; /* Cambia la dirección de los elementos secundarios a columna y los invierte */
+   }
+
+   /* Estilos adicionales para el grupo de tipos de vehículos */
+   .type-veh {
+      text-align: center; /* Centra el texto dentro del contenedor */
+   }
+
+   /* Estilos para el grupo "type" en pantallas más pequeñas */
+   .type {
+      display: flex; /* Mostrar como flexbox */
+      flex-direction: row; /* Dirección de los elementos */
+      justify-content: center; /* Centrar los elementos horizontalmente */
+      gap: 1rem; /* Espacio entre elementos secundarios */
+   }
+
+   /* Estilos para el grupo de botones en pantallas más pequeñas */
+   .buttons {
+      display: flex; /* Mostrar como flexbox */
+      flex-direction: row; /* Dirección de los elementos */
+      flex-wrap: wrap; /* Permitir el ajuste de línea */
+      gap: 1rem; /* Espacio entre elementos secundarios */
+   }
+}
+
+/* Media query para pantallas de máximo 768px */
+@media (max-width: 768px) {
+   /* Oculta la navegación lateral en pantallas más pequeñas */
+   .nav_lateral {
+      display: none; /* Ocultar el elemento */
+   }
+
+   /* Muestra el botón de la barra de navegación en pantallas más pequeñas */
+   .navbar-toggler {
+      display: block; /* Mostrar el elemento */
+   }
+
+   /* Oculta el logo en pantallas más pequeñas */
+   .logo {
+      display: none; /* Ocultar el elemento */
+   }
+
+   /* Estilos para la sección "reports" en pantallas más pequeñas */
+   .reports {
+      width: 100%; /* Ancho completo */
+      margin: 0 auto; /* Centrado horizontal */
+      padding-bottom: 6rem; /* Espacio en la parte inferior */
+   }
+
+   /* Estilos para los botones de informes en pantallas más pequeñas */
+   .btn_reports {
+      display: flex; /* Mostrar como flexbox */
+      flex-direction: column; /* Dirección de los elementos */
+      align-items: center; /* Centrar los elementos horizontalmente */
+   }
+}
+
+/* Media query para pantallas de máximo 576px */
+@media (max-width: 576px) {
+   /* Estilos para la sección "reports" en pantallas más pequeñas */
+   .reports {
+      overflow-y: auto; /* Permitir desplazamiento vertical */
+      align-content: start; /* Alinea el contenido al inicio */
+   }
+
+   /* Estilos para los títulos h2 dentro de la sección "reports" */
+   .reports h2 {
+      margin: 2rem 0; /* Ajusta el margen superior e inferior */
+   }
+
+   /* Estilos para el contenedor de gráficos en pantallas más pequeñas */
+   .graphics {
+      grid-row: 3; /* Mueve el contenedor de gráficos a la tercera fila */
+   }
+
+   /* Estilos para las imágenes dentro de .graphics en pantallas más pequeñas */
+   .graphics img {
+      width: 100%; /* Ancho completo */
+   }
+
+   /* Estilos para el formulario de clientes en pantallas más pequeñas */
+   .bg-form-cust {
+      width: 80%; /* Ancho del formulario */
+      padding-bottom: 2rem; /* Espacio en la parte inferior */
+      margin-bottom: 2rem; /* Margen inferior */
+   }
+
+   /* Estilos para el formulario de clientes en pantallas más pequeñas */
+   .form-cust {
+      flex-direction: column; /* Dirección de los elementos */
+      gap: 0; /* Espacio entre elementos */
+   }
+
+   /* Estilos para los botones de clientes en pantallas más pequeñas */
+   aside .btn-cust {
+      justify-content: space-around; /* Espaciado uniforme alrededor de los botones */
+   }
+
+   /* Estilos para el formulario en pantallas más pequeñas */
+   .form {
+      justify-content: flex-start; /* Alinear contenido al inicio */
+      padding-top: 3rem; /* Espacio en la parte superior */
+      align-items: flex-start;
+   }
+}
+
+/* Media query para pantallas de máximo 400px */
+@media (max-width: 400px) {
+   /* Estilos para los botones de clientes en pantallas muy pequeñas */
+   aside .btn-cust {
+      justify-content: space-between; /* Espaciado uniforme entre los botones */
+   }
+
+   /* Estilos para las imágenes dentro de .graphics en pantallas muy pequeñas */
+   .graphics img {
+      width: 30rem; /* Ancho máximo */
+   }
+
+   /* Estilos para el grupo de botones en pantallas muy pequeñas */
+   .buttons {
+      display: grid; /* Mostrar como grid */
+      grid-template-columns: 50% 50%; /* Dos columnas iguales */
+   }
+}

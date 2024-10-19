@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+
+<body>
+    <header class="header navbar">
+        <aside class="container-fluid">
+            <aside class="logo">
+                <a href="disponibilidad.html">
+                    <img src="img/logo.png" alt="Logo parqueadero">
+                </a>
+            </aside>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                    <path
+                        d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                    </path>
+                </svg>
+            </button>
+            <aside class="logo_cssj">
+                <a href="disponibilidad.html">
+                    <img src="img/logo_parqueadero.png" alt="Logo parqueadero">
+                </a>
+            </aside>
+            <aside class="logout">
+                <a href="index.html">
+                    <img src="img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
+                </a>
+            </aside>
+            <aside class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <aside class="offcanvas-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <aside class="nav-lat">
+                        <a href="disponibilidad.html">Disponibilidad</a>
+                        <a href="entrada.html">Entrada</a>
+                        <a href="salida.html">Salida</a>
+                        <a href="mensualidad.html">Mensualidad</a>
+                        <a href="reservas.html">Reservas</a>
+                        <a class="active" href="#">Reportes</a>
+                        <a href="registro.html">Registro</a>
+                        <a href="ayuda.html">Ayuda</a>
+                        <a href="politicas.html">Políticas</a>
+                    </aside>
+                </aside>
+            </aside>
+        </aside>
+    </header>
+    <main class="main">
+        <aside class="nav_lateral">
+            <a href="disponibilidad.html">Disponibilidad</a>
+            <a href="entrada.html">Entrada</a>
+            <a href="salida.html">Salida</a>
+            <a href="mensualidad.html">Mensualidad</a>
+            <a href="reservas.html">Reservas</a>
+            <a class="active" href="#">Reportes</a>
+            <a href="registro.html">Registro</a>
+            <a href="ayuda.html">Ayuda</a>
+            <a href="politicas.html">Políticas</a>
+        </aside>
+        <aside class="reports">
+            <!-- Contenedor principal para los reportes de ingresos -->
+        
+            <h2>Reportes de Ingresos</h2>
+            <!-- Encabezado que indica el tipo de reporte -->
+        
+            <aside>
+                <!-- Contenedor secundario -->
+        
+                <aside class="graphics">
+                    <!-- Contenedor para el gráfico de ingresos -->
+        
+                    <img src="img/Rep4_Celd_Ingr.png" alt="Grafico de celtas totales mensuales">
+                    <!-- Imagen que muestra el gráfico de ingresos -->
+                </aside>
+        
+                <aside class="btn_reports">
+                    <!-- Contenedor para los botones de reportes -->
+        
+                    <aside class="type-veh">
+                        <!-- Contenedor para seleccionar el tipo de vehículo -->
+        
+                        <h4>Vehículo</h4>
+                        <!-- Encabezado que indica el tipo de vehículo -->
+        
+                        <aside class="type">
+                            <!-- Contenedor para los tipos de vehículos -->
+        
+                            <aside>
+                                <!-- Opción para seleccionar carro -->
+        
+                                <label for="lcar">Carro</label>
+                                <!-- Etiqueta del radio button para carro -->
+                                <input type="radio" name="vehicle_type" id="lcar">
+                                <!-- Radio button para seleccionar carro -->
+                            </aside>
+        
+                            <aside>
+                                <!-- Opción para seleccionar moto -->
+        
+                                <label for="lmotorcycle">Moto</label>
+                                <!-- Etiqueta del radio button para moto -->
+                                <input type="radio" name="vehicle_type" id="lmotorcycle">
+                                <!-- Radio button para seleccionar moto -->
+                            </aside>
+                        </aside>
+                    </aside>
+        
+                    <!-- Botones para seleccionar el período de tiempo del reporte -->
+                    <aside class="buttons">
+                        <button class="button" type="button">Diario</button>
+                        <!-- Botón para reporte diario -->
+                        <button class="button" type="button">Semanal</button>
+                        <!-- Botón para reporte semanal -->
+                        <button class="button" type="button">Mensual</button>
+                        <!-- Botón para reporte mensual -->
+                        <button class="button" type="button">Anual</button>
+                        <!-- Botón para reporte anual -->
+                    </aside>
+                </aside>
+            </aside>
+        </aside>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

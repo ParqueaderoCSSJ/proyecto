@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta etiquetas para la codificación y la escala inicial -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Facturas</title>
+    <!-- Icono de la pestaña del navegador -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Enlaces a hojas de estilo externas -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Enlaces a hojas de estilo personalizadas -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <!-- Encabezado de la página -->
+    <header class="header navbar">
+        <aside class="container-fluid">
+            <!-- Logotipo -->
+            <aside class="logo">
+                <a href="disponibilidad.html">
+                    <img src="img/logo.png" alt="Logo parqueadero">
+                </a>
+            </aside>
+            <!-- Botón de navegación para dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+                    <path
+                        d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                    </path>
+                </svg>
+            </button>
+            <!-- Logotipo CSSJ -->
+            <aside class="logo_cssj">
+                <a href="disponibilidad.html">
+                    <img src="img/logo_parqueadero.png" alt="Logo parqueadero">
+                </a>
+            </aside>
+            <!-- Botón de cierre de sesión -->
+            <aside class="logout">
+                <a href="index.html">
+                    <img src="img/signout.png" alt="Cierre de seccion" title="Cerrar Sesion">
+                </a>
+            </aside>
+            <!-- Menú lateral desplegable -->
+            <aside class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <aside class="offcanvas-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <!-- Lista de enlaces de navegación -->
+                    <aside class="nav-lat">
+                        <a href="disponibilidad.html">Disponibilidad</a>
+                        <a class="active" href="#">Entrada</a>
+                        <a href="salida.html">Salida</a>
+                        <a href="mensualidad.html">Mensualidad</a>
+                        <a href="reservas.html">Reservas</a>
+                        <a href="reportes.html">Reportes</a>
+                        <a href="registro.html">Registro</a>
+                        <a href="ayuda.html">Ayuda</a>
+                        <a href="politicas.html">Políticas</a>
+                    </aside>
+                </aside>
+            </aside>
+        </aside>
+    </header>
+
+
+    <main class="main">
+        <!-- Barra lateral de navegación -->
+        <aside class="nav_lateral">
+            <!-- Enlaces de navegación -->
+            <a href="disponibilidad.html">Disponibilidad</a>
+            <!-- Enlace activo -->
+            <a class="active" href="#">Entrada</a>
+            <a href="salida.html">Salida</a>
+            <a href="mensualidad.html">Mensualidad</a>
+            <a href="reservas.html">Reservas</a>
+            <a href="reportes.html">Reportes</a>
+            <a href="registro.html">Registro</a>
+            <a href="ayuda.html">Ayuda</a>
+            <a href="politicas.html">Políticas</a>
+        </aside>
+
+        <!-- Sección para ingresar datos y mostrar facturas -->
+        <aside class="facturas">
+            <!-- Formulario para ingresar datos -->
+            <form class="form_facturas entrada justify-content-around">
+                <!-- Grupo de elementos -->
+                <aside>
+                    <!-- Campo de entrada para la matrícula -->
+                    <aside class="cajaderecha">
+                        <label for="lmatricula"></label>
+                        <input class="inputmat" type="text" name="matricula" id="lmatricula" placeholder="PLACA"
+                            maxlength="6">
+                    </aside>
+                </aside>
+                <!-- Selector de tipo de vehículo y botones -->
+                <aside>
+                    <aside class="tipoybotones">
+                        <!-- Lista de opciones de tarifas -->
+                        <aside class="list">
+                            <legend>Tarifa</legend>
+                            <!-- Opción para seleccionar moto -->
+                            <aside class="moto">
+                                <label for="lmoto">Moto</label>
+                                <input type="radio" name="Tarifa" id="lmoto" value="Moto">
+                            </aside>
+                            <!-- Opción para seleccionar carro -->
+                            <aside class="carro">
+                                <label for="lcarro">Carro</label>
+                                <input type="radio" name="Tarifa" id="lcarro" value="carro">
+                            </aside>
+                        </aside>
+                        <!-- Botón para imprimir factura -->
+                        <aside class="submit">
+                            <input class="button" type="submit" value="Imprimir">
+                        </aside>
+                        <!-- Botón para guardar datos -->
+                        <aside class="reset">
+                            <input class="button" type="reset" value="Guardar">
+                        </aside>
+                    </aside>
+                </aside>
+            </form>
+
+            <!-- Tabla para mostrar facturas -->
+            <aside class="tablacompleta">
+                <table class="tabla">
+                    <thead>
+                        <!-- Fila de encabezado de la tabla -->
+                        <tr class="primerafila">
+                            <!-- Columnas de la tabla -->
+                            <th>Placa</th>
+                            <th>Tarifa</th>
+                            <th>Hora Entrada</th>
+                            <th>Recibo</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Filas de datos de la tabla -->
+                        <tr>
+                            <td>LWC65B</td>
+                            <td>Moto</td>
+                            <td>03:45 PM</td>
+                            <td><a href="img/ingreso_1.png" target="_blank">LWC65B</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>BWC690</td>
+                            <td>Carro</td>
+                            <td>04:00 PM</td>
+                            <td><a href="img/ingreso_2.png" target="_blank">BWC690</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>DEC165</td>
+                            <td>Carro</td>
+                            <td>11:33 AM</td>
+                            <td><a href="img/ingreso_3.png" target="_blank">DEC165</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>MOP487</td>
+                            <td>Carro</td>
+                            <td>05:11 PM</td>
+                            <td><a href="#">MOP487</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>LWC65B</td>
+                            <td>Moto</td>
+                            <td>03:45 PM</td>
+                            <td><a href="#">LWC65B</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>BWC690</td>
+                            <td>Carro</td>
+                            <td>04:00 PM</td>
+                            <td><a href="#">BWC690</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>DEC165</td>
+                            <td>Carro</td>
+                            <td>11:33 AM</td>
+                            <td><a href="#">DEC165</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>MOP487</td>
+                            <td>Carro</td>
+                            <td>05:11 PM</td>
+                            <td><a href="#">MOP487</a></td>
+                            <td><img class="delete" src="img/delete.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+        </aside>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
