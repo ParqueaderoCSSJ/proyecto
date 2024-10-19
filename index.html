@@ -8,11 +8,12 @@
   <!-- Configuración de la escala inicial y la anchura para dispositivos móviles -->
   <title>Login</title>
   <!-- Título de la página -->
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="./views/img/favicon.png" type="image/x-icon" />
   <!-- Icono de la pestaña -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./views/css/style.css" />
   <!-- Enlace a la hoja de estilos principal -->
-  <link rel="stylesheet" href="css/style1.css" />
+  <link rel="stylesheet" href="./views/css/login.css" />
+  <link rel="stylesheet" href="./views/admin/disponibilidad.html" />
   <!-- Enlace a otra hoja de estilos -->
 </head>
 
@@ -26,10 +27,10 @@
       <!-- Título del formulario -->
       <aside class="container">
         <!-- Contenedor del logo -->
-        <img src="img/logo.png" alt="logo" />
+        <img src="./views/img/logo.png" alt="logo" />
         <!-- Imagen del logo -->
       </aside>
-      <form action="disponibilidad.html">
+      <form id="login">
         <!-- Formulario para el inicio de sesión -->
         <aside class="usuario">
           <!-- Campo de entrada para el nombre de usuario -->
@@ -40,18 +41,21 @@
         </aside>
         <aside class="usuario">
           <!-- Campo de entrada para la contraseña -->
-          <input type="password" name="contraseña" id="contraseña" required />
+          <input type="password" name="password" id="password" required />
           <!-- Campo de entrada de contraseña -->
           <label for="contraseña">Contraseña</label>
           <!-- Etiqueta para el campo de contraseña -->
         </aside>
-        <a class="reestablecer" href="..admin/registro_cust.html">Restablecer contraseña</a>
+        <a class="reestablecer" href="./views/usuario/registro.html">Restablecer contraseña</a>
         <!-- Enlace para restablecer la contraseña -->
-        <input class="btn_login" type="submit" value="Ingresar" />
+        <input class="btn_login" type="submit" value="Ingresar" id="ingresar"/>
         <!-- Botón de envío del formulario -->
       </form>
     </aside>
   </main>
-</body>
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./controllers/main.js"></script>
+  <script type="module" src="./controllers/controllerLogin.js"></script>
+</body>
 </html>

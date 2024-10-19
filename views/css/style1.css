@@ -1,0 +1,549 @@
+/**** JOHAN *****/
+/***** GLOBALES ******/
+/**** PAGINA LOGIN *****/
+/* Estilos generales para el documento HTML */
+html {
+   overflow: hidden; /* Oculta el desbordamiento de contenido fuera del área visible */
+}
+
+/* Estilos para el cuerpo de la página de inicio de sesión */
+
+/*PAGINA DISPONIBILIDAD*/
+/*graficas(imagenes jajaja)*/
+
+/* Estilos para el contenedor principal */
+.main {
+   display: flex; /* Mostrar como contenedor flexible */
+}
+
+/* Estilos para el contenedor de gráficas */
+.graficas {
+   display: flex; /* Mostrar como contenedor flexible */
+   flex-direction: column; /* Dirección de la columna */
+   width: var(--width-main); /* Ancho definido por variable */
+   height: var(--height-main); /* Altura definida por variable */
+   overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
+   padding-bottom: 6rem;
+}
+
+/* Estilos para las columnas de gráficas */
+.columna {
+   display: flex; /* Mostrar como contenedor flexible */
+   flex-direction: column; /* Dirección de la columna */
+   align-items: center; /* Alinear elementos al centro */
+   margin: 0 auto; /* Margen automático horizontal */
+   margin-top: 3rem; /* Margen superior */
+   margin-bottom: 2rem; /* Margen inferior */
+   max-width: calc(50% - 30px); /* Ancho máximo */
+}
+
+/* Estilos para el título de las columnas */
+.columna h2 {
+   margin-bottom: 1rem; /* Margen inferior */
+   font-weight: bold; /* Estilo de fuente en negrita */
+}
+
+/* Estilos para las gráficas de moto y carro */
+.graficasMoto,
+.graficasCarro {
+   display: flex; /* Mostrar como contenedor flexible */
+   flex-direction: row; /* Dirección de la fila */
+   grid-gap: 10px; /* Espacio entre elementos */
+}
+
+/* Estilos para las imágenes de las gráficas de moto y carro */
+.graficasMoto img,
+.graficasCarro img {
+   width: 28rem; /* Ancho de la imagen */
+   height: auto; /* Altura automática para mantener la proporción */
+   margin: 0 auto; /* Margen automático horizontal */
+   border-radius: 1rem; /* Radio de borde */
+}
+
+/* Estilos para el contenedor de imágenes */
+.contenedor-imagenes {
+   display: flex; /* Mostrar como contenedor flexible */
+   flex-direction: column; /* Dirección de la columna */
+   align-items: center; /* Alinear elementos al centro horizontalmente */
+}
+
+/* Estilos para la página de ayuda */
+.container_ayuda {
+   width: 100%; /* Ancho completo */
+   height: var(--height-main); /* Altura definida por variable */
+   overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
+   padding: 0 2rem; /* Relleno horizontal */
+   padding-top: 3rem; /* Relleno superior */             
+   padding-bottom: 8rem;
+}
+
+/* Estilos para el contenedor de ayuda */
+.cont_ayuda {
+   width: 80%; /* Ancho del contenedor */
+   margin-left: 5rem; /* Margen izquierdo */
+   margin-top: 2rem; /* Margen superior */
+}
+
+/* Estilos para las secciones de la navegación y páginas */
+.header_navegacion,
+.pag_disponibilidad,
+.pag_facturas,
+.pag_mensualidad,
+.pag_reservas,
+.pag_reportes,
+.pag_registro {
+   margin-bottom: 30px; /* Margen inferior para separar las secciones */
+}
+
+/* Estilos para los títulos de las secciones */
+.header_navegacion h2,
+.pag_disponibilidad h2,
+.pag_facturas h2,
+.pag_mensualidad h2,
+.pag_reservas h2,
+.pag_reportes h2,
+.pag_registro h2 {
+   font-size: 24px; /* Tamaño de fuente */
+   font-weight: bold; /* Peso de la fuente */
+   color: #1a1a1a; /* Color del texto */
+}
+
+/* Estilos para los párrafos de las secciones */
+.header_navegacion p,
+.pag_disponibilidad p,
+.pag_facturas p,
+.pag_mensualidad p,
+.pag_reservas p,
+.pag_reportes p,
+.pag_registro p {
+   font-size: 16px; /* Tamaño de fuente */
+   color: #333; /* Color del texto */
+}
+
+/* Estilos para dispositivos con un ancho máximo de 1040px */
+@media (max-width: 1040px){
+   /* Cambio de dirección de la disposición de las gráficas */
+   .graficas {
+      flex-direction: row; /* Cambio a disposición en fila */
+   }
+   /* Estilos para las gráficas de moto y carro */
+   .graficasMoto,
+   .graficasCarro {
+      display: flex; /* Mostrar como contenedor flexible */
+      flex-direction: column; /* Dirección de la columna */
+   }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 960px */
+@media (max-width: 960px){
+   /* Ajuste del ancho del contenedor en la página de mensualidad para clientes */
+   .main .container-mensualidadCliente {
+      width: 100%;
+   }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
+   /* Mostrar el botón para desplegar el menú en la barra de navegación */
+   .navbar-toggler {
+      display: block;
+   }
+   /* Ocultar el logo en la barra de navegación */
+   .logo {
+      display: none;
+   }
+   /* Ocultar la barra lateral de navegación */
+   .nav_lateral {
+      display: none;
+   }
+   /* Cambios en la disposición de las gráficas para pantallas más grandes */
+   .graficas {
+      width: 100%; /* Ancho completo */
+   }
+   /* Ajustes en el contenedor de ayuda */
+   .cont_ayuda{
+      width: 90%; /* Ancho del 90% */
+      margin-top: 0; /* Sin margen superior */
+      margin-left: 0; /* Sin margen izquierdo */
+      margin: 0 auto; /* Margen automático en los lados */
+   }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+   /* Cambio en la disposición de las gráficas a columna */
+   .graficas {
+      flex-direction: column; /* Cambio a disposición en columna */
+   }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 576px */
+@media (max-width: 576px) {
+   /* Mostrar el botón para desplegar el menú en la barra de navegación */
+   .navbar-toggler {
+      display: block;
+   }
+   /* Ocultar el logo en la barra de navegación */
+   .logo {
+      display: none;
+   }
+   /* Ocultar la barra lateral de navegación */
+   .nav_lateral {
+      display: none;
+   }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 478px */
+@media (max-width: 478px) {
+   /* Ajuste del ancho del contenedor de inicio de sesión */
+   .login {
+      width: 85%; /* Ancho del 85% */
+   } 
+   /* Ajuste del ancho del formulario */
+   .formulario {
+      width: 100%; /* Ancho completo */
+   }
+}
+
+/* Estilos para la página de mensualidad del cliente */
+.container-mensualidadCliente {
+   width: var(--width-main); /* Ancho definido por la variable CSS */
+   height: var(--height-main); /* Altura definida por la variable CSS */
+   display: flex;
+   flex-direction: column;
+   gap: 20px; /* Espacio entre elementos */
+}
+
+.espacio1 {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr); /* Cuadrícula con 5 columnas de tamaño igual */
+   grid-gap: 20px; /* Espacio entre elementos de la cuadrícula */
+   padding-top: 20px; /* Relleno superior */
+}
+
+textarea {
+   resize: none; /* Evitar que el textarea se redimensione */
+   height: 100px; /* Altura fija */
+   width: 1000px; /* Ancho fijo */
+}
+
+.botonesyTexto {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end; /* Alinear elementos al final del eje transversal */
+   gap: 30px; /* Espacio entre elementos */
+   grid-column: 3 / span 1; /* Columnas dentro de la cuadrícula */
+}
+
+/* Estilos para la cuarta columna */
+.columna4 {
+   padding-left: 25%; /* Relleno a la izquierda */
+   align-items: center; /* Alinear elementos al centro */
+}
+
+/* Ajustes de la columna 5 */
+.columna5{
+   padding-top: 30px; /* Espacio superior aumentado */
+}
+
+/* Ajustes de las columnas 1, 2 y 3 */
+.columna1,
+.columna2,
+.columna3{
+   padding-top: 10px; /* Espacio superior incrementado */
+}
+
+/* Ajuste de margen para las columnas 1 a 5 */
+.columna1,  
+.columna2,
+.columna3,
+.columna4,
+.columna5{
+   margin: 0 auto; /* Margen horizontal central */
+}
+
+/* Estilos para el lote de estacionamiento */
+.parking-lot{
+   background-color: rgba(78, 100, 119, 0.85); /* Color de fondo con transparencia */
+   color: white; /* Color del texto */
+   text-align: center; /* Alineación del texto */
+   padding: 2rem; /* Relleno interno */
+   margin: 0 auto; /* Margen horizontal central */
+   border-radius: 10px; /* Borde redondeado */
+   width: 100%; /* Ancho completo */
+}
+
+/* Estilos para el espacio de estacionamiento */
+.parking-space {
+   margin-top: auto; /* Margen superior automático */
+   padding: 0 auto; /* Relleno horizontal automático */
+}
+
+/* Estilos para el título del lote de estacionamiento */
+.parking-lot h2 {
+   text-align: center; /* Alineación del texto */
+   font-size: 30px; /* Tamaño de fuente */
+   padding-bottom: 2rem; /* Espacio inferior */
+}
+
+/* Ajustes de la zona 3 */
+.zona3{
+   padding-top: 2rem; /* Espacio superior aumentado */
+   padding-bottom: 8rem;
+   width: 95%; /* Ancho del 95% */
+   margin: 0 auto; /* Margen horizontal central */
+}
+
+/* Estilos para el contenedor de la cuadrícula */
+.grid {
+   display: flex; /* Mostrar como flexbox */
+   flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+   margin: 0 auto; /* Margen horizontal central */
+   gap: 1rem; /* Espacio entre elementos */
+}
+
+/* Estilos para las etiquetas dentro de la cuadrícula */
+.grid label {
+   margin: 0 auto; /* Margen horizontal central */
+}
+
+/* Estilos para los lugares de estacionamiento */
+.parking-spot {
+   width: 90px; /* Ancho */
+   height: 90px; /* Alto */
+   display: flex; /* Mostrar como flexbox */
+   align-items: center; /* Alinear elementos verticalmente */
+   justify-content: center; /* Alinear elementos horizontalmente */
+   border-radius: 6px; /* Borde redondeado */
+   color: white; /* Color del texto */
+   font-weight: bold; /* Grosor de la fuente */
+}
+
+/* Estilos para los checkbox (ocultar) */
+input[type="radio"]{
+   display: none; /* Ocultar */
+}
+
+/* Estilos para el estado 'verde' del lugar de estacionamiento */
+.green {
+   background-color: rgb(72, 181, 196); /* Color de fondo verde */
+   cursor: pointer; /* Cursor al pasar por encima */
+}
+
+/* Estilos para el estado 'verde' cuando se pasa el mouse por encima */
+.green:hover {
+   background-color: rgb(253, 215, 1); /* Cambio de color de fondo */
+   color: black; /* Cambio de color del texto */
+}
+
+/* Estilos para el estado 'checked' del checkbox (mostrar) */
+input[type="radio"]:checked + span {
+   background-color:  rgb(253, 215, 1); /* Color de fondo */
+   width: 100%; /* Ancho completo */
+   height: 100%; /* Alto completo */
+   display: flex; /* Mostrar como flexbox */
+   align-items: center; /* Alinear elementos verticalmente */
+   justify-content: center; /* Alinear elementos horizontalmente */
+   border-radius: 6px; /* Borde redondeado */
+   color: black; /* Color del texto */
+}
+
+/* Estilos para un elemento con fondo rojo */
+.red {
+   background-color: rgb(170, 4, 4); /* Color de fondo rojo */
+   pointer-events: none; /* Deshabilitar eventos de puntero */
+}
+
+/* Estilos para la barra lateral de navegación */
+.nav_lateral {
+   height: var(--height-main); /* Altura igual a la altura principal */
+}
+
+/* Estilos para la sección de facturas */
+.facturas {
+   height: var(--height-main); /* Altura igual a la altura principal */
+   overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
+   padding-bottom: 2rem; /* Espacio inferior */
+}
+
+/* Estilos para el formulario de facturas */
+.form_facturas {
+   display: flex; /* Mostrar como flexbox */
+   width: 95%; /* Ancho del 95% */
+   margin: 3rem auto; /* Margen superior e inferior de 3rem, y margen horizontal automático */
+   justify-content: space-between; /* Distribuir el espacio entre los elementos */
+   gap: 2rem; /* Espacio entre los elementos */
+}
+
+/* Estilos para los elementos secundarios del formulario de facturas */
+.form_facturas > aside {
+   display: flex; /* Mostrar como flexbox */
+   justify-content: space-between; /* Distribuir el espacio entre los elementos */
+   gap: 2rem; /* Espacio entre los elementos */
+   width: 100%; /* Ancho del 100% */
+}
+
+/* Estilos para las cajas derecha e izquierda del formulario */
+.cajaderecha, .cajaizquierda {
+   display: flex; /* Mostrar como flexbox */
+   width: 100%; /* Ancho del 100% */
+}
+
+/* Estilos para los campos de matrícula y caja izquierda */
+.form_facturas #lmatricula, .form_facturas #leftbox {
+   width: 100%; /* Ancho del 100% */
+   height: 100%; /* Altura del 100% */
+   border-radius: 25px; /* Borde redondeado */
+   font-size: 6rem; /* Tamaño de fuente grande */
+   text-align: center; /* Texto centrado */
+   padding: 0 1rem; /* Relleno horizontal */
+   background-color: white; /* Fondo blanco */
+   text-transform: uppercase; /* Convertir texto a mayúsculas */
+}
+
+/* Estilos para los campos de entrada de matrícula, caja izquierda y decorar */
+.inputmat, .leftbox, .decorar {
+   border: 1px solid black; /* Borde sólido negro */
+}
+
+/* Estilos para la caja izquierda */
+.leftbox {
+   pointer-events: none; /* Deshabilitar eventos de puntero */
+}
+
+/* Estilos para los contenedores de datos y tipo y botones */
+.datos, .tipoybotones {
+   max-width: 11rem; /* Ancho máximo de 11rem */
+   min-width: 11rem; /* Ancho mínimo de 11rem */
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Dirección de columna */
+   justify-content: space-between; /* Distribuir el espacio entre los elementos */
+   align-items: center; /* Alinear los elementos al centro */
+}
+
+/* Estilos para los campos de entrada de hora de entrada, salida y horas */
+.inputenterhour, .inputouthour, .hours {
+   width: 100%; /* Ancho del 100% */
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Dirección de columna */
+   border-radius: 10px; /* Borde redondeado */
+}
+
+/* Estilos para la lista de opciones */
+.list {
+   display: flex; /* Mostrar como flexbox */
+   flex-direction: column; /* Dirección de columna */
+}
+
+/* Estilos para los elementos dentro de la lista */
+.list aside {
+   display: flex; /* Mostrar como flexbox */
+   align-items: center; /* Alinear elementos al centro verticalmente */
+   gap: 1rem; /* Espacio entre elementos */
+}
+
+/* Estilos para los elementos de la lista al pasar el mouse */
+.list label:hover, .list input:hover {
+   cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+
+/* Estilos para la leyenda de la lista */
+.list legend {
+   font-size: 17px; /* Tamaño de fuente */
+   font-weight: bold; /* Peso de fuente en negrita */
+   text-align: left; /* Alinear texto a la izquierda */
+   margin-bottom: 0; /* Eliminar margen inferior */
+}
+
+/* Estilos para los botones de enviar y restablecer */
+.submit, .reset {
+   text-align: center; /* Alinear texto al centro */
+   margin-top: 5px; /* Margen superior */
+}
+
+/* Estilos decorativos */
+.decorar {
+   color: black; /* Color de texto negro */
+   background-color: white; /* Fondo blanco */
+   border-radius: 5px; /* Borde redondeado */
+   width: 90%; /* Ancho del 90% */
+   text-align: center; /* Alinear texto al centro */
+}
+
+/* Estilos para la decoración */
+.decoration1 {
+   padding: 2px; /* Relleno */
+   margin-bottom: 3px; /* Margen inferior */
+}
+
+/* Estilos para la tabla completa */
+.tablacompleta {
+   width: 100%; /* Ancho del 100% */
+   height: 36rem; /* Altura de 36rem */
+   max-height: 300px; /* Altura máxima de 300px */
+   overflow-y: auto; /* Habilitar desplazamiento vertical */
+}
+
+/* Estilos para la tabla */
+.tabla {
+   background-color: white; /* Fondo blanco */
+   text-align: center; /* Alinear texto al centro */
+   border-collapse: collapse; /* Colapsar bordes de la tabla */
+   width: 95%; /* Ancho del 95% */
+   margin: 0 auto; /* Margen automático horizontalmente */
+   margin-bottom: 1rem; /* Margen inferior */
+}
+
+/* Estilos para las celdas de encabezado y datos */
+th,
+td {
+   border: 1px solid rgb(149, 137, 137); /* Borde de 1px sólido */
+   padding: 0; /* Sin relleno */
+   width: 208px; /* Ancho de la celda */
+   height: 50px; /* Altura de la celda */
+}
+
+/* Estilos para las celdas de encabezado */
+th {
+   border: #000000; /* Borde negro */
+   position: sticky; /* Fijar la posición */
+   top: 0; /* Fijar en la parte superior */
+   background-color: #76C9D7; /* Color de fondo azul */
+   z-index: 1; /* Índice z para superposición */
+}
+
+/* Estilos para la primera fila */
+.primerafila {
+   background-color: #76C9D7; /* Color de fondo azul */
+}
+
+/* Estilos para el botón de eliminar */
+.delete {
+   width: 3rem; /* Ancho de 3rem */
+}
+
+/* Estilos al pasar el mouse sobre el botón de eliminar */
+.delete:hover {
+   position: relative; /* Posición relativa */
+   bottom: 2px; /* Mover hacia abajo 2px */
+   right: 2px; /* Mover hacia la derecha 2px */
+   cursor: pointer; /* Cambiar cursor a puntero */
+}
+
+/* Estilos para los inputs en el formulario de facturas */
+.form_facturas input:not(.button){
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Familia de fuentes */
+   font-size: 13px; /* Tamaño de fuente */
+}
+
+/* Estilos para el contenedor de la página de mensualidad cliente en pantallas pequeñas */
+@media (max-width: 768px){
+ .container-mensualidadCliente {
+   width: 100%; /* Ancho del 100% */
+ }
+ .green:hover {
+   background-color:  rgb(72, 181, 196);
+   color: white;
+ }
+}
+
