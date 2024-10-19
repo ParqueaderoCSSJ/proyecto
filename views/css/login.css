@@ -1,3 +1,12 @@
+/* CORRECIONES DE ESTILOS */
+body.swal2-height-auto{
+    min-height: 100vh;
+}
+.swal2-show {
+    font-size: 1.6rem;
+}
+
+/* ESTILOS DEL LOGIN */
 .body-login {
     background-image: url(../img/fondo.jpg);
     /* Imagen de fondo */
