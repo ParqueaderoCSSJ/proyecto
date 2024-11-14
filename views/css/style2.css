@@ -92,7 +92,7 @@ main {
       min-width: 11rem; /* Ancho mínimo de 11rem */
       display: flex; /* Se muestra como flexbox */
       flex-direction: column; /* Dirección de columna */
-      justify-content: space-between; /* Espacio uniforme entre elementos */
+      justify-content: center; /* Espacio uniforme entre elementos */
       align-items: center; /* Alineación centrada vertical */
 }
 
@@ -143,7 +143,7 @@ main {
 .submit,
 .reset {
       text-align: center; /* Alineación del texto al centro */
-      margin-top: 5px; /* Margen superior de 5px */
+      margin-top: 10px; /* Margen superior de 5px */
 }
 
 /* Estilos para el elemento decorar */

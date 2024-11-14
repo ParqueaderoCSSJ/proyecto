@@ -91,7 +91,7 @@
         <!-- Sección para ingresar datos y mostrar facturas -->
         <aside class="facturas">
             <!-- Formulario para ingresar datos -->
-            <form class="form_facturas entrada justify-content-around">
+            <form id="formRegistro" class="form_facturas entrada justify-content-around">
                 <!-- Grupo de elementos -->
                 <aside>
                     <!-- Campo de entrada para la matrícula -->
@@ -115,16 +115,12 @@
                             <!-- Opción para seleccionar carro -->
                             <aside class="carro">
                                 <label for="lcarro">Carro</label>
-                                <input type="radio" name="Tarifa" id="lcarro" value="carro">
+                                <input type="radio" name="Tarifa" id="lcarro" value="Carro">
                             </aside>
-                        </aside>
-                        <!-- Botón para imprimir factura -->
-                        <aside class="submit">
-                            <input class="button" type="submit" value="Imprimir">
                         </aside>
                         <!-- Botón para guardar datos -->
                         <aside class="reset">
-                            <input class="button" type="reset" value="Guardar">
+                            <input class="button" type="submit" value="Guardar" id="btnGuardar">
                         </aside>
                     </aside>
                 </aside>
@@ -144,9 +140,9 @@
                             <th>Eliminar</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="informacionRegistro">
                         <!-- Filas de datos de la tabla -->
-                        <tr>
+                        <!-- <tr>
                             <td>LWC65B</td>
                             <td>Moto</td>
                             <td>03:45 PM</td>
@@ -201,7 +197,7 @@
                             <td>05:11 PM</td>
                             <td><a href="#">MOP487</a></td>
                             <td><img class="delete" src="../img/delete.png" alt=""></td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </aside>
@@ -210,6 +206,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script type="module" src="../../controllers/controllerEntrada.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
