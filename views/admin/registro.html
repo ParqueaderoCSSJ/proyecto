@@ -70,127 +70,116 @@
             <a href="./ayuda.html">Ayuda</a>
             <a href="./politicas.html">Políticas</a>
         </aside>
+
         <aside class="caja-reg-principal">
-            <!-- Contenedor principal del formulario de registro -->
-            <h1 class="title">Registro de Usuarios</h1>
-            <!-- Encabezado indicando el propósito del formulario -->
-        
-            <aside class="caja-Reg">
-                <!-- Contenedor para el formulario -->
-                <form class="formularios">
-                    <!-- Inicio del formulario -->
-                    <aside class="dos-section">
-                        <!-- Contenedor para dividir el formulario en dos secciones -->
-                        
-        
-                        <aside class="seccion1">
-                            <!-- Primera sección del formulario -->
-                            <aside>
-                                <!-- Contenedor del campo "Tipo Documento" -->
-                                <label for="Correo">Tipo Documento</label>
-                                <!-- Etiqueta para el campo de tipo de documento -->
-                                <select name="tipoDocumento" id="tipoDocumento" required>
-                                    <!-- Menú desplegable para seleccionar el tipo de documento -->
-                                    <option value="">Seleccionar</option>
-                                    <option value="cedula">Cédula de ciudadanía</option>
-                                    <option value="tdI">Tarjeta de identidad</option>
-                                    <option value="extranjeria">Cédula de extranjería</option>
-                                </select>
-                            </aside>
-                            <aside>
-                                <label for="Documento">No° Documento</label>
-                                <input type="number" name="Documento" id="Documento" required>
-                            </aside>
-                            <aside>
-                                <!-- Contenedor del campo "Nombre" -->
-                                <label for="Nombre">Nombre</label>
-                                <!-- Etiqueta para el campo de nombre -->
-                                <input type="text" name="Nombre" id="Nombre" required>
-                                <!-- Campo de entrada de texto para el nombre -->
-                            </aside>
-                            <aside>
-                                <!-- Contenedor del campo "Apellidos" -->
-                                <label for="Apellido">Apellidos</label>
-                                <!-- Etiqueta para el campo de apellidos -->
-                                <input type="text" name="Apellido" id="Apellido" required>
-                                <!-- Campo de entrada de texto para los apellidos -->
-                            </aside>
+                <!-- Contenedor principal del formulario de registro -->
+                <h1 class="title">Registro de Usuarios</h1>
+                <!-- Encabezado indicando el propósito del formulario -->
+            
+                <aside class="caja-Reg">
+                    <!-- Contenedor para el formulario -->
+                    <form class="formularios" id="formularioRegistro">
+                        <!-- Inicio del formulario -->
+                        <aside class="dos-section">
+                            <!-- Contenedor para dividir el formulario en dos secciones -->
                             
-                            <!-- Otros campos de entrada de información similares -->
-                            
-                            <aside class="radio">
-                                <label>Sexo</label>
-                                <aside class="sexo">
-                                    <aside>
-                                        <input value="Hombre" type="radio" name="sexo" id="Hombre" required>
-                                        <label  for="Hombre">Hombre</label>
-                                    </aside>
-                                    <aside>
-                                        <input value="Mujer" type="radio" name="sexo" id="Mujer">
-                                        <label  for="Mujer">Mujer</label>
-                                    </aside>
-                                    <aside>
-                                        <input value="Binario" type="radio" name="sexo" id="binario">
-                                        <label  for="binario">Binario</label>
+            
+                            <aside class="seccion1">
+                                <!-- Primera sección del formulario -->
+                                <aside>
+                                    <!-- Contenedor del campo "Tipo Documento" -->
+                                    <label for="Correo">Tipo Documento</label>
+                                    <!-- Etiqueta para el campo de tipo de documento -->
+                                    <select name="tipoDocumento" id="tipoDocumento" required>
+                                        <!-- Menú desplegable para seleccionar el tipo de documento -->
+                                        <option value="">Seleccionar</option>
+                                        <option value="cc">Cédula de ciudadanía</option>
+                                        <option value="ti">Tarjeta de identidad</option>
+                                        <option value="ce">Cédula de extranjería</option>
+                                    </select>
+                                </aside>
+                                <aside>
+                                    <label for="Documento">No° Documento</label>
+                                    <input type="number" name="Documento" id="Documento" required>
+                                </aside>
+                                <aside>
+                                    <!-- Contenedor del campo "Nombre" -->
+                                    <label for="Nombre">Nombre</label>
+                                    <!-- Etiqueta para el campo de nombre -->
+                                    <input type="text" name="Nombre" id="Nombre" required>
+                                    <!-- Campo de entrada de texto para el nombre -->
+                                </aside>
+                                <aside>
+                                    <!-- Contenedor del campo "Apellidos" -->
+                                    <label for="Apellido">Apellidos</label>
+                                    <!-- Etiqueta para el campo de apellidos -->
+                                    <input type="text" name="Apellido" id="Apellido" required>
+                                    <!-- Campo de entrada de texto para los apellidos -->
+                                </aside>
+                                
+                                <!-- Otros campos de entrada de información similares -->
+                                
+                                <aside class="radio">
+                                    <label>Sexo</label>
+                                    <aside class="sexo">
+                                        <aside>
+                                            <input value="Hombre" type="radio" name="sexo" id="Hombre" required>
+                                            <label  for="Hombre">Hombre</label>
+                                        </aside>
+                                        <aside>
+                                            <input value="Mujer" type="radio" name="sexo" id="Mujer">
+                                            <label  for="Mujer">Mujer</label>
+                                        </aside>
+                                        <aside>
+                                            <input value="Binario" type="radio" name="sexo" id="binario">
+                                            <label  for="binario">Binario</label>
+                                        </aside>
                                     </aside>
                                 </aside>
+                                <aside>
+                                    <label for="Telefono">Teléfono</label>
+                                    <input type="number" name="Telefono" id="Telefono" required>
+                                </aside>
                             </aside>
-                            <aside>
-                                <label for="Telefono">Teléfono</label>
-                                <input type="number" name="Telefono" id="Telefono" required>
-                            </aside>
-                        </aside>
-                        <aside class="seccion2">
-                            <aside>
-                                <label for="Correo">Correo Electrónico</label>
-                                <input type="email" name="Correo" id="Correo">
-                            </aside>
-                            <aside>
-                                <label for="Roll">Rol</label>
-                                
-                                    <select name="Rol" id="Rol" id="Rol" required>
-                                        <option value="">Seleccionar</option>
-                                        <option value="administrativa">Administrativa</option>
-                                        <option value="operario">Operario</option>
-                                        <option value="cliente">Cliente</option>
-                                    </select>
-                            </aside>
-                            <aside>
-                                <label for="Cargo">Cargo</label>
-                                
-                                    <select name="cargo" id="cargo" required>
-                                        <option value="">Seleccionar</option>
-                                        <option value="gerente">Gerente</option>
-                                        <option value="admin">Administrador</option>
-                                        <option value="auxiliar">Auxiliar</option>
-                                        <option value="cajero">Cajero</option>
-                                    </select>
-                                
-                            </aside>
-                            <aside>
-                                <label for="Usuario">Usuario</label>
-                                <input type="text" name="Usuario" id="Usuario">
-                            </aside>
-                            <aside>
-                                <label for="Contraseña">Contraseña</label>
-                                <input type="password" name="Contraseña" id="Contrasena">
-                            </aside>
-                            <aside>
-                                <label for="Confirmar">Confirmar Contraseña</label>
-                                <input type="password" name="Confirmar" id="Confirmar">
-                            </aside>
-                        <!-- Botones para enviar el formulario -->
-                            <aside class="botones">
-                                <input class="button" id="btnGuardar" type="submit" value="Guardar">
-                                <!-- Botón para guardar -->
-                                <input class="button" type="button" value="Eliminar">
-                                <!-- Botón para eliminar -->
+                            <aside class="seccion2">
+                                <aside>
+                                    <label for="Correo">Correo Electrónico</label>
+                                    <input type="email" name="Correo" id="Correo">
+                                </aside>
+                                <aside>
+                                    <label for="Roll">Rol</label>
+                                    
+                                        <select name="Rol" id="Rol" id="Rol" required>
+                                            <option value="">Seleccionar</option>
+                                            <option value="admin">Administrativa</option>
+                                            <option value="operario">Operario</option>
+                                            <option value="cliente">Cliente</option>
+                                        </select>
+                                </aside>
+                                <aside>
+                                    <label for="Usuario">Usuario</label>
+                                    <input type="text" name="Usuario" id="Usuario">
+                                </aside>
+                                <aside>
+                                    <label for="Contraseña">Contraseña</label>
+                                    <input type="password" name="Contraseña" id="Contrasena">
+                                </aside>
+                                <aside>
+                                    <label for="Confirmar">Confirmar Contraseña</label>
+                                    <input type="password" name="Confirmar" id="Confirmar">
+                                </aside>
+                            <!-- Botones para enviar el formulario -->
+                                <aside class="botones" id="botones">
+                                    <input class="button" id="btnGuardar" type="submit" value="Guardar">
+                                    <!-- Botón para guardar -->
+                                </aside>
                             </aside>
                         </aside>
-                    </aside>
-                </form>
-            </aside>
+                    </form>
+
+                </aside>
         </aside>
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
