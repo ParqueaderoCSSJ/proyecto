@@ -16,7 +16,7 @@ function validacionDeCampos(e) {
   const apellido = document.querySelector('#Apellido').value.toLowerCase();
   const telefono = document.querySelector('#Telefono').value.toLowerCase();
   const correo = document.querySelector('#Correo').value.toLowerCase();
-  const roll = document.querySelector('#Rol').value.toLowerCase();
+  const roll = document.querySelector('#Rol') !== null ? document.querySelector('#Rol').value : 'usuario' ;
   const user = document.querySelector('#Usuario').value;
   const password = document.querySelector('#Contrasena').value;
   const confirmar = document.querySelector('#Confirmar').value;
