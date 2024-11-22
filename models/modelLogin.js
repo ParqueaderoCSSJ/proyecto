@@ -8,12 +8,11 @@ let usuarios = [
 document.addEventListener('DOMContentLoaded', functionArray)
 
 function functionArray() {
-    let validacion = JSON.parse(localStorage.getItem('registros')) || [];
-    if( validacion.length === 0 ) {
+    let users = JSON.parse(localStorage.getItem('registros')) || [];
+    if( users.length === 0 ) {
         localStorage.setItem('registros', JSON.stringify(usuarios));
         return;
     }
-    let users = JSON.parse(localStorage.getItem('registros')) || [];
     return users
 }
 
