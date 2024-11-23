@@ -175,6 +175,19 @@ html {
    overflow-y: auto; /* Permitir desplazamiento vertical si el contenido excede la altura */
    width: 100%; /* Ancho del 100% */
    padding-bottom: 6rem; /* Relleno inferior de 2rem */
+   display: flex;
+   flex-direction: column;
+}
+
+.tablaUsuario {
+   width: 95%;
+   margin: 30px auto
+}
+
+.tablausuarios {
+   width: 98%; /* Ancho del 95% del contenedor */
+   height: calc(100vh - 28rem); /* Altura calculada como el 100% de la altura de la ventana menos 28rem */
+   margin: 0 auto; /* Margen automático a la izquierda y derecha para centrar horizontalmente */
 }
 
 /* Estilos para el título */
