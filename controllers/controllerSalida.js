@@ -16,11 +16,7 @@ function validarCampos(e) {
   if( inputPlaca.value !== '' ) {
     buscarVehiculo(inputPlaca.value.toUpperCase());
   } else {
-    Swal.fire({
-      title: "Error!",
-      text: "Complete todos los campos",
-      icon: "error"
-    });
+    alertSuccess("Complete todos los campos", false);
   }
 }
 
@@ -31,11 +27,7 @@ function buscarVehiculo( placa ) {
   if( indexPlaca !== -1 ) {
     calcularValor( indexPlaca );
   } else {
-    Swal.fire({
-      title: "Error!",
-      text: "La placa no se enceuntra en el sistema",
-      icon: "error"
-    });
+    alertSuccess("La placa no se encuentra en el sistema", false);
   }
 }
 
@@ -80,11 +72,7 @@ function mostrarMensaje( indexPlaca, datosVehiculo, valorHora ) {
     confirmButtonText: "Sí, facturar"
   }).then((result) => {
     if (result.isConfirmed) {
-      Swal.fire({
-        title: "Facturado!",
-        text: "Se ha facturado exitosamente.",
-        icon: "success"
-      });
+      alertSuccess("Se ha facturado exitosamente", true);
       eliminarEntrada( indexPlaca, datosVehiculo );
     }
   });
@@ -147,4 +135,3 @@ function eliminarHTML() {
     registros.removeChild(registros.firstChild)
   }
 }
-
