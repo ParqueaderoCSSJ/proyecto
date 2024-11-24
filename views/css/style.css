@@ -137,6 +137,10 @@ input:not(.button), select{
    cursor: pointer; /* Cambiar el cursor a mano */
 }
 
+.btnGuardarAdmin {
+   width: 90%;
+}
+
 /* Estilos para el botón al pasar el cursor */
 .button:hover {
    position: relative; /* Cambiar la posición */
@@ -348,6 +352,18 @@ td {
    .politicas {
       padding: 4rem; /* Relleno reducido */
       padding-bottom: 6rem;
+   }
+}
+
+@media (max-width: 576px) {
+   .politicas {
+      padding: 4rem; /* Relleno reducido */
+      padding-bottom: 6rem;
+   }
+
+   .columnasFrom {
+      display: flex;
+      flex-direction: column;
    }
 }
 
