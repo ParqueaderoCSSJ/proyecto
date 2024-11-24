@@ -89,3 +89,22 @@
  .btn-cust input {
     margin-top: 1.6rem; /* Margen superior */
  }
+
+
+ @media (max-width: 576px) {
+   .columnasFrom {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .form {
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   .bg-form-cust {
+      /* margin: 0 auto; Margen automático en los lados */
+      margin-top: 90px;
+   } 
+}
+ 
