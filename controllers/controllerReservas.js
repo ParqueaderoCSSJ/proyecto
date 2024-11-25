@@ -4,28 +4,32 @@ export function registrarRegistros() {
     const placa = document.getElementById('lmatricula').value;
     const diaEntrada = document.getElementById('ldia_entrada').value;
     const diaSalida = document.getElementById('ldia_salida').value;
-    const tarifa = document.querySelector('input[name="Tarifa"]:checked').value;
+    const tarifa = document.querySelector('input[name="Tarifa"]:checked');
 
     if (!placa || !diaEntrada || !diaSalida || !tarifa) {
-        alert("Por favor, completa todos los campos.");
-        return;
+        var msg = "Por favor, completa todos los datos";
+        alertSuccess(msg, false);
+    } else {
+        const fechaEntrada = new Date(diaEntrada);
+        const fechaSalida = new Date(diaSalida);
+        const totalDias = Math.ceil((fechaSalida - fechaEntrada) / (1000 * 60 * 60 * 24));
+    
+        const newRegistro = {
+            placa: placa,
+            tarifa: tarifa.value,
+            diaEntrada: diaEntrada,
+            diaSalida: diaSalida,
+            totalDias: isNaN(totalDias) || totalDias < 0 ? 0 : totalDias
+        };
+    
+        Registros.push(newRegistro);
+        console.log(newRegistro);
+        crearRegistroTiempo(newRegistro);
+    
+        var msg = "Ingresado con éxito";
+        alertSuccess(msg, true);
+        document.getElementById('form_reservas').reset();
     }
-
-    const fechaEntrada = new Date(diaEntrada);
-    const fechaSalida = new Date(diaSalida);
-    const totalDias = Math.ceil((fechaSalida - fechaEntrada) / (1000 * 60 * 60 * 24));
-
-    const newRegistro = {
-        placa: placa,
-        tarifa: tarifa,
-        diaEntrada: diaEntrada,
-        diaSalida: diaSalida,
-        totalDias: isNaN(totalDias) || totalDias < 0 ? 0 : totalDias
-    };
-
-    Registros.push(newRegistro);
-    console.log(newRegistro);
-    crearRegistroTiempo(newRegistro);
 }
 
 function crearRegistroTiempo(newRegistro) {
