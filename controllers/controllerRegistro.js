@@ -1,7 +1,6 @@
 import { registros } from "../models/modelRegistro.js";
 
 const formulario = document.querySelector('#formularioRegistro');
-
 const btnGuardar = document.querySelector('#btnGuardar');
 
 btnGuardar.addEventListener('click', validacionDeCampos); 
@@ -23,64 +22,43 @@ function validacionDeCampos(e) {
   
   if(tipoDocumento !== '' && documento !== '' && nombre !== '' && radioSexo !== null && apellido !== '' && telefono !== '' && correo !== '' && roll !== '' && user !== '' && password !== '' && confirmar !== '') {
     if( password === confirmar ) {
-      validacionDuplicados( tipoDocumento, documento, nombre, radioSexo.value, apellido, telefono, correo, roll, user, password);  
+      const usuarioObj = {
+        tipoDocumento,
+        documento,
+        nombre,
+        radioSexo: radioSexo.value, 
+        apellido,
+        telefono,
+        correo,
+        roll,
+        user,
+        password
+      }
+      validacionDuplicados( usuarioObj );  
     } else {
-      Swal.fire({
-        title: "Error!",
-        text: "Las contraseñas deben de ser iguales",
-        icon: "error"
-      });
+      alertSuccess("Las contraseñas deben de ser iguales", false);
     }
   } else {
-    Swal.fire({
-      title: "Error!",
-      text: "Complete todos los campos",
-      icon: "error"
-    });
+    alertSuccess("Complete todos los campos", false);
   }
 }
 
-function validacionDuplicados(tipoDocumento, documento, nombre, radioSexo, apellido, telefono, correo, roll, user, password) {
-  const encontradoDocumento = registros.some( usuario => usuario.documento === documento );
-  const encontradoUser = registros.some( usuario => usuario.user === user );
-  const encontradoEmail = registros.some( usuario => usuario.correo === correo );
+function validacionDuplicados( usuarioObj ) {
+  const encontradoDocumento = registros.some( usuario => usuario.documento === usuarioObj.documento );
+  const encontradoUser = registros.some( usuario => usuario.user === usuarioObj.user );
+  const encontradoEmail = registros.some( usuario => usuario.correo === usuarioObj.correo );
 
   if( encontradoDocumento ) {
-    Swal.fire({
-      title: "Error!",
-      text: "Documento de identidad ya existe",
-      icon: "error"
-    });
+    alertSuccess('Documento de identidad ya existe', false);
     return;
   }
   if( encontradoUser ) {
-    Swal.fire({
-      title: "Error!",
-      text: "Usuario ya existe",
-      icon: "error"
-    });
+    alertSuccess('Usuario ya existe', false);
     return;
   }
   if( encontradoEmail ) {
-    Swal.fire({
-      title: "Error!",
-      text: "Email ya existe",
-      icon: "error"
-    });
+    alertSuccess('Email ya existe', false);
     return;
-  }
-
-  const usuarioObj = {
-    tipoDocumento,
-    documento,
-    nombre,
-    radioSexo, 
-    apellido,
-    telefono,
-    correo,
-    roll,
-    user,
-    password
   }
 
   agregarUsuario(usuarioObj);
@@ -89,11 +67,7 @@ function validacionDuplicados(tipoDocumento, documento, nombre, radioSexo, apell
 function agregarUsuario(usuarioObj) {
   registros.push(usuarioObj);
   formulario.reset();
-  Swal.fire({
-    title: "Éxito!",
-    text: "El elemento fue guardado exitosamente!",
-    icon: "success"
-  });
+  alertSuccess('El usuario fue creado exitosamente!', true);
   
   sincronizarLocalStorage();
 }

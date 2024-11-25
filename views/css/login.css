@@ -136,6 +136,7 @@ body.swal2-height-auto{
     /* Margen superior e inferior */
     cursor: pointer;
     /* Cambiar el cursor a puntero */
+    color: white;
 }
 
 /* Estilos para el botón de inicio de sesión */
