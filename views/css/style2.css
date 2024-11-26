@@ -449,7 +449,7 @@ aside .botones {
       /* Ajustar dirección de elementos en formularios de facturas y mensualidad */
       .form_facturas{
             flex-direction: column; /* Apilar elementos */
-            height: 34rem; /* Altura fija */
+            /* height: 34rem; Altura fija */
       }
 
       .entrada {

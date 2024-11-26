@@ -1,4 +1,5 @@
 import {entrada} from "../models/modelEntrada.js";
+// import { alertSuccess } from "./main.js";
 
 const formRegistro = document.querySelector('#formRegistro');
 const btnGuardar = document.querySelector('#btnGuardar');
@@ -20,25 +21,13 @@ function validacionCampos(e) {
 
     if( !encontrado ) {
       capturarDatosMatricula( inputPlaca, radioVehiculo );
-      Swal.fire({
-        title: "Éxito!",
-        text: "El elemento fue guardado exitosamente!",
-        icon: "success"
-      });
+      alertSuccess("El elemento fue guardado exitosamente!", true)
     } else {
       formRegistro.reset();
-      Swal.fire({
-        title: "Error!",
-        text: "La placa ya existe en el sistema!",
-        icon: "error"
-      });
+      alertSuccess("La placa ya existe en el sistema!", false);
     }
   } else {
-    Swal.fire({
-      title: "Error!",
-      text: "Complete todos los campos",
-      icon: "error"
-    });
+    alertSuccess("Complete todos los campos", false);
   }
 }
 
@@ -89,7 +78,7 @@ function imprimirHTML() {
     registros.appendChild(tr)
   })
 
-  sincronizarLocalStorage()
+  sincronizarLocalStorage();
 }
 
 function sincronizarLocalStorage() {
@@ -106,7 +95,7 @@ function eliminarRegistro(e) {
   if( e.target.classList.contains('delete') ) {
     const vehiculoId = e.target.getAttribute('data-recibo');
 
-    const indexId = entrada.findIndex( vehiculo => vehiculo.recibo == vehiculoId);
+    const indexId = entrada.findIndex( vehiculo => vehiculo.placa == vehiculoId);
 
     entrada.splice( indexId, 1 );
 

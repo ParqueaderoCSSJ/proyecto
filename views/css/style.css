@@ -137,6 +137,10 @@ input:not(.button), select{
    cursor: pointer; /* Cambiar el cursor a mano */
 }
 
+.btnGuardarAdmin {
+   width: 90%;
+}
+
 /* Estilos para el botón al pasar el cursor */
 .button:hover {
    position: relative; /* Cambiar la posición */
@@ -265,11 +269,24 @@ td {
 
 /* Estilos para el botón de eliminar */
 .delete {
-   width: 3rem; /* Ancho del botón de eliminar */
+   width: 3rem;
+   margin-right: 8px; /* Ancho del botón de eliminar */
 }
 
 /* Estilos para el botón de eliminar al pasar el cursor sobre él */
 .delete:hover {
+   position: relative; /* Cambiar la posición */
+   bottom: 1px; /* Desplazamiento hacia abajo */
+   right: 1px; /* Desplazamiento hacia la derecha */
+   cursor: pointer; /* Cambiar el cursor a una mano */
+}
+
+.editar {
+   width: 2.7rem; /* Ancho del botón de eliminar */
+}
+
+/* Estilos para el botón de eliminar al pasar el cursor sobre él */
+.editar:hover {
    position: relative; /* Cambiar la posición */
    bottom: 1px; /* Desplazamiento hacia abajo */
    right: 1px; /* Desplazamiento hacia la derecha */
@@ -335,6 +352,18 @@ td {
    .politicas {
       padding: 4rem; /* Relleno reducido */
       padding-bottom: 6rem;
+   }
+}
+
+@media (max-width: 576px) {
+   .politicas {
+      padding: 4rem; /* Relleno reducido */
+      padding-bottom: 6rem;
+   }
+
+   .columnasFrom {
+      display: flex;
+      flex-direction: column;
    }
 }
 
