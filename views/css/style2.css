@@ -450,6 +450,7 @@ aside .botones {
       .form_facturas{
             flex-direction: column; /* Apilar elementos */
             /* height: 34rem; Altura fija */
+            height: 340px;
       }
 
       .entrada {
