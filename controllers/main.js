@@ -5,7 +5,7 @@ function alertSuccess(message, success) {
             text: message,
             icon: 'success',
             showConfirmButton: false,
-            timer: 2000
+            // timer: 2000
           });  
     } else {
         Swal.fire({
@@ -13,7 +13,7 @@ function alertSuccess(message, success) {
             text: message,
             icon: 'error',
             showConfirmButton: false,
-            timer: 2000
+            // timer: 2000
           });          
     }
 }

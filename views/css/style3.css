@@ -4,7 +4,10 @@
 main {
    display: flex; /* Mostrar como flexbox para alinear elementos */
 }
-
+/* Utilidades */
+.swal2-show {
+   font-size: 1.6rem;
+}
 /* Estilos generales para el documento HTML */
 html {
    overflow-y: hidden; /* Ocultar la barra de desplazamiento vertical */
@@ -306,7 +309,8 @@ aside .botones {
 @media (max-width: 768px) {
    .form_facturas, .mensualidad {
       flex-direction: column; /* Orientación de columna */
-      height: 34rem; /* Altura fija de 34rem */
+      height: 33rem; /* Altura fija de 34rem */
+      justify-content:space-around; 
    }
    .form_facturas > aside:nth-child(2), .mensualidad > aside:nth-child(2) {
       flex-direction: row-reverse; /* Orientación de fila invertida */

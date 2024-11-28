@@ -5,7 +5,10 @@
 html {
    overflow: hidden; /* Oculta el desbordamiento de contenido fuera del área visible */
 }
-
+/* Utilidades */
+.swal2-show {
+   font-size: 1.6rem;
+}
 /* Estilos para el cuerpo de la página de inicio de sesión */
 
 /*PAGINA DISPONIBILIDAD*/

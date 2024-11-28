@@ -4,7 +4,10 @@
 main {
       display: flex; /* Se muestra como flexbox */
 }
-
+/* Utilidades */
+.swal2-show {
+      font-size: 1.6rem;
+   }
 /* Estilos para los inputs de entrada y salida de horas */
 .inputenterhour input,
 .inputouthour input,
@@ -27,13 +30,13 @@ main {
 
 /* Estilos para las secciones de facturas y mensualidad */
 .facturas,
-.mensualidad {
+.mensualidad, .salida {
       width: var(--width-main); /* Ancho definido por la variable */
 }
 
 /* Estilos para los formularios de facturas y mensualidad */
 .form_facturas,
-.form_mensualidad {
+.form_mensualidad, .form_salida {
       display: flex; /* Se muestra como flexbox */
       width: 95%; /* Ancho del 95% */
       margin: 3rem auto; /* Margen en la parte superior e inferior y centrado horizontalmente */
@@ -43,7 +46,8 @@ main {
 
 /* Estilos para los elementos aside dentro de los formularios de facturas y mensualidad */
 .form_facturas>aside,
-.mensualidad>aside {
+.mensualidad>aside,
+.form_salida>aside {
       display: flex; /* Se muestra como flexbox */
       justify-content: space-between; /* Espacio uniforme entre elementos */
       gap: 2rem; /* Espacio entre elementos */
@@ -59,7 +63,9 @@ main {
 
 /* Estilos para los inputs de matrícula y caja izquierda en los formularios de facturas */
 .form_facturas .inputmat,
-.form_facturas .leftbox {
+.form_facturas .leftbox,
+.form_salida .inputmat,
+.form_salida .leftbox{
       width: 100%; /* Ancho completo */
       height: 100%; /* Altura completa */
       border-radius: 25px; /* Borde redondeado */
@@ -435,7 +441,8 @@ aside .botones {
 
       /* Ajustar el ancho y centrar elementos en las páginas de facturas y mensualidad */
       .facturas,
-      .mensualidad {
+      .mensualidad,
+      .salida {
             width: 100%; /* Ancho completo */
             margin: 0 auto; /* Centrado horizontal */
             height: var(--height-main); /* Altura variable */
@@ -460,7 +467,8 @@ aside .botones {
 
       /* Ajustar dirección de elementos en el aside de formularios de facturas y mensualidad */
       .form_facturas>aside:nth-child(2),
-      .mensualidad>aside:nth-child(2) {
+      .mensualidad>aside:nth-child(2),
+      .form_salida>aside:nth-child(2) {
             flex-direction: row-reverse; /* Dirección invertida */
       }
 }
