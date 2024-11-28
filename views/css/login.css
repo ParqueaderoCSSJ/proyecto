@@ -80,7 +80,7 @@ body.swal2-height-auto{
 .formulario {
     max-width: 400px;
     width: 100%;
-    margin: 0 2rem;
+    margin: 2rem;
     /* Ancho del formulario */
     background: rgba(43, 147, 151, 0.7);
     /* Color de fondo con transparencia */

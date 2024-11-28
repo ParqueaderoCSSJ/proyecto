@@ -46,7 +46,10 @@ input:not(.button), select{
 }
 
 /************ GLOBALES ***************/
-
+/* Utilidades */
+.swal2-show {
+   font-size: 1.6rem;
+}
 /* Estilos para la cabecera */
 .header {
    display: flex; /* Mostrar elementos en línea */
